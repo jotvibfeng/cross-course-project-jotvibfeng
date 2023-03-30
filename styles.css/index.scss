@@ -1,0 +1,153 @@
+body {
+    margin: 0%;
+   
+}
+
+
+
+
+header {
+    background-color: #4B7D59;
+    height: 97px;
+    width: 1440px;
+    font-family: roboto,sans-serif;
+    font-size: 16px;
+    display: flex;
+    font-weight: medium;
+    
+    nav ul li {
+        display: inline-flex;
+        margin-left: 64px;
+        margin-top: 25px;
+        font-size: 16px;
+        
+    }
+    
+
+     
+    
+
+    
+
+    .logo {
+        width: 112px;
+        height: 64px;
+        margin-top: 17px;
+        margin-left: 100px;
+    }
+
+    .shoppingcart {
+        width: 24px;
+        height: 24px;
+        margin: 36px ;
+        margin-left:500px;
+        margin-top: 36px;
+    }
+
+}
+ 
+.container-1{
+   display: flex;
+   margin-top: 50px;
+}
+    
+div.product-tow{
+    
+     .furious{
+        margin-top: 8px;
+        left: 275px;
+       width: 20px;
+    }
+    p.title{
+        margin-top: 5px;
+        margin-left: 175px;
+        font-family: roboto,sans-serif;
+        font-weight: regular;
+    }
+    
+}
+
+ div.product-three{
+    margin-left: 200px;
+    h1.assassin{
+        margin-top: 8px;
+        margin-left: 85px;
+        font-family: roboto,sans-serif;
+    }
+    p.game{
+       margin-right: px;
+    }
+        
+    }
+    
+div.product-four{
+     margin-left: 200px;
+
+    }
+
+
+.product-tow{
+    .game{
+        margin-top: px;
+        margin-left: 175px;
+}
+}
+.black-image {
+    width: 150px;
+    height: 200px;
+    margin-left: 110px;
+    
+   
+    
+    
+}
+.black{
+    padding-left: 200px;
+    margin-top: 8px;
+    font-family: roboto,sans-serif;
+   
+}
+
+.assassin-image {
+    width: 150px;
+    height: 200px;
+}
+
+.furious-image {
+    width: 150px;
+    height: 200px;
+    padding-left: 183px;
+    
+}
+
+.pingpong-image {
+    width: 150px;
+    height: 200px;
+    
+}
+
+.container-2{
+    display: flex;
+    margin-top: 52px;
+}
+
+
+.spacewar-image{
+    width:150px;
+    height: 200px;
+}
+
+.racing-image{
+    width: 150px;
+    height: 200px;
+}
+
+.boxer-image{
+    width: 150px;
+    height: 200px;
+}
+
+.cyberpunk-image{
+    width: 150px;
+    height: 200px;
+}
