@@ -836,9 +836,6 @@ div.title-order {
     font-weight: bolder;
 }
 
- 
-
-
 div.order-container {
     position: absolute;
     left: 2.5em;
@@ -900,7 +897,6 @@ img.ping-pong-order {
         left: 9em;
     }
 }
-
 
 div.checkout-container {
     position: absolute;
@@ -964,9 +960,570 @@ div.checkout-container {
     }
 }
 
-         
-            
+
+//*The Checkout page start here*// 
+
+div.hero-delivery {
+    position: absolute;
+    top: 12em;
+    left: 2em;
+    background-color: #fff;
+    width: 382px;
+    height: 175px;
+
+    h1.del-info {
+        font-size: 24px;
+        position: absolute;
+        top: -2.5em;
+
+    }
+
+    h4.checkout-del {
+       position: relative;
+       top: 1.5em;
+       left: .5em;
+       margin: .5em;
+       font-size: 16px;
+       font-weight: 500;
         
+    }
+
+    h4.checkout-info {
+        position: relative;
+        top: .5em;
+        left: .5em;
+        margin: .5em;
+        font-size: 16px;
+        font-weight: 500;
+        
+    }
+}
+
+
+div.hero-option {
+    position: absolute;
+    top: 28em;
+    left: 2em;
+    background-color: #fff;
+    width: 382px;
+    height: 175px;
+
+    h1.del-option {
+     position: absolute;
+     top: -2.5em;
+     font-size: 24px;
+    }
+
+    label.radio-button1 {
+       position: absolute;
+       left: 10.7em;
+       top: 4em;
+       cursor: pointer;
+
+       input.radio-input1 {
+         display: none;
+        
+       }
+
+       div.radio__radio1 {
+        width: 1.25em;
+        height: 1.25em;
+        border: 2px solid black;
+        border-radius: 50%;
+        box-sizing: border-box;
+        padding: 2px;
+        position: absolute;
+        left: 0.1em;
+        
+        
+       }
+
+       div.radio__radio1::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        display: block;
+        background-color: #11BF42;
+        border-radius: 50%;
+
+        transform: scale(0);
+        transition: transform 0.15s;
+       }
+
+       input.radio-input1:checked + div.radio__radio1::after {
+        transform:scale(1);
+       }
+        
+    }
+    label.radio-button2 {
+       position: absolute;
+       left: 10.7em;
+       top: 7em;
+       cursor: pointer;
+
+       input.radio-input2 {
+         display: none;
+        
+       }
+
+       div.radio__radio2 {
+        width: 1.25em;
+        height: 1.25em;
+        border: 2px solid black;
+        border-radius: 50%;
+        box-sizing: border-box;
+        padding: 2px;
+        position: absolute;
+        left: 0.1em;
+        
+        
+       }
+
+       div.radio__radio2::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        display: block;
+        background-color: #11BF42;
+        border-radius: 50%;
+
+        transform: scale(0);
+        transition: transform 0.15s;
+       }
+
+       input.radio-input2:checked + div.radio__radio2::after {
+        transform:scale(1);
+       }
+        
+    }
+    label.radio-button3 {
+       position: absolute;
+       left: 10.7em;
+       top: 8.7em;
+       cursor: pointer;
+
+       input.radio-input3 {
+         display: none;
+        
+       }
+
+       div.radio__radio3 {
+        width: 1.25em;
+        height: 1.25em;
+        border: 2px solid black;
+        border-radius: 50%;
+        box-sizing: border-box;
+        padding: 2px;
+        position: absolute;
+        left: 0.1em;
+        
+        
+       }
+
+       div.radio__radio3::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        display: block;
+        background-color: #11BF42;
+        border-radius: 50%;
+
+        transform: scale(0);
+        transition: transform 0.15s;
+       }
+
+       input.radio-input3:checked + div.radio__radio3::after {
+        transform:scale(1);
+       }
+        
+    }
+   
+    label.radio-button {
+       position: absolute;
+       left: 10.7em;
+       top: 2.4em;
+       cursor: pointer;
+
+       input.radio-input {
+         display: none;
+        
+       }
+
+       div.radio__radio {
+        width: 1.25em;
+        height: 1.25em;
+        border: 2px solid black;
+        border-radius: 50%;
+        box-sizing: border-box;
+        padding: 2px;
+        position: absolute;
+        left: 0.1em;
+        
+        
+       }
+
+       div.radio__radio::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        display: block;
+        background-color: #11BF42;
+        border-radius: 50%;
+
+        transform: scale(0);
+        transition: transform 0.15s;
+       }
+
+       input.radio-input:checked + div.radio__radio::after {
+        transform:scale(1);
+       }
+        
+    }
+
+    
+
+    h4.del-date {
+     position: relative;
+     top: .5em;
+     left: .5em;
+     margin: .5em;
+    }
+
+    h4.mail-option {
+     position: relative;
+     top: 1.5em;
+     left: .5em;
+     margin: .5em;
+     font-size: 16px;
+     font-weight: 500;
+    }
+
+    svg.ups {
+     width: 24px;
+     height: 25px;
+     position: absolute;
+     left: 11em;
+     top: .7em;
+    }
+
+    svg.postnord {
+     width: 58px;
+     height: 19px;
+     position: absolute;
+     top: 6em;
+     left: 19.1em;
+    }
+
+    svg.bring {
+        width: 58px;
+        height: 19px;
+        position: absolute;
+        top: 7.5em;
+        left: 19em;
+        
+    }
+    svg.bring-2 {
+        width: 58px;
+        height: 19px;
+        position: absolute;
+        top: 9em;
+        left: 19em;
+        
+    }
+}
+
+div.hero-pay {
+    position: absolute;
+    top: 45em;
+    left: 2em;
+    background-color:#fff;
+    width: 382px;
+    height: 94px;
+
+    h1.del-pay {
+        position: absolute;
+        top: -2.5em;
+        font-size: 24px;
+    }
+
+    h4.pay-option {
+        position: relative;
+        left: 1em;
+    }
+
+    label.radio-button4 {
+        position: absolute;
+        left: 4em;
+        top: 1.5em;
+        cursor: pointer;
+ 
+        input.radio-input4 {
+          display: none;
+         
+        }
+ 
+        div.radio__radio4 {
+         width: 1.25em;
+         height: 1.25em;
+         border: 2px solid black;
+         border-radius: 50%;
+         box-sizing: border-box;
+         padding: 2px;
+         position: absolute;
+         
+        
+         ;
+         
+         
+        }
+ 
+        div.radio__radio4::after {
+         content: '';
+         width: 100%;
+         height: 100%;
+         display: block;
+         background-color: #11BF42;
+         border-radius: 50%;
+ 
+         transform: scale(0);
+         transition: transform 0.15s;
+        }
+ 
+        input.radio-input4:checked + div.radio__radio4::after {
+         transform:scale(1);
+        }
+         
+     }
+
+     label.radio-button5 {
+        position: absolute;
+        left: 4em;
+        top: 3.8em;
+        cursor: pointer;
+ 
+        input.radio-input5 {
+          
+          display: none;
+          
+         
+        }
+ 
+        div.radio__radio5 {
+         width: 1.25em;
+         height: 1.25em;
+         border: 2px solid black;
+         border-radius: 50%;
+         box-sizing: border-box;
+         padding: 2px;
+         position: absolute;
+         
+        
+         ;
+         
+         
+        }
+ 
+        div.radio__radio5::after {
+         content: '';
+         width: 100%;
+         height: 100%;
+         display: block;
+         background-color: #11BF42;
+         border-radius: 50%;
+ 
+         transform: scale(0);
+         transition: transform 0.15s;
+        }
+ 
+        input.radio-input5:checked + div.radio__radio5::after {
+         transform:scale(1);
+        }
+         
+     }
+
+    svg.vipps {
+     width: 86px;
+     height: 31px;
+     position: absolute;
+     top: 1em;
+     left: 5em;
+    }
+
+   
+
+    svg.master-card {
+       width: 50px;
+       height: 24px;
+       position: absolute;
+       left: 6em;
+       top: 3.7em;
+       background-color: #E2E2E2;
+       border-radius: 4px;
+       
+
+    }
+
+    svg.visa {
+        width: 60px;
+        height: 19px;
+        position: absolute;
+        left: 10em;
+        background-color: #E2E2E2;
+        border-radius: 4px;
+       
+    }
+}
+
+div.hero-detail {
+    position: absolute;
+    top: 55em;
+    left: 2em;
+    background-color:#fff;
+    height: 206px;
+    width: 382px;
+   
+    h1.del-detail {
+    position: absolute;
+    top: -2.5em;
+    font-size: 24px;
+   }
+
+   h4.del-pay {
+    position: absolute;
+    top: 0em;
+    left: 21em;
+    font-weight: 500;
+   }
+
+   h4.del-pay-1 {
+    position: absolute;
+    top: 2em;
+    left: 19em;
+    font-weight: 500;
+   }
+
+   h4.del-game {
+    position: relative;
+    left: 6em;
+    font-weight: normal;
+    margin: .5em;
+    width: 100px;
+   }
+   
+   h4.check-pay {
+    width: 50px;
+    position: absolute;
+    left: 8em;
+    top: 3.1em;
+    color: #fff;
+    width: 168px;
+    height: 35px;
+    text-align: center;
+    font-size: 24px;
+    border-radius: 4px;
+    font-family: nunito,sans-serif;
+    background-color: #4B7D59;
+
+    a {
+        width: 10px;
+    }
+   }
+   
+   h4.hero-total {
+    position: relative;
+    top: -.5em;
+    left: 1em;
+    font-weight: 500;
+   }
+
+       
+    img.del-ping-pong {
+        width: 80px;
+        height: 102px;
+        position: absolute;
+        top: 5.7em;
+        left: 1em;
+
+    }
+
+    
+}
+
+
+//*checkout footer desgin start here*//
+     div.footer-check {
+
+        footer { 
+            width: 100%;
+            height: 134px;
+            background-color: #4B7D59;
+            position: absolute;
+            top: 1150px;
+        
+            div.sosical-media{
+            display:inline;
+            position: absolute;
+            left: 28em;
+            top:3em;
+            svg.insta{
+                width: 32px;
+                height: 30px;
+                position: absolute;
+                right: 4em;
+            }
+            svg.tik-tok{
+               width: 32px;
+               height: 34px; 
+               position: absolute;
+               right: 1em;
+            }
+            svg.face{
+                width: 17px;
+                height: 30px;
+                position: absolute;
+                left:0,5em;
+            }
+        
+          
+        }
+        .logo-footer{
+            margin: 0;
+            height: 64px;
+            width: 90px;
+                
+            position: absolute;
+            bottom: 4em;
+            left: 2em;
+            top: 1em;
+        }
+        
+        div.footer-col {
+            nav{
+             position: absolute;
+             left: 10em;
+             top: 1em;
+            }
+            ul{
+             margin: 0;
+             padding: 0;
+             list-style: none;
+            }
+            li{
+             margin-top: .5em;
+             }
+             a{
+              font-family: nunito,sans-serif;
+              text-decoration: none;
+              color: #fff;
+             }
+        
+             a:hover{
+                color: #75dd53;
+             }
+        }
+
+     }       
+    } 
 
 //* footer design start here *//
 footer { 
@@ -1274,6 +1831,22 @@ div.footer-col {
     
         }
     }
+
+    div.footer-check {
+        footer {
+            div.sosical-media{
+                display:inline;
+                position: absolute;
+                left: 40em;
+                top: 3em;
+            }
+            div.footer-col{
+                position: absolute;
+                left: 8em;
+        
+            }
+        }
+    }
     
 }
 
@@ -1366,7 +1939,41 @@ div.footer-col {
         }
     }
     
+    div.footer-check {
+        footer {
+            height: 96px;
+            div.sosical-media{
+                display:inline;
+                position: absolute;
+                left: 47em;
+                top: 2em;
+             
+             svg.face {
+                width: 14px;
+                height: 32px;
+             }
+             svg.tik-tok {
+                width: 24px;
+                height: 32px;
+             }
+             svg.insta{
+                width: 25px;
+                width: 32px;
+             }
+    
+            }
+            div.footer-col{
+                position: absolute;
+                left: 10em;
+        
+            }
+        }
+        
+    
+    }
+
 }
+
 @media screen and (min-width: 900px) {
     label.nav-toggle-lable {
         display: none;
@@ -1427,7 +2034,22 @@ div.footer-col {
 
     }
 
-   
+    div.hero-option {
+        position: absolute;
+       
+    }
+
+    div.hero-pay {
+        position: absolute;
+       
+    }
+
+    div.hero-detail {
+        a h4:hover {
+            background-color: #11BF42;
+        }
+       }
+       
     .product-container-4{
 
         position: absolute;
@@ -1487,6 +2109,37 @@ div.footer-col {
             position: absolute;
             left: 10em;
     
+        }
+    }
+
+    div.footer-check {
+        footer {
+            height: 96px;
+            top: 1200px;
+            div.sosical-media {
+                display:inline;
+                position: absolute;
+                left: 52.5em;
+                top: 2em;
+             svg.face {
+                width: 14px;
+                height: 32px;
+             }
+             svg.tik-tok {
+                width: 24px;
+                height: 32px;
+             }
+             svg.insta{
+                width: 25px;
+                width: 32px;
+             }
+    
+            }
+            div.footer-col {
+                position: absolute;
+                left: 10em;
+        
+            }
         }
     }
 }
@@ -2136,7 +2789,49 @@ div.footer-col {
         }
     }
     
+    div.hero-detail {
+        position: absolute;
+        top: 12em;
+        left: 29em;
+        width: 450px;
+        height: 206px;
 
+        img.del-ping-pong {
+            position: absolute;
+            top: 1em;
+            
+        }
+
+        h4.del-game {
+            position: relative;
+            top: -2.5em;
+        }
+
+        h4.del-pay {
+            position: absolute;
+            top: 7em;
+            left: 10em;
+        }
+        h4.del-pay-1 {
+            position: absolute;
+            top: 8.5em;
+            left: 10em;
+        }
+
+        h4.check-pay {
+            position: absolute;
+            left: 11em;
+            top: 4em;
+        }
+
+        h4.hero-total {
+            position: relative;
+            top: 7.5em;
+            left: .5em;
+            margin: .7em;
+
+        }
+    }
     
     footer {
         height: 96px;
@@ -2167,6 +2862,39 @@ div.footer-col {
         }
         
 
+    }
+
+    div.footer-check {
+        footer {
+            height: 96px;
+            top: 1000px;
+            div.sosical-media {
+                display:inline;
+                position: absolute;
+                left: 60em;
+                top: 2em;
+             svg.face {
+                width: 14px;
+                height: 32px;
+             }
+             svg.tik-tok {
+                width: 24px;
+                height: 32px;
+             }
+             svg.insta{
+                width: 25px;
+                width: 32px;
+             }
+    
+            }
+            div.footer-col {
+                position: absolute;
+                left: 15em;
+        
+            }
+            
+    
+        }
     }
 
     img.logo-footer{
@@ -2286,6 +3014,36 @@ div.footer-col {
         top: 23em;
     }
 
+    div.hero-detail {
+        position: absolute;
+        top: 12em;
+        left: 29em;
+        width: 558px;
+        height: 206px;
+
+        h4.check-pay {
+            position: absolute;
+            left: 15em;
+        }
+
+        h4.del-pay {
+            position: absolute;
+            top: 7em;
+            left: 17em;
+            font-weight: 500;
+           }
+        
+           h4.del-pay-1 {
+            position: absolute;
+            top: 8.5em;
+            left: 15em;
+            font-weight: 500;
+           }
+
+
+    }
+
+   
     footer {
         height: 96px;
         div.sosical-media {
@@ -2315,6 +3073,38 @@ div.footer-col {
         
 
     }
+
+    div.footer-check {
+        footer {
+            height: 96px;
+            div.sosical-media {
+                display:inline;
+                position: absolute;
+                left: 70em;
+                top: 2em;
+             svg.face {
+                width: 14px;
+                height: 32px;
+             }
+             svg.tik-tok {
+                width: 24px;
+                height: 32px;
+             }
+             svg.insta{
+                width: 25px;
+                width: 32px;
+             }
+    
+            }
+            div.footer-col {
+                position: absolute;
+                left: 16em;
+        
+            }
+            
+    
+        }
+    }
 }
 @media screen and (min-width: 1400px) {
     label.nav-toggle-lable {
@@ -2326,7 +3116,7 @@ div.footer-col {
     header {
         display: grid;
         grid-template-columns: 5fr auto minmax(900px, 3fr) 3fr;
-        width: 1440px;
+       
         height: 97px;
         .logo{
             position: absolute;
@@ -2411,6 +3201,11 @@ div.footer-col {
         top: 23em;
     }
 
+    div.hero-detail {
+        position: absolute;
+        top: 12em;
+        left: 35em;
+    }
     footer {
         height: 96px;
         div.sosical-media {
@@ -2440,5 +3235,37 @@ div.footer-col {
         
 
     }
+
+    div.footer-check {
+        footer {
+            height: 96px;
+            div.sosical-media {
+                display:inline;
+                position: absolute;
+                left: 82em;
+                top: 2em;
+             svg.face {
+                width: 14px;
+                height: 32px;
+             }
+             svg.tik-tok {
+                width: 24px;
+                height: 32px;
+             }
+             svg.insta{
+                width: 25px;
+                width: 32px;
+             }
+    
+            }
+            div.footer-col {
+                position: absolute;
+                left: 15em;
+        
+            }
+            
+    
+        }
 }
 
+}

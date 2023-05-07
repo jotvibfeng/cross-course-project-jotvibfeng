@@ -33,6 +33,10 @@ header {
         height: 100%;
         display: flex;
         align-items: center;
+        
+        span {
+            color: #4B7D59;
+        }
     }
 
     .nav-toggle-lable span,
@@ -214,6 +218,76 @@ div.footer-col {
 }
 }
 
+div.footer-detail {
+    footer{
+        width: 100%;
+        height: 134px;
+        background-color: #4B7D59;
+        position: absolute;
+        top: 1450px;
+    div.sosical-media{
+        display:inline;
+        position: absolute;
+        left: 28em;
+        top:3em;
+        svg.insta{
+            width: 32px;
+            height: 30px;
+            position: absolute;
+            right: 4em;
+        }
+        svg.tik-tok{
+           width: 32px;
+           height: 34px; 
+           position: absolute;
+           right: 1em;
+        }
+        svg.face{
+            width: 17px;
+            height: 30px;
+            position: absolute;
+            left:0,5em;
+        }
+      
+    }
+    .logo-footer{
+        margin: 0;
+        height: 64px;
+        width: 90px;
+            
+        position: absolute;
+        bottom: 4em;
+        left: 2em;
+        top: 1em;
+    }
+    
+    div.footer-col {
+        nav{
+         position: absolute;
+         left: 10em;
+         top: 1em;
+        }
+        ul{
+         margin: 0;
+         padding: 0;
+         list-style: none;
+        }
+        li{
+         margin-top: .5em;
+         }
+         a{
+          font-family: nunito,sans-serif;
+          text-decoration: none;
+          color: #fff;
+         }
+    
+         a:hover{
+            color: #75dd53;
+         }
+    }
+    }
+}
+
 //* The styling of the contact page started here *//
 img.service-man {
     position: relative;
@@ -335,12 +409,511 @@ div.hero-send {
    
 }
 
+//*The successful payment page start here*//
+
+div.hero-successful {
+
+    h1.succes-title {
+        position: absolute;
+        top: 5.5em;
+        left: 2.7em;
+        font-size: 26px;
+        font-weight: bold;
+    }
+    svg.checkmark {
+        width: 66px;
+        height: 66px;
+        position: absolute;
+        top: 12em;
+        left: 13em;
+    }
+
+    p.succes-text {
+        
+        width: 410px;
+        text-align: center;
+        line-height: 1.8em;
+        position: absolute;
+        top: 16em;
+        left: 2.5em;
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
 
 
+div.hero-rec {
+    
+    position: absolute;
+    top: 20em;
+
+    h1.rec-title {
+        font-size: 20px;
+        font-weight:bold;
+        position: absolute;
+        top: 3em;
+        left: 7em;
+        width: 300px;
+    }
+
+   
+    h3.rec-detail {
+        font-family: nunito,sans-serif;
+        font-weight: bold;
+        font-size: 24px;
+        background-color: #1E7B9C;
+        border-radius: 4px;
+        position: absolute;
+        top: 12.7em;
+        left: 1em;
+        width: 130px;
+        height: 35px;
+        text-align: center;
+        color: #fff;
+                       
+        }
+    h3.rec-detail2 {
+        font-family: nunito,sans-serif;
+        font-weight: bold;
+        font-size: 24px;
+        background-color: #1E7B9C;
+        border-radius: 4px;
+        position: absolute;
+        top: 12.7em;
+        left: 7.6em;
+        width: 130px;
+        height: 35px;
+        text-align: center;
+        color: #fff;
+                       
+        }
+    h3.rec-detail3 {
+        font-family: nunito,sans-serif;
+        font-weight: bold;
+        font-size: 24px;
+        background-color: #1E7B9C;
+        border-radius: 4px;
+        position: absolute;
+        top: 12.7em;
+        left: 14.2em;
+        width: 130px;
+        height: 35px;
+        text-align: center;
+        color: #fff;
+                       
+        }
+        h2.rec-game {
+            position: absolute;
+            top: 20em;
+            left: 1.7em;
+            font-size: 14px;
+            font-weight: normal;
+        }
+        h2.rec-game2 {
+            position: absolute;
+            top: 20em;
+            left: 13em;
+            width: 200px;
+            font-size: 14px;
+            font-weight: normal;
+        }
+        h2.rec-game3 {
+            position: absolute;
+            top: 20em;
+            left: 24.3em;
+            font-size: 14px;
+            font-weight: normal;
+        }
+
+        h3.rec-console {
+            position: absolute;
+            top: 30em;
+            left: 2.4em;
+            font-size: 10px;
+            font-weight: lighter;
+        }
+        h3.rec-console2 {
+            position: absolute;
+            top: 30em;
+            left: 18.2em;
+            font-size: 10px;
+            font-weight: normal;
+        }
+        h3.rec-console3 {
+            position: absolute;
+            top: 30em;
+            left: 34em;
+            font-size: 10px;
+            font-weight: normal;
+        }
+
+        h3.rec-price {
+            position: absolute;
+            top: 17.2em;
+            left: 6.5em;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        h3.rec-price2 {
+            position: absolute;
+            top: 17.2em;
+            left: 16.7em;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        h3.rec-price3 {
+            position: absolute;
+            top: 17.2em;
+            left: 26.5em;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+
+
+    img.rec-images {
+        height: 159px;
+        width: 130px;
+        position: absolute;
+        top: 8em;
+        left: 1.5em;
+    }
+    img.rec-images2 {
+        height: 159px;
+        width: 130px;
+        position: absolute;
+        top: 8em;
+        left: 11.5em;
+    }
+    img.rec-images3 {
+        height: 159px;
+        width: 130px;
+        position: absolute;
+        top: 8em;
+        left: 21.3em;
+    }
+
+
+}
+
+//*The Detail page style start here*//
+
+div.detail-top {
+    position: absolute;
+    top: 10em;
+    img.top-image {
+        width: 202px;
+        height: 249px;
+        position: absolute;
+        left: 7em;
+        top: 1em;
+    }
+
+    svg.rate {
+        width: 149px;
+        height: 35px;
+        position: absolute;
+        top: 17em;
+        left: 8.5em;
+    }
+
+    h1.top-title {
+        position: absolute;
+        left: 1em;
+        top: -2.5em;
+        font-size: 28px;
+        width: 300px;
+        font-weight: normal;
+        font-family: robto,sans-serif;
+    }
+
+    h2.sec-title {
+        position: absolute;
+        left: 1.7em;
+        top: -em;
+        font-size: 16px;
+        font-weight: lighter;
+        font-family: robto,sans-serif;
+    }
+}
+
+div.nav-add {
+    position: absolute;
+    top: 20em;
+    left: 5em;
+    background-color: #E4E7D9;
+    height: 80px;
+    width: 360px;
+
+    h3.add-nav {
+        font-family: nunito,sans-serif;
+        font-size: 25px;
+        font-weight: bold;
+        position: absolute;
+        left: 5.5em;
+        top: -.3em;
+        width: 200px;
+        background-color: #4B7D59;
+        border-radius: 4px;
+        width: 200px;
+        height: 40px;
+        text-align: center;
+        color: #fff;
+    }
+
+    h1.add-price {
+        position: absolute;
+        left: .5em;
+        font-size: 24px;
+        font-weight: bold;
+        font-family: roboto,sans-serif;
+    }
+
+    h2.add-ship {
+        position: absolute;
+        top: 2em;
+        left: .7em;
+        font-size: 16px;
+        font-weight: lighter;
+        font-family: roboto,sans-serif;
+        width: 200px;
+    }
+}
+
+
+div.nav-spec {
+    position: absolute;
+    top: 38em;
+
+    h1.spec-title {
+        font-size: 24px;
+        font-weight: 600;
+        position: absolute;
+        top: 1em;
+        left: 1.5em;
+        z-index: 500;
+    }
+   
+    
+ div.close-item {
+  
+   
+    h2.back-text {
+        font-size: 24px;
+        font-weight: 600;
+        position: absolute;
+        left: 1.5em;
+        top: 3.5em;
+        }
+
+    h2.spec-head {
+        background-color: #E4E7D9;
+        width: 440px;
+        height: 50px;
+        position: absolute;
+        top: 3em;
+        left: 1.3em;
+    }
+
+    svg.div-line1 {
+        position: absolute;
+        top: 22em;
+        width:480px;
+        height: 1px;
+    }
+
+    div.spec-des {
+        position: absolute;
+        top: 10em;
+        left: 4em;
+        
+       h2.spec-genre {
+        font-size: 18px;
+        font-weight: normal;
+        position: absolute;
+        top: -1.9em;
+        left: -1.8em;
+        border: 2px solid #E4E7D9 ;
+        width: 240px;
+        height: 24.5px;
+        padding-top:.5em;
+        padding-left: .5em;
+       }
+
+       h2.spec-platform {
+        font-size: 18px;
+        font-weight: normal;
+        position: absolute;
+        top: .3em;
+        left: -1.8em;
+        border: 2px solid #E4E7D9 ;
+        width: 240px;
+        height: 24.5px;
+        padding-top:.5em;
+        padding-left: .5em;
+
+       }
+       h2.spec-esrb {
+        font-size: 18px;
+        font-weight: normal;
+        position: absolute;
+        top: 2.5em;
+        left: -1.8em;
+        border: 2px solid #E4E7D9 ;
+        width: 240px;
+        height: 24px;
+        padding-top:.5em;
+        padding-left: .5em;
+
+       }
+       h2.spec-pegi {
+        font-size: 18px;
+        font-weight: normal;
+        position: absolute;
+        top: 4.7em;
+        left: -1.8em;
+        border: 2px solid #E4E7D9 ;
+        width: 240px;
+        height: 24.5px;
+        padding-top:.5em;
+        padding-left: .5em;
+
+       }
+       h2.spec-multi {
+        font-size: 18px;
+        font-weight: normal;
+        position: absolute;
+        top: 7em;
+        left: -1.8em;
+        border: 2px solid #E4E7D9 ;
+        width: 240px;
+        height: 24.5px;
+        padding-top:.5em;
+        padding-left: .5em;
+       }
+    }
+
+    div.spec-info {
+       position: absolute;
+       top: 8em;
+       left: 20em;
+
+       h2.spec-sport {
+        font-size: 18px;
+        font-weight: normal;
+        position: absolute;
+        top: -.2em;
+        left: -2.1em;
+        border: 2px solid #E4E7D9 ;
+        width: 175px;
+        height: 25px;
+        padding-top:.5em;
+        padding-left: .5em;
+
+       }
+       h2.spec-play {
+        font-size: 18px;
+        font-weight: normal;
+        position: absolute;
+        top: 2.1em;
+        left: -2.1em;
+        border: 2px solid #E4E7D9 ;
+        width: 175px;
+        height: 24.5px;
+        padding-top:.5em;
+        padding-left: .5em;
+
+       }
+       h2.spec-for {
+        font-size: 18px;
+        font-weight: normal;
+        position: absolute;
+        top: 4.3em;
+        left: -2.1em;
+        border: 2px solid #E4E7D9 ;
+        width: 175px;
+        height: 24.5px;
+        padding-top:.5em;
+        padding-left: .5em;
+
+       }
+       h2.spec-age {
+        font-size: 18px;
+        font-weight: normal;
+        position: absolute;
+        top: 6.5em;
+        left: -2.1em;
+        border: 2px solid #E4E7D9 ;
+        width: 175px;
+        height: 24.5px;
+        padding-top:.5em;
+        padding-left: .5em;
+       }
+       h2.spec-num {
+        font-size: 18px;
+        font-weight: normal;
+        position: absolute;
+        top: 8.8em;
+        left: -2.1em;
+        border: 2px solid #E4E7D9 ;
+        width: 175px;
+        height: 24.5px;
+        padding-top:.5em;
+        padding-left: .5em;
+
+       }
+    }
+ }
+   
+}
+
+div.close-info {
+   
+    position: absolute;
+    top: 60em;
+    svg.div-line {
+        position: absolute;
+        top: 0em;
+        left: .2em;
+        width: 490px;
+        height: 1px;
+       
+    }
+
+    h1.close-producte-title {
+        font-size: 24px;
+        position: absolute;
+        top: 0em;
+        left: 1.5em;
+        width: 300px;
+    }
+}
+
+
+
+div.close-producte {
+    position: absolute;
+    top: 2em;
+    left: 2.2em;
+
+    h1.close-game-title {
+        width: 200px;
+        font-size: 30px;
+        font-weight: normal;
+        position: absolute;
+        top:.1em;
+    }
+
+    p {
+        position: absolute;
+        top: 2.5em;
+        width: 390px;
+        font-size: 20px;
+        font-weight: lighter;
+    }
+}
 
 // The responsiv styling start here//
-
-
 
 @media only screen and (min-width: 700px) {
     label.nav-toggle-lable {
@@ -410,6 +983,12 @@ div.hero-send {
         width: 30em;
     }
     
+    svg.div-line1 {
+        display: none;
+    }
+    svg.div-line {
+        display: none;
+    }
 
     nav a::after {
         content: '';
@@ -457,11 +1036,6 @@ div.hero-send {
     }
     
 }
-
-
-
-
-
 
 @media screen and (min-width: 800px) {
     label.nav-toggle-lable {
@@ -513,8 +1087,229 @@ div.hero-send {
             background-color: #11BF42;
         }
     }
-    
+    div.detail-top{
+
+        svg.rate {
+            width: 149px;
+            height: 35px;
+            position: absolute;
+            top: .7em;
+            left: 22em;
+        }
+    }
+
+    div.nav-add {
+        position: absolute;
+        top: 4.5em;
+        left: 21em;
+        height: 120px;
+        h3.add-nav {
+            position: absolute;
+            top: 1.5em;
+            left: .4em;
+            width: 300px;
+            height: 40px;
+        }
+
+        h1.add-price {
+            position: absolute;
+            top: -.5em;
+        }
+        h2.add-ship {
+            position: absolute;
+            top: 1.3em;
+
+        }
+        
+
+        a h3:hover {
+            background-color: #11BF42;
+        }
+    }
    
+    div.nav-spec {
+        position: absolute;
+        top: 27em;
+        
+        div.close-item {
+            
+            width: 100%;
+            height: 500px;
+            background-color: #fff;
+             h2.back-text {
+                 font-size: 24px;
+                 font-weight: 600;
+                 position: absolute;
+                 left: 1.5em;
+                 top: 3.5em;
+                 }
+         
+             h2.spec-head {
+                 background-color: #E4E7D9;
+                 width: 440px;
+                 height: 50px;
+                 position: absolute;
+                 top: 3em;
+                 left: 1.3em;
+             }
+         
+             svg.div-line1 {
+                 position: absolute;
+                 top: 22em;
+                 width:480px;
+                 height: 1px;
+             }
+         
+             div.spec-des {
+                 position: absolute;
+                 top: 10em;
+                 left: 4em;
+                 
+                h2.spec-genre {
+                 font-size: 18px;
+                 font-weight: normal;
+                 position: absolute;
+                 top: -1.9em;
+                 left: -1.8em;
+                 border: 2px solid #E4E7D9 ;
+                 width: 240px;
+                 height: 24.5px;
+                 padding-top:.5em;
+                 padding-left: .5em;
+                }
+         
+                h2.spec-platform {
+                 font-size: 18px;
+                 font-weight: normal;
+                 position: absolute;
+                 top: .3em;
+                 left: -1.8em;
+                 border: 2px solid #E4E7D9 ;
+                 width: 240px;
+                 height: 24.5px;
+                 padding-top:.5em;
+                 padding-left: .5em;
+         
+                }
+                h2.spec-esrb {
+                 font-size: 18px;
+                 font-weight: normal;
+                 position: absolute;
+                 top: 2.5em;
+                 left: -1.8em;
+                 border: 2px solid #E4E7D9 ;
+                 width: 240px;
+                 height: 24px;
+                 padding-top:.5em;
+                 padding-left: .5em;
+         
+                }
+                h2.spec-pegi {
+                 font-size: 18px;
+                 font-weight: normal;
+                 position: absolute;
+                 top: 4.7em;
+                 left: -1.8em;
+                 border: 2px solid #E4E7D9 ;
+                 width: 240px;
+                 height: 24.5px;
+                 padding-top:.5em;
+                 padding-left: .5em;
+         
+                }
+                h2.spec-multi {
+                 font-size: 18px;
+                 font-weight: normal;
+                 position: absolute;
+                 top: 7em;
+                 left: -1.8em;
+                 border: 2px solid #E4E7D9 ;
+                 width: 240px;
+                 height: 24.5px;
+                 padding-top:.5em;
+                 padding-left: .5em;
+                }
+             }
+         
+             div.spec-info {
+                position: absolute;
+                top: 8em;
+                left: 20em;
+         
+                h2.spec-sport {
+                 font-size: 18px;
+                 font-weight: normal;
+                 position: absolute;
+                 top: -.2em;
+                 left: -2.1em;
+                 border: 2px solid #E4E7D9 ;
+                 width: 175px;
+                 height: 25px;
+                 padding-top:.5em;
+                 padding-left: .5em;
+         
+                }
+                h2.spec-play {
+                 font-size: 18px;
+                 font-weight: normal;
+                 position: absolute;
+                 top: 2.1em;
+                 left: -2.1em;
+                 border: 2px solid #E4E7D9 ;
+                 width: 175px;
+                 height: 24.5px;
+                 padding-top:.5em;
+                 padding-left: .5em;
+         
+                }
+                h2.spec-for {
+                 font-size: 18px;
+                 font-weight: normal;
+                 position: absolute;
+                 top: 4.3em;
+                 left: -2.1em;
+                 border: 2px solid #E4E7D9 ;
+                 width: 175px;
+                 height: 24.5px;
+                 padding-top:.5em;
+                 padding-left: .5em;
+         
+                }
+                h2.spec-age {
+                 font-size: 18px;
+                 font-weight: normal;
+                 position: absolute;
+                 top: 6.5em;
+                 left: -2.1em;
+                 border: 2px solid #E4E7D9 ;
+                 width: 175px;
+                 height: 24.5px;
+                 padding-top:.5em;
+                 padding-left: .5em;
+                }
+                h2.spec-num {
+                 font-size: 18px;
+                 font-weight: normal;
+                 position: absolute;
+                 top: 8.8em;
+                 left: -2.1em;
+                 border: 2px solid #E4E7D9 ;
+                 width: 175px;
+                 height: 24.5px;
+                 padding-top:.5em;
+                 padding-left: .5em;
+         
+                }
+             }
+          }
+
+    }
+
+    div.close-info {
+        position: absolute;
+        top: 53em;
+
+    }
    
     div.text-box {
         position: absolute;
@@ -603,7 +1398,38 @@ div.hero-send {
     
         }
     }
+
+    div.footer-detail {
+        footer{
+        height: 96px;
+        div.sosical-media{
+            display:inline;
+            position: absolute;
+            left: 47em;
+            top: 2em;
+         
+         svg.face {
+            width: 14px;
+            height: 32px;
+         }
+         svg.tik-tok {
+            width: 24px;
+            height: 32px;
+         }
+         svg.insta{
+            width: 25px;
+            width: 32px;
+         }
+
+        }
+        div.footer-col{
+            position: absolute;
+            left: 10em;
     
+        }
+    }
+    
+}
 }
 @media screen and (min-width: 900px) {
     label.nav-toggle-lable {
@@ -1078,7 +1904,7 @@ div.hero-send {
     header {
         display: grid;
         grid-template-columns: 5fr auto minmax(900px, 3fr) 3fr;
-        width: 1440px;
+      
         height: 97px;
         .logo{
             position: absolute;
@@ -1126,6 +1952,45 @@ div.hero-send {
 
 
     }
+
+   div.close-info {
+    position: absolute;
+    top: 21.5em;
+    left: 18em;
+    
+    
+    h1.close-producte-title {
+        position: absolute;
+        left: 13.5em;
+        top: 5em;
+    }
+    div.close-producte {
+        position: absolute;
+        top: 11em;
+        left: 20em;
+        border: solid #E4E7D9;
+        width: 400px;
+        height: 220px;
+
+        
+    
+        h1.close-game-title {
+            width: 200px;
+            font-size: 30px;
+            font-weight: normal;
+            position: absolute;
+            top:-.5em;
+        }
+    
+        p {
+            position: absolute;
+            top: 1.5em;
+            width: 390px;
+            font-size: 20px;
+            font-weight: lighter;
+        }
+    }
+   }
 
     .info{
         position: absolute;
@@ -1210,6 +2075,40 @@ div.hero-send {
        div.hero-send {
         position: absolute;
         top: 47.5em;
+       }
+
+       div.footer-detail{
+        footer {
+            height: 96px;
+            position: absolute;
+            top: 900px;
+            div.sosical-media {
+                display:inline;
+                position: absolute;
+                left: 82em;
+                top: 2em;
+             svg.face {
+                width: 14px;
+                height: 32px;
+             }
+             svg.tik-tok {
+                width: 24px;
+                height: 32px;
+             }
+             svg.insta{
+                width: 25px;
+                width: 32px;
+             }
+    
+            }
+            div.footer-col {
+                position: absolute;
+                left: 15em;
+        
+            }
+            
+    
+        }
        }
 
     footer {
