@@ -1617,6 +1617,10 @@ div.close-producte p {
   label.nav-toggle-lable {
     display: none;
   }
+  div.detail-top h2.sec-title {
+    position: absolute;
+    top: -2em;
+  }
   header {
     display: grid;
     grid-template-columns: 5fr auto minmax(900px, 3fr) 3fr;
