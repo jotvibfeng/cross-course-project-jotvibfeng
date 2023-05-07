@@ -866,6 +866,7 @@ div.hero-option label.radio-button1 div.radio__radio1 {
   padding: 2px;
   position: absolute;
   left: 0.1em;
+  color: #fff;
 }
 div.hero-option label.radio-button1 div.radio__radio1::after {
   content: "";
@@ -898,6 +899,7 @@ div.hero-option label.radio-button2 div.radio__radio2 {
   padding: 2px;
   position: absolute;
   left: 0.1em;
+  color: #fff;
 }
 div.hero-option label.radio-button2 div.radio__radio2::after {
   content: "";
@@ -930,6 +932,7 @@ div.hero-option label.radio-button3 div.radio__radio3 {
   padding: 2px;
   position: absolute;
   left: 0.1em;
+  color: #fff;
 }
 div.hero-option label.radio-button3 div.radio__radio3::after {
   content: "";
@@ -962,6 +965,7 @@ div.hero-option label.radio-button div.radio__radio {
   padding: 2px;
   position: absolute;
   left: 0.1em;
+  color: #fff;
 }
 div.hero-option label.radio-button div.radio__radio::after {
   content: "";
@@ -1053,6 +1057,7 @@ div.hero-pay label.radio-button4 div.radio__radio4 {
   box-sizing: border-box;
   padding: 2px;
   position: absolute;
+  color: #fff;
 }
 div.hero-pay label.radio-button4 div.radio__radio4::after {
   content: "";
@@ -1084,6 +1089,7 @@ div.hero-pay label.radio-button5 div.radio__radio5 {
   box-sizing: border-box;
   padding: 2px;
   position: absolute;
+  color: #fff;
 }
 div.hero-pay label.radio-button5 div.radio__radio5::after {
   content: "";
