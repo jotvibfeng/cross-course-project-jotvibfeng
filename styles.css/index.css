@@ -31,6 +31,9 @@ header .nav-toggle-lable {
   display: flex;
   align-items: center;
 }
+header .nav-toggle-lable span {
+  color: #4B7D59;
+}
 header .nav-toggle-lable span,
 header .nav-toggle-lable span::before,
 header .nav-toggle-lable span::after {

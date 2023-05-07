@@ -708,11 +708,13 @@ div.nav-spec {
 
     h2.spec-head {
         background-color: #E4E7D9;
-        width: 440px;
-        height: 50px;
+        width: 415px;
+        height: 30px;
         position: absolute;
         top: 3em;
         left: 1.3em;
+        padding:.5em
+        ;
     }
 
     svg.div-line1 {
