@@ -1782,6 +1782,25 @@ div.close-producte {
     }
     }
 
+    div.nav-spec {
+
+        h1.spec-title {
+            position: absolute;
+            top: 0.5em;
+        }
+        div.close-item {
+
+            h2.spec-head {
+                position: absolute;
+                top: 2em;
+                width: 17.3em;
+            }
+        }
+
+      
+        
+    }
+
    div.text-box {
     position:absolute;
     top: -5em;
@@ -1811,6 +1830,7 @@ div.close-producte {
     width: 123px;
     height: 35px;
    }
+
 
     header {
         display: grid;
@@ -1908,14 +1928,7 @@ div.close-producte {
         }
     }
    
-    div.nav-spec {
-
-        h2.spec-head {
-            position: absolute;
-            top: 1em;
-        }
-        
-    }
+   
 
     header {
         display: grid;
