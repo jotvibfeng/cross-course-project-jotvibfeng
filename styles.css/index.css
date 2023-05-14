@@ -4,6 +4,7 @@ body {
   font-weight: normal;
 }
 
+/*Nav bar styling start here*/
 header {
   background-color: #4B7D59;
   text-align: center;
@@ -100,6 +101,7 @@ header .shoppingcart {
   bottom: 1.5em;
 }
 
+/* product styling started here */
 .product-container .black-image {
   height: 159px;
   width: 122px;
@@ -680,10 +682,12 @@ header .shoppingcart {
   color: #fff;
 }
 
+/*The Cart styling started here*/
 body.body-background {
   background-color: #E2E2E2;
 }
 
+/*For chromium and safari*/
 input[type=number]::-webkit-inner-spin-button {
   display: none;
 }
@@ -805,6 +809,7 @@ div.checkout-container a.hero-checkout {
   position: absolute;
 }
 
+/*The Checkout page start here*/
 div.hero-delivery {
   position: absolute;
   top: 12em;
@@ -1192,6 +1197,7 @@ div.hero-detail img.del-ping-pong {
   left: 1em;
 }
 
+/*checkout footer desgin start here*/
 div.footer-check footer {
   width: 100%;
   height: 134px;
@@ -1254,6 +1260,7 @@ div.footer-check footer div.footer-col a:hover {
   color: #75dd53;
 }
 
+/* footer design start here */
 footer {
   width: 100%;
   height: 134px;

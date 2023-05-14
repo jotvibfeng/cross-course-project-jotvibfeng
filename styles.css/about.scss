@@ -4,7 +4,7 @@ body {
     font-weight: normal;
    
 }
-//Nav bar styling start here//
+/*Nav bar styling start here*/
 header {
     background-color: #4B7D59;
     text-align: center;
@@ -121,7 +121,7 @@ header {
 
 
 
-//* The main styling on web page start here *//
+/* The main styling on web page start here */
 
 img.vr-man {
     position: relative;
@@ -149,7 +149,7 @@ left: 2em;
 width: 297px;
 height: 166px;
 }
-//* footer design start here *//
+/* footer design start here */
 footer{
     width: 100%;
     height: 134px;
@@ -288,7 +288,7 @@ div.footer-detail {
     }
 }
 
-//* The styling of the contact page started here *//
+/* The styling of the contact page started here */
 img.service-man {
     position: relative;
     top: 5em;
@@ -409,7 +409,7 @@ div.hero-send {
    
 }
 
-//*The successful payment page start here*//
+/*The successful payment page start here*/
 
 div.hero-successful {
 
@@ -596,7 +596,7 @@ div.hero-rec {
 
 }
 
-//*The Detail page style start here*//
+/*The Detail page style start here*/
 
 div.detail-top {
     position: absolute;
@@ -630,7 +630,7 @@ div.detail-top {
     h2.sec-title {
         position: absolute;
         left: 1.7em;
-        top: -em;
+        top: -1.5em;
         font-size: 16px;
         font-weight: lighter;
         font-family: robto,sans-serif;
@@ -1908,6 +1908,14 @@ div.close-producte {
         }
     }
    
+    div.nav-spec {
+
+        h2.spec-head {
+            position: absolute;
+            top: 1em;
+        }
+        
+    }
 
     header {
         display: grid;
