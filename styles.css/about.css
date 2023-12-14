@@ -528,21 +528,21 @@ div.hero-rec img.rec-images3 {
 /*The Detail page style start here*/
 div.detail-top {
   position: absolute;
-  top: 10em;
+  top: 7em;
 }
 div.detail-top img.top-image {
   width: 202px;
   height: 249px;
   position: absolute;
-  left: 7em;
+  left: 1em;
   top: 1em;
 }
 div.detail-top svg.rate {
   width: 149px;
-  height: 35px;
+  height: 2em;
   position: absolute;
-  top: 17em;
-  left: 8.5em;
+  top: 1em;
+  left: 15em;
 }
 div.detail-top h1.top-title {
   position: absolute;
@@ -564,8 +564,8 @@ div.detail-top h2.sec-title {
 
 div.nav-add {
   position: absolute;
-  top: 20em;
-  left: 5em;
+  top: 5em;
+  left: 15em;
   background-color: #E4E7D9;
   height: 80px;
   width: 360px;
@@ -604,7 +604,7 @@ div.nav-add h2.add-ship {
 
 div.nav-spec {
   position: absolute;
-  top: 38em;
+  top: 15em;
 }
 div.nav-spec h1.spec-title {
   font-size: 24px;
@@ -769,7 +769,7 @@ div.nav-spec div.close-item div.spec-info h2.spec-num {
 
 div.close-info {
   position: absolute;
-  top: 60em;
+  top: 27em;
 }
 div.close-info svg.div-line {
   position: absolute;
@@ -1434,6 +1434,7 @@ div.close-producte p {
     -o-object-position: left 70%;
        object-position: left 70%;
   }
+
   footer {
     height: 96px;
   }
@@ -1637,6 +1638,16 @@ div.close-producte p {
     position: absolute;
     top: -2em;
   }
+
+  div.detail-top {
+    position: absolute;
+    top: 5em;
+  }
+
+  div.nav-spec {
+    position: absolute;
+    top: 13em;
+  }
   header {
     display: grid;
     grid-template-columns: 5fr auto minmax(900px, 3fr) 3fr;
@@ -1679,8 +1690,8 @@ div.close-producte p {
   }
   div.close-info {
     position: absolute;
-    top: 21.5em;
-    left: 18em;
+    top: 10em;
+    left: 15em;
   }
   div.close-info h1.close-producte-title {
     position: absolute;
