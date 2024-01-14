@@ -4,6 +4,11 @@ body {
   font-weight: normal;
 }
 
+div.game-container {
+  position: absolute;
+  bottom: 10px;
+}
+
 /*Nav bar styling start here*/
 header {
   background-color: #4B7D59;
@@ -12,6 +17,7 @@ header {
   z-index: 999;
   width: 100%;
   height: 80px;
+  top: 0px;
 }
 header .logo {
   margin: 0;
@@ -101,586 +107,180 @@ header .shoppingcart {
   bottom: 1.5em;
 }
 
-/* product styling started here */
-.product-container .black-image {
-  height: 159px;
-  width: 122px;
-  position: absolute;
-  top: 120px;
-  left: 47px;
-}
-.product-container div.info {
-  font-family: roboto, sans-serif;
-}
-.product-container .title {
-  position: absolute;
-  top: 17em;
-  left: 1.5em;
-  font-weight: normal;
-  font-size: 16px;
-}
-.product-container .price {
-  position: absolute;
-  top: 13.3em;
-  left: 6.5em;
-  font-size: 20px;
-  font-weight: bold;
-}
-.product-container .console {
-  position: absolute;
-  top: 29.2em;
-  left: 2.3em;
-  font-weight: lighter;
-  font-size: 10px;
-}
-.product-container div.action-button-1 {
-  font-family: nunito, sans-serif;
-  font-weight: bolder;
-  font-size: 20px;
-}
-.product-container div.action-button-1 .add {
-  background-color: #4B7D59;
-  border-radius: 4px;
-  position: absolute;
-  top: 12.9em;
-  left: 1em;
-  width: 168px;
-  height: 35px;
-  text-align: center;
-}
-.product-container div.action-button-1 a {
-  color: #fff;
-}
-.product-container div.action-button-2 {
-  font-family: nunito, sans-serif;
-  font-weight: bolder;
-  font-size: 20px;
-}
-.product-container div.action-button-2 .detail {
-  background-color: #1E7B9C;
-  border-radius: 4px;
-  position: absolute;
-  top: 14.7em;
-  left: 1em;
-  width: 168px;
-  height: 35px;
-  text-align: center;
-}
-.product-container div.action-button-2 a {
-  color: #fff;
+/* javascript assigment styling started here */
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  transition: opacity 1s, visibility 1s;
 }
 
-.product-container-2 {
-  position: absolute;
-  left: 15em;
-}
-.product-container-2 .furious-image {
-  height: 159px;
-  width: 122px;
-  position: absolute;
-  top: 120px;
-  left: 47px;
-}
-.product-container-2 div.info {
-  font-family: roboto, sans-serif;
-}
-.product-container-2 .title {
-  position: absolute;
-  top: 17em;
-  left: 1.5em;
-  font-weight: normal;
-  font-size: 16px;
-}
-.product-container-2 .price {
-  position: absolute;
-  top: 13.3em;
-  left: 6.5em;
-  font-size: 20px;
-  font-weight: bold;
-}
-.product-container-2 .console {
-  position: absolute;
-  top: 29.2em;
-  left: 2.3em;
-  font-weight: lighter;
-  font-size: 10px;
-}
-.product-container-2 div.action-button-1 {
-  font-family: nunito, sans-serif;
-  font-weight: bolder;
-  font-size: 20px;
-}
-.product-container-2 div.action-button-1 .add {
-  background-color: #4B7D59;
-  border-radius: 4px;
-  position: absolute;
-  top: 12.9em;
-  left: 1em;
-  width: 168px;
-  height: 35px;
-  text-align: center;
-}
-.product-container-2 div.action-button-1 a {
-  color: #fff;
-}
-.product-container-2 div.action-button-2 {
-  font-family: nunito, sans-serif;
-  font-weight: bolder;
-  font-size: 20px;
-}
-.product-container-2 div.action-button-2 .detail {
-  background-color: #1E7B9C;
-  border-radius: 4px;
-  position: absolute;
-  top: 14.7em;
-  left: 1em;
-  width: 168px;
-  height: 35px;
-  text-align: center;
-}
-.product-container-2 div.action-button-2 a {
-  color: #fff;
+.loading::after {
+  content: "";
+  width: 75px;
+  height: 75px;
+  border: 15px solid rgb(164, 161, 161);
+  border-top-color: #11BF42;
+  border-radius: 50%;
+  animation: loading 0.75s ease infinite;
 }
 
-.product-container-3 {
-  position: absolute;
-  left: 0em;
-  top: 20em;
-}
-.product-container-3 .ping-pong-image {
-  height: 159px;
-  width: 122px;
-  position: absolute;
-  top: 120px;
-  left: 47px;
-}
-.product-container-3 div.info {
-  font-family: roboto, sans-serif;
-}
-.product-container-3 .title {
-  position: absolute;
-  top: 17em;
-  left: 1.5em;
-  font-weight: normal;
-  font-size: 16px;
-  width: 6em;
-}
-.product-container-3 .price {
-  position: absolute;
-  top: 13.3em;
-  left: 6.5em;
-  font-size: 20px;
-  font-weight: bold;
-}
-.product-container-3 .console {
-  position: absolute;
-  top: 29.2em;
-  left: 2.3em;
-  font-weight: lighter;
-  font-size: 10px;
-}
-.product-container-3 div.action-button-1 {
-  font-family: nunito, sans-serif;
-  font-weight: bolder;
-  font-size: 20px;
-}
-.product-container-3 div.action-button-1 .add {
-  background-color: #4B7D59;
-  border-radius: 4px;
-  position: absolute;
-  top: 12.9em;
-  left: 1em;
-  width: 168px;
-  height: 35px;
-  text-align: center;
-}
-.product-container-3 div.action-button-1 a {
-  color: #fff;
-}
-.product-container-3 div.action-button-2 {
-  font-family: nunito, sans-serif;
-  font-weight: bolder;
-  font-size: 20px;
-}
-.product-container-3 div.action-button-2 .detail {
-  background-color: #1E7B9C;
-  border-radius: 4px;
-  position: absolute;
-  top: 14.7em;
-  left: 1em;
-  width: 168px;
-  height: 35px;
-  text-align: center;
-}
-.product-container-3 div.action-button-2 a {
-  color: #fff;
+@keyframes loading {
+  from{
+    transform: rotate(0turn);
+  }
+  to{
+    transform: rotate(1turn);
+  }
 }
 
-.product-container-4 {
-  position: absolute;
-  left: 15em;
-  top: 20em;
-}
-.product-container-4 .assassin-image {
-  height: 159px;
-  width: 122px;
-  position: absolute;
-  top: 120px;
-  left: 47px;
-}
-.product-container-4 div.info {
-  font-family: roboto, sans-serif;
-}
-.product-container-4 .title {
-  position: absolute;
-  top: 17em;
-  left: 1.5em;
-  font-weight: normal;
-  font-size: 16px;
-}
-.product-container-4 .price {
-  position: absolute;
-  top: 13.3em;
-  left: 6.5em;
-  font-size: 20px;
-  font-weight: bold;
-}
-.product-container-4 .console {
-  position: absolute;
-  top: 29.2em;
-  left: 2.3em;
-  font-weight: lighter;
-  font-size: 10px;
-}
-.product-container-4 div.action-button-1 {
-  font-family: nunito, sans-serif;
-  font-weight: bolder;
-  font-size: 20px;
-}
-.product-container-4 div.action-button-1 .add {
-  background-color: #4B7D59;
-  border-radius: 4px;
-  position: absolute;
-  top: 12.9em;
-  left: 1em;
-  width: 168px;
-  height: 35px;
-  text-align: center;
-}
-.product-container-4 div.action-button-1 a {
-  color: #fff;
-}
-.product-container-4 div.action-button-2 {
-  font-family: nunito, sans-serif;
-  font-weight: bolder;
-  font-size: 20px;
-}
-.product-container-4 div.action-button-2 .detail {
-  background-color: #1E7B9C;
-  border-radius: 4px;
-  position: absolute;
-  top: 14.7em;
-  left: 1em;
-  width: 168px;
-  height: 35px;
-  text-align: center;
-}
-.product-container-4 div.action-button-2 a {
-  color: #fff;
+.loading-hidden {
+  opacity: 0;
+  visibility: hidden;
 }
 
-.product-container-5 {
-  position: absolute;
-  left: 0em;
-  top: 40em;
-}
-.product-container-5 .space-war-image {
-  height: 159px;
-  width: 122px;
-  position: absolute;
-  top: 120px;
-  left: 47px;
-}
-.product-container-5 div.info {
-  font-family: roboto, sans-serif;
-}
-.product-container-5 .title {
-  position: absolute;
-  top: 17em;
-  left: 1.5em;
-  font-weight: normal;
-  font-size: 16px;
-  width: 6em;
-}
-.product-container-5 .price {
-  position: absolute;
-  top: 13.3em;
-  left: 6.5em;
-  font-size: 20px;
-  font-weight: bold;
-}
-.product-container-5 .console {
-  position: absolute;
-  top: 29.2em;
-  left: 2.3em;
-  font-weight: lighter;
-  font-size: 10px;
-}
-.product-container-5 div.action-button-1 {
-  font-family: nunito, sans-serif;
-  font-weight: bolder;
-  font-size: 20px;
-}
-.product-container-5 div.action-button-1 .add {
-  background-color: #4B7D59;
-  border-radius: 4px;
-  position: absolute;
-  top: 12.9em;
-  left: 1em;
-  width: 168px;
-  height: 35px;
-  text-align: center;
-}
-.product-container-5 div.action-button-1 a {
-  color: #fff;
-}
-.product-container-5 div.action-button-2 {
-  font-family: nunito, sans-serif;
-  font-weight: bolder;
-  font-size: 20px;
-}
-.product-container-5 div.action-button-2 .detail {
-  background-color: #1E7B9C;
-  border-radius: 4px;
-  position: absolute;
-  top: 14.7em;
-  left: 1em;
-  width: 168px;
-  height: 35px;
-  text-align: center;
-}
-.product-container-5 div.action-button-2 a {
-  color: #fff;
+.gamehub-container {
+  display:grid;
+  grid-template-columns: repeat(2,200px);
+  gap: 90px;
 }
 
-.product-container-6 {
-  position: absolute;
-  left: 15em;
-  top: 40em;
-}
-.product-container-6 .racing-image {
-  height: 159px;
-  width: 122px;
-  position: absolute;
-  top: 120px;
-  left: 47px;
-}
-.product-container-6 div.info {
-  font-family: roboto, sans-serif;
-}
-.product-container-6 .title {
-  position: absolute;
-  top: 17em;
-  left: 1.5em;
-  font-weight: normal;
-  font-size: 16px;
-}
-.product-container-6 .price {
-  position: absolute;
-  top: 13.3em;
-  left: 6.5em;
-  font-size: 20px;
-  font-weight: bold;
-}
-.product-container-6 .console {
-  position: absolute;
-  top: 29.2em;
-  left: 2.3em;
-  font-weight: lighter;
-  font-size: 10px;
-}
-.product-container-6 div.action-button-1 {
-  font-family: nunito, sans-serif;
-  font-weight: bolder;
-  font-size: 20px;
-}
-.product-container-6 div.action-button-1 .add {
-  background-color: #4B7D59;
-  border-radius: 4px;
-  position: absolute;
-  top: 12.9em;
-  left: 1em;
-  width: 168px;
-  height: 35px;
-  text-align: center;
-}
-.product-container-6 div.action-button-1 a {
-  color: #fff;
-}
-.product-container-6 div.action-button-2 {
-  font-family: nunito, sans-serif;
-  font-weight: bolder;
-  font-size: 20px;
-}
-.product-container-6 div.action-button-2 .detail {
-  background-color: #1E7B9C;
-  border-radius: 4px;
-  position: absolute;
-  top: 14.7em;
-  left: 1em;
-  width: 168px;
-  height: 35px;
-  text-align: center;
-}
-.product-container-6 div.action-button-2 a {
-  color: #fff;
+.product-image {
+  height: 200px;
+  width: 150px;
+  position: relative;
+  left: 100px;
+  top: 100px;
 }
 
-.product-container-7 {
-  position: absolute;
-  left: 0em;
-  top: 60em;
-}
-.product-container-7 .boxer-image {
-  height: 159px;
-  width: 122px;
-  position: absolute;
-  top: 120px;
-  left: 47px;
-}
-.product-container-7 div.info {
-  font-family: roboto, sans-serif;
-}
-.product-container-7 .title {
-  position: absolute;
-  top: 17em;
-  left: 1.5em;
-  font-weight: normal;
-  font-size: 16px;
-}
-.product-container-7 .price {
-  position: absolute;
-  top: 13.3em;
-  left: 6.5em;
-  font-size: 20px;
-  font-weight: bold;
-}
-.product-container-7 .console {
-  position: absolute;
-  top: 29.2em;
-  left: 2.3em;
-  font-weight: lighter;
-  font-size: 10px;
-}
-.product-container-7 div.action-button-1 {
-  font-family: nunito, sans-serif;
-  font-weight: bolder;
-  font-size: 20px;
-}
-.product-container-7 div.action-button-1 .add {
-  background-color: #4B7D59;
-  border-radius: 4px;
-  position: absolute;
-  top: 12.9em;
-  left: 1em;
-  width: 168px;
-  height: 35px;
-  text-align: center;
-}
-.product-container-7 div.action-button-1 a {
-  color: #fff;
-}
-.product-container-7 div.action-button-2 {
-  font-family: nunito, sans-serif;
-  font-weight: bolder;
-  font-size: 20px;
-}
-.product-container-7 div.action-button-2 .detail {
-  background-color: #1E7B9C;
-  border-radius: 4px;
-  position: absolute;
-  top: 14.7em;
-  left: 1em;
-  width: 168px;
-  height: 35px;
-  text-align: center;
-}
-.product-container-7 div.action-button-2 a {
-  color: #fff;
+.game-info {
+  position: relative;
+  top: 300px;
+  left: -200px;
 }
 
-.product-container-8 {
-  position: absolute;
-  left: 15em;
-  top: 60em;
-}
-.product-container-8 .cyberpunk-image {
-  height: 159px;
-  width: 122px;
-  position: absolute;
-  top: 120px;
-  left: 47px;
-}
-.product-container-8 div.info {
-  font-family: roboto, sans-serif;
-}
-.product-container-8 .title {
-  position: absolute;
-  top: 17em;
-  left: 1.5em;
+.game-title {
   font-weight: normal;
-  font-size: 16px;
+  font-size: 18px;
+  position: relative;
+  top: -10px;
+  left: 7px;
+  width: 150%;
+  
 }
-.product-container-8 .price {
-  position: absolute;
-  top: 13.3em;
-  left: 6.5em;
+
+.game-price {
   font-size: 20px;
   font-weight: bold;
+  position: relative;
+  top: -22px;
+  left: 5px;
 }
-.product-container-8 .console {
-  position: absolute;
-  top: 29.2em;
-  left: 2.3em;
-  font-weight: lighter;
-  font-size: 10px;
-}
-.product-container-8 div.action-button-1 {
-  font-family: nunito, sans-serif;
-  font-weight: bolder;
-  font-size: 20px;
-}
-.product-container-8 div.action-button-1 .add {
+
+.action-button {
+  position: relative;
+  top: 70px;
+  left: 90px;
   background-color: #4B7D59;
-  border-radius: 4px;
-  position: absolute;
-  top: 12.9em;
-  left: 1em;
   width: 168px;
   height: 35px;
+  border-radius: 4px;
+  z-index: 1;
+}
+
+.action-button::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: #11BF42;
+  transition: transform 400ms ease-in;
+  z-index: -1;
+}
+
+.action-button::after {
+  transform: scaleX(0);
+  transform-origin: right;
+}
+
+.action-button:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.add {
+  color: white;
   text-align: center;
+  position: relative;
+  top: -10px;
+  
 }
-.product-container-8 div.action-button-1 a {
-  color: #fff;
-}
-.product-container-8 div.action-button-2 {
-  font-family: nunito, sans-serif;
-  font-weight: bolder;
-  font-size: 20px;
-}
-.product-container-8 div.action-button-2 .detail {
+
+.detail-button  {
+  position: relative;
+  top: 120px;
+  left: -200px;
   background-color: #1E7B9C;
-  border-radius: 4px;
-  position: absolute;
-  top: 14.7em;
-  left: 1em;
   width: 168px;
   height: 35px;
+  border-radius: 4px;
+  z-index: 1;
+}
+
+.detail-button::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: #4FBBE1;
+  transition: transform 400ms ease-in;
+  z-index: -1;
+
+}
+
+.detail-button::after {
+  transform: scaleX(0);
+  transform-origin: right;
+}
+
+.detail-button:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.detail {
   text-align: center;
+  color: white;
+  position: relative;
+  top: -10px;
 }
-.product-container-8 div.action-button-2 a {
-  color: #fff;
+
+a {
+  text-decoration: none;
 }
+
+.error {
+  position: relative;
+  width: 600px;
+  top: 150px;
+  left: 20px;
+  font-weight: bolder;
+  font-size: 25px;
+  color: red;
+}
+
+
+
 
 /*The Cart styling started here*/
 body.body-background {
@@ -1266,7 +866,7 @@ footer {
   height: 134px;
   background-color: #4B7D59;
   position: absolute;
-  top: 1500px;
+  top: 2150px;
 }
 footer div.sosical-media {
   display: inline;
@@ -1479,6 +1079,53 @@ footer div.footer-col a:hover {
   }
 }
 @media screen and (min-width: 800px) {
+  
+  .gamehub-container {
+    display:grid;
+    grid-template-columns: repeat(3,200px);
+    gap: 70px;
+    position: relative;
+    top: 10px;
+  }
+
+  .game-info {
+    position: relative;
+    top: 300px;
+    left: -180px;
+  }
+  
+  .game-title {
+    font-weight: normal;
+    font-size: 18px;
+    position: relative;
+    top: -10px;
+    left: 7px;
+    width: 250%;
+    
+  }
+  
+  .action-button {
+    position: relative;
+    top: 370px;
+    left: -450px;
+    background-color: #4B7D59;
+    width: 168px;
+    height: 35px;
+    border-radius: 4px;
+    z-index: 1;
+  }
+
+  .detail-button  {
+    position: relative;
+    top: 140px;
+    left: 90px;
+    background-color: #1E7B9C;
+    width: 168px;
+    height: 35px;
+    border-radius: 4px;
+    z-index: 1;
+  }
+  
   label.nav-toggle-lable {
     display: none;
   }
@@ -1526,6 +1173,7 @@ footer div.footer-col a:hover {
   }
   footer {
     height: 96px;
+    top: 1650px;
   }
   footer div.sosical-media {
     display: inline;
@@ -1576,6 +1224,57 @@ footer div.footer-col a:hover {
   }
 }
 @media screen and (min-width: 900px) {
+  
+  .gamehub-container {
+    display:grid;
+    grid-template-columns: repeat(3,200px);
+    gap: 70px;
+    position: relative;
+    top: 10px;
+  }
+
+  .game-info {
+    position: relative;
+    top: 300px;
+    left: -180px;
+  }
+  
+  .game-title {
+    font-weight: normal;
+    font-size: 18px;
+    position: relative;
+    top: -10px;
+    left: 7px;
+    width: 250%;
+    
+  }
+  
+  .action-button {
+    position: relative;
+    top: 370px;
+    left: -450px;
+    background-color: #4B7D59;
+    width: 168px;
+    height: 35px;
+    border-radius: 4px;
+    z-index: 1;
+  }
+
+  .detail-button  {
+    position: relative;
+    top: 140px;
+    left: 90px;
+    background-color: #1E7B9C;
+    width: 168px;
+    height: 35px;
+    border-radius: 4px;
+    z-index: 1;
+  }
+  
+  
+  
+  
+  
   label.nav-toggle-lable {
     display: none;
   }
@@ -1657,7 +1356,7 @@ footer div.footer-col a:hover {
   }
   footer {
     height: 96px;
-    top: 800px;
+    top: 1650px;
   }
   footer div.sosical-media {
     display: inline;
@@ -1709,6 +1408,59 @@ footer div.footer-col a:hover {
   }
 }
 @media screen and (min-width: 930px) {
+  
+  .gamehub-container {
+    display:grid;
+    grid-template-columns: repeat(3,200px);
+    gap: 70px;
+    position: relative;
+    top: 10px;
+    left: 10px;
+  }
+
+  .game-info {
+    position: relative;
+    top: 300px;
+    left: -180px;
+  }
+  
+  .game-title {
+    font-weight: normal;
+    font-size: 18px;
+    position: relative;
+    top: -10px;
+    left: 7px;
+    width: 250%;
+    
+  }
+  
+  .action-button {
+    position: relative;
+    top: 370px;
+    left: -450px;
+    background-color: #4B7D59;
+    width: 168px;
+    height: 35px;
+    border-radius: 4px;
+    z-index: 1;
+  }
+
+  .detail-button  {
+    position: relative;
+    top: 140px;
+    left: 90px;
+    background-color: #1E7B9C;
+    width: 168px;
+    height: 35px;
+    border-radius: 4px;
+    z-index: 1;
+  }
+  
+  
+  
+  
+  
+  
   label.nav-toggle-lable {
     display: none;
   }
@@ -1753,8 +1505,62 @@ footer div.footer-col a:hover {
     width: 2.5em;
     height: 2.5em;
   }
+
+  footer {
+    top: 1650px;
+  }
 }
 @media screen and (min-width: 1030px) {
+  .gamehub-container {
+    display:grid;
+    grid-template-columns: repeat(4,100px);
+    gap: 160px;
+    position: relative;
+    top: 20px;
+  }
+
+  .game-info {
+    position: relative;
+    top: 300px;
+    left: -170px;
+  }
+  
+  .game-title {
+    font-weight: normal;
+    font-size: 18px;
+    position: relative;
+    top: -10px;
+    left: 7px;
+    width: 250%;
+    
+  }
+  
+  .action-button {
+    position: relative;
+    top: 370px;
+    left: -430px;
+    background-color: #4B7D59;
+    width: 168px;
+    height: 35px;
+    border-radius: 4px;
+    z-index: 1;
+  }
+
+  .detail-button  {
+    position: relative;
+    top: 410px;
+    left: -690px;
+    background-color: #1E7B9C;
+    width: 168px;
+    height: 35px;
+    border-radius: 4px;
+    z-index: 1;
+  }
+  
+  
+  
+  
+  
   label.nav-toggle-lable {
     display: none;
   }
@@ -2229,7 +2035,7 @@ footer div.footer-col a:hover {
   }
   footer {
     height: 96px;
-    top: 900px;
+    top: 1250px;
   }
   footer div.sosical-media {
     display: inline;
@@ -2288,6 +2094,53 @@ footer div.footer-col a:hover {
   }
 }
 @media screen and (min-width: 1200px) {
+  
+  .gamehub-container {
+    display:grid;
+    grid-template-columns: repeat(4,100px);
+    gap: 160px;
+    position: relative;
+    top: 20px;
+  }
+
+  .game-info {
+    position: relative;
+    top: 300px;
+    left: -170px;
+  }
+  
+  .game-title {
+    font-weight: normal;
+    font-size: 18px;
+    position: relative;
+    top: -10px;
+    left: 7px;
+    width: 250%;
+    
+  }
+  
+  .action-button {
+    position: relative;
+    top: 370px;
+    left: -430px;
+    background-color: #4B7D59;
+    width: 168px;
+    height: 35px;
+    border-radius: 4px;
+    z-index: 1;
+  }
+
+  .detail-button  {
+    position: relative;
+    top: 410px;
+    left: -690px;
+    background-color: #1E7B9C;
+    width: 168px;
+    height: 35px;
+    border-radius: 4px;
+    z-index: 1;
+  }
+  
   label.nav-toggle-lable {
     display: none;
   }
@@ -2397,6 +2250,8 @@ footer div.footer-col a:hover {
   }
   footer {
     height: 96px;
+    position: relative;
+    top: 320px;
   }
   footer div.sosical-media {
     display: inline;
@@ -2447,7 +2302,55 @@ footer div.footer-col a:hover {
   }
 }
 @media screen and (min-width: 1400px) {
-  label.nav-toggle-lable {
+ 
+  .gamehub-container {
+    display:grid;
+    grid-template-columns: repeat(4,100px);
+    gap: 160px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+  }
+
+  .game-info {
+    position: relative;
+    top: 300px;
+    left: -170px;
+  }
+  
+  .game-title {
+    font-weight: normal;
+    font-size: 18px;
+    position: relative;
+    top: -10px;
+    left: 7px;
+    width: 250%;
+    
+  }
+  
+  .action-button {
+    position: relative;
+    top: 370px;
+    left: -430px;
+    background-color: #4B7D59;
+    width: 168px;
+    height: 35px;
+    border-radius: 4px;
+    z-index: 1;
+  }
+
+  .detail-button  {
+    position: relative;
+    top: 410px;
+    left: -690px;
+    background-color: #1E7B9C;
+    width: 168px;
+    height: 35px;
+    border-radius: 4px;
+    z-index: 1;
+  }
+ 
+ label.nav-toggle-lable {
     display: none;
   }
   header {
@@ -2527,6 +2430,8 @@ footer div.footer-col a:hover {
   }
   footer {
     height: 96px;
+    position: relative;
+    top: 300px;
   }
   footer div.sosical-media {
     display: inline;

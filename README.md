@@ -1,3 +1,223 @@
+product page
+
+<div class="product-container">
+          <div class="game">
+            <div class="image-1">
+              <a href="detail.html">
+                <img
+                  src="/images/Black-image.jpg"
+                  class="black-image"
+                  alt="The cover of Black"
+                />
+              </a>
+            </div>
+            <div class="info">
+              <h3 class="title">Black</h3>
+              <h3 class="price">10.99$</h3>
+              <h5 class="console">Playbox</h5>
+            </div>
+            <div class="action-button-1">
+              <a href="cart.html">
+                <h3 class="add">Add to cart</h3>
+              </a>
+            </div>
+            <div class="action-button-2">
+              <a href="detail.html">
+                <h3 class="detail">Detail</h3>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="product-container-2">
+          <div class="game">
+            <div class="Image-2">
+              <a href="detail.html"
+                ><img
+                  src="/images/Furious-image.jpg"
+                  class="furious-image"
+                  alt="The cover of Furious"
+              /></a>
+            </div>
+            <div class="info">
+              <h3 class="title">Furious</h3>
+              <h3 class="price">10.99$</h3>
+              <h5 class="console">Playbox</h5>
+            </div>
+            <div class="action-button-1">
+              <a href="cart.html">
+                <h3 class="add">Add to cart</h3>
+              </a>
+            </div>
+            <div class="action-button-2">
+              <a href="detail.html">
+                <h3 class="detail">Detail</h3>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="product-container-3">
+          <div class="game">
+            <div class="Image-3">
+              <a href="detail.html"
+                ><img
+                  src="/images/PingPong-image.jpeg"
+                  class="ping-pong-image"
+                  alt="The cover of Ping Pong"
+              /></a>
+            </div>
+            <div class="info">
+              <h3 class="title">Ping Pong</h3>
+              <h3 class="price">10.99$</h3>
+              <h5 class="console">Playbox</h5>
+            </div>
+            <div class="action-button-1">
+              <a href="cart.html">
+                <h3 class="add">Add to cart</h3>
+              </a>
+            </div>
+            <div class="action-button-2">
+              <a href="detail.html">
+                <h3 class="detail">Detail</h3>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="product-container-4">
+          <div class="game">
+            <div class="Image-4">
+              <a href="detail.html"
+                ><img
+                  src="/images/Assassin-image.jpg"
+                  class="assassin-image"
+                  alt="The cover of Assassin"
+              /></a>
+            </div>
+            <div class="info">
+              <h3 class="title">Assassin</h3>
+              <h3 class="price">10.99$</h3>
+              <h5 class="console">Playbox</h5>
+            </div>
+            <div class="action-button-1">
+              <a href="cart.html">
+                <h3 class="add">Add to cart</h3>
+              </a>
+            </div>
+            <div class="action-button-2">
+              <a href="detail.html">
+                <h3 class="detail">Detail</h3>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="product-container-5">
+          <div class="game">
+            <div class="Image-5">
+              <a href="detail.html"
+                ><img
+                  src="/images/Space war-image.jpg"
+                  class="space-war-image"
+                  alt="The cover of Space War"
+              /></a>
+            </div>
+            <div class="info">
+              <h3 class="title">Space War</h3>
+              <h3 class="price">10.99$</h3>
+              <h5 class="console">Playbox</h5>
+            </div>
+            <div class="action-button-1">
+              <a href="cart.html">
+                <h3 class="add">Add to cart</h3>
+              </a>
+            </div>
+            <div class="action-button-2">
+              <a href="detail.html">
+                <h3 class="detail">Detail</h3>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="product-container-6">
+          <div class="game">
+            <div class="Image-6">
+              <a href="detail.html"
+                ><img
+                  src="/images/Racing-image.jpg"
+                  class="racing-image"
+                  alt="The cover of Racing"
+              /></a>
+            </div>
+            <div class="info">
+              <h3 class="title">Racing</h3>
+              <h3 class="price">10.99$</h3>
+              <h5 class="console">Playbox</h5>
+            </div>
+            <div class="action-button-1">
+              <a href="cart.html">
+                <h3 class="add">Add to cart</h3>
+              </a>
+            </div>
+            <div class="action-button-2">
+              <a href="detail.html">
+                <h3 class="detail">Detail</h3>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="product-container-7">
+          <div class="Black">
+            <div class="Image-7">
+              <a href="detail.html"
+                ><img
+                  src="/images/Boxer-image.jpg"
+                  class="boxer-image"
+                  alt="The cover of Boxer"
+              /></a>
+            </div>
+            <div class="info">
+              <h3 class="title">Boxer</h3>
+              <h3 class="price">10.99$</h3>
+              <h5 class="console">Playbox</h5>
+            </div>
+            <div class="action-button-1">
+              <a href="cart.html">
+                <h3 class="add">Add to cart</h3>
+              </a>
+            </div>
+            <div class="action-button-2">
+              <a href="detail.html">
+                <h3 class="detail">Detail</h3>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="product-container-8">
+          <div class="game">
+            <div class="Image-8">
+              <a href="detail.html"
+                ><img
+                  src="/images/Cyberpunk-image.jpg"
+                  class="cyberpunk-image"
+                  alt="The cover of Cyberpunk"
+              /></a>
+            </div>
+            <div class="info">
+              <h3 class="title">Cyberpunk</h3>
+              <h3 class="price">10.99$</h3>
+              <h5 class="console">Playbox</h5>
+            </div>
+            <div class="action-button-1">
+              <a href="cart.html">
+                <h3 class="add">Add to cart</h3>
+              </a>
+            </div>
+            <div class="action-button-2">
+              <a href="detail.html">
+                <h3 class="detail">Detail</h3>
+              </a>
+            </div>
+          </div>
+        </div>
+
 <main>
       <div class="detail-top">
         <h1 class="top-title">Ping Pong</h1>

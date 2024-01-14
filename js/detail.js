@@ -1,31 +1,43 @@
-import { products } from "./data/products.js";
+const queryString = document.location.search;
+const params = new URLSearchParams(queryString);
+const id = params.get("id");
 
+console.log(id);
 
+if (!id) {
+  document.location.href = "/";
+}
 
-function displayProducts(products) {
-    const detailTop = document.querySelector("#detail-top");
-    const navSpec = document.querySelector("#nav-spec");
-    const closeInfo = document.querySelector("#close-info");
-  
+const url = `https://api.noroff.dev/api/v1/gamehub/${id}`;
 
+console.log(url);
 
-    
-    products.forEach(function (product) {
-        detailTop.innerHTML = `<div class="detail-top">
-        <h1 class="top-title">${product.title}</h1>
-        <h2 class="sec-title">PLAYBOX</h2>
-        <img
-          src="${product.image}"
-          alt="Cover of Ping Pong on detail page"
-          class="top-image"
-        />
-        <svg
-          class="rate"
-          viewBox="0 0 149 25"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
+async function getGamehub() {
+  try {
+    const loadingContainer = document.querySelector("#loading");
+    const response = await fetch(url);
+    const details = await response.json();
+    console.log(details);
+
+    loadingContainer.innerHTML = "";
+
+    const detailContainer = document.querySelector("#detail-container");
+
+    detailContainer.innerHTML = `<div class="detail-card">
+                               <h1 class="detail-title">${details.title}</h1>
+                               <h2 class="sec-title">Playbox</h2>
+                               <img
+                               src="${details.image}"
+                               alt="Cover of ${details.title} on detail page"
+                               class="detail-image"
+                             />
+                             <svg
+                               class="rate"
+                               viewBox="0 0 149 25"
+                               fill="none"
+                               xmlns="http://www.w3.org/2000/svg"
+                            >
+                        <path
             d="M5.52746 23.9339L7.30085 15.8639L7.36282 15.5819L7.14955 15.3873L1.17433 9.93425L9.0455 9.21503L9.35005 9.1872L9.464 8.9034L12.5 1.34193L15.536 8.9034L15.65 9.1872L15.9545 9.21503L23.8257 9.93425L17.8505 15.3873L17.6372 15.5819L17.6992 15.8639L19.4725 23.9339L12.768 19.6766L12.5 19.5064L12.232 19.6766L5.52746 23.9339Z"
             fill="#FCF200"
             stroke="black"
@@ -51,76 +63,66 @@ function displayProducts(products) {
             stroke="black"
           />
         </svg>
-        <div class="nav-add">
-          <h1 class="add-price">${product.price}$</h1>
-          <h2 class="add-ship">Free shipping</h2>
-          <a href="cart.html">
-            <h3 class="add-nav">Add to cart</h3>
-          </a>
-        </div>
-      </div>`;
-     
-      navSpec.innerHTML = `<div class="nav-spec">
-      <h1 class="spec-title">Specifications</h1>
-      <div class="close-item">
-        <h2 class="spec-head">Genreal</h2>
-        <div class="spec-des">
-          <h2 class="spec-genre">Genre</h2>
-          <h2 class="spec-platform">Platform</h2>
-          <h2 class="spec-esrb">ESRB</h2>
-          <h2 class="spec-pegi">PEGI</h2>
-          <h2 class="spec-multi">Multiplayer</h2>
-        </div>
-        <div class="spec-info">
-          <h2 class="spec-sport">${product.genre}</h2>
-          <h2 class="spec-play">Playbox</h2>
-          <h2 class="spec-for">Everyone</h2>
-          <h2 class="spec-age">${product.ageRating}</h2>
-          <h2 class="spec-num">1-2</h2>
-        </div>
-      </div>
-    </div>`
-
-    closeInfo.innerHTML = ` <div class="close-info">
-    <h1 class="close-producte-title">Product Info</h1>
-    <div class="close-producte">
-      <h1 class="close-game-title">${product.title}</h1>
-      <p>${product.description}
-      </p>
-    </div>
-  </div>`
-    });
-
-        
+                             <div class="nav-add">
+                              <h1 class="add-price">${details.price}$</h1>
+                              <h2 class="add-ship">Free shipping</h2>
+                              <a href="cart.html?id=${details.id}">
+                               <h3 class="add-cart">Add to cart</h3>
+                              </a>
+                             </div>
+                             <div class="nav-spec">
+                             <h1 class="spec-title">Specifications</h1>
+                             <div class="close-item">
+                               <h2 class="spec-head">Genreal</h2>
+                               <div class="spec-des">
+                                 <h2 class="spec-genre">Genre</h2>
+                                 <h2 class="spec-platform">Platform</h2>
+                                 <h2 class="spec-esrb">ESRB</h2>
+                                 <h2 class="spec-pegi">PEGI</h2>
+                                 <h2 class="spec-released">released</h2>
+                                 <h2 class="spec-multi">Multiplayer</h2>
+                               </div>
+                               <div class="spec-info">
+                                 <h2 class="spec-sport">${details.genre}</h2>
+                                 <h2 class="spec-play">Playbox</h2>
+                                 <h2 class="spec-for">Everyone</h2>
+                                 <h2 class="spec-age">${details.ageRating}</h2>
+                                 <h2 class="spec-num">1-2</h2>
+                                 <h2 class="spec-resleased">${details.released}</h2>
+                               </div>
+                             </div>
+                           </div>
+                     
+                           <div class="close-info">
+                             <h1 class="close-producte-title">Product Info</h1>
+                             <div class="close-producte">
+                               <h1 class="close-game-title">${details.title}</h1>
+                               <p>
+                                 ${details.description}
+                               </p>
+                             </div>
+                           </div>
+                             </div>`;
+  } catch (error) {
+    console.log(error);
+    const detailContainer = document.querySelector("#detail-container");
+    detailContainer.innerHTML =
+      '<div class="error"> An error arccured when calling this gamehub API</div>';
+  }
 }
+getGamehub();
 
+document.addEventListener("DOMContentLoaded", function () {
+  const loading = document.getElementById("loading");
 
+  window.addEventListener("load", function () {
+    // Hide the loading indicator when the page has fully loaded
+    loading.classList.add("loading-hidden");
+  });
 
-
-displayProducts(products);
-
-//* Styling useing
-//const navAddElement = document.querySelector('.nav-add');
-//const rateElement = document.querySelector('.rate');
-
-
-//rateElement.style.position = 'absolute'; 
-//rateElement.style.top = '1em'; 
-//rateElement.style.left = '15em';
-
-//navAddElement.style.position = 'absolute'; 
-//navAddElement.style.top = '5em'; 
-//navAddElement.style.left = '15em';
-
-
-
-async function fetchgamehub() {
-    const response = await fetch ("https://api.noroff.dev/api/v1/gamehub");
-    console.log (response);
-    const results = await response.json();
-    console.log(results);
-}
-
-
-
-fetchgamehub();
+  // Simulate a delay or async operation
+  setTimeout(() => {
+    // Show the loading indicator
+    loading.classList.remove("loading-hidden");
+  });
+});

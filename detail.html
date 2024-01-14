@@ -36,8 +36,10 @@
       href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/styles.css/about.css" />
-    <script src="js/detail.js" type="module"></script>
+
+    <link rel="stylesheet" href="styles.css/about.css" />
+    <script src="js/detail.js" defer></script>
+
     <title>Detail|Game Hub</title>
   </head>
   <header>
@@ -68,11 +70,8 @@
   </header>
   <body>
     <main>
-      <div id="detail-top" class="detail-top"></div>
-
-      <div id="nav-spec" class="nav-spec"></div>
-
-      <div id="close-info" class="close-info"></div>
+      <div id="detail-container" class="detail-container"></div>
+      <div id="loading" class="loading">Loading...</div>
     </main>
   </body>
   <div class="footer-detail">

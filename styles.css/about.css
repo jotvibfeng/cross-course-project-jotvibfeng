@@ -130,6 +130,8 @@ img.vr-man {
   height: 166px;
 }
 
+
+
 /* footer design start here */
 footer {
   width: 100%;
@@ -526,56 +528,101 @@ div.hero-rec img.rec-images3 {
 }
 
 /*The Detail page style start here*/
-div.detail-top {
-  position: absolute;
-  top: 7em;
-}
-div.detail-top img.top-image {
-  width: 202px;
-  height: 249px;
-  position: absolute;
-  left: 1em;
-  top: 1em;
-}
-div.detail-top svg.rate {
-  width: 149px;
-  height: 2em;
-  position: absolute;
-  top: 1em;
-  left: 15em;
-}
-div.detail-top h1.top-title {
-  position: absolute;
-  left: 1em;
-  top: -2.5em;
-  font-size: 28px;
-  width: 300px;
-  font-weight: normal;
-  font-family: robto, sans-serif;
-}
-div.detail-top h2.sec-title {
-  position: absolute;
-  left: 1.7em;
-  top: -1.5em;
-  font-size: 16px;
-  font-weight: lighter;
-  font-family: robto, sans-serif;
+
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  transition: opacity 1s, visibility 1s;
 }
 
-div.nav-add {
+.loading::after {
+  content: "";
+  width: 75px;
+  height: 75px;
+  border: 15px solid rgb(164, 161, 161);
+  border-top-color: #11BF42;
+  border-radius: 50%;
+  animation: loading 0.75s ease infinite;
+}
+
+@keyframes loading {
+  from{
+    transform: rotate(0turn);
+  }
+  to{
+    transform: rotate(1turn);
+  }
+}
+
+.loading-hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.error {
+  position: relative;
+  width: 600px;
+  top: 150px;
+  left: 20px;
+  font-weight: bolder;
+  font-size: 25px;
+  color: red;
+}
+
+.detail-image {
+  width: 287px;
+  height: 388px;
+  position: relative;
+  top: 200px;
+  left: 20px;
+}
+
+.detail-title {
+ position: absolute;
+ left: 20px;
+ top: 100px;
+ font-size: 30px;
+ font-weight: 700;
+ font-family: robto,sans-serif;
+}
+
+.sec-title {
   position: absolute;
-  top: 5em;
-  left: 15em;
+  top: 130px;
+  left: 20px;
+  font-weight: lighter;
+}
+
+.rate {
+  width: 209px;
+  height: 100px;
+  position: absolute;
+  top: 170px;
+  left: 350px;
+}
+
+.nav-add {
+  position: absolute;
+  top: 300px;
+  left: 320px;
   background-color: #E4E7D9;
   height: 80px;
-  width: 360px;
+  width: 340px;
 }
-div.nav-add h3.add-nav {
+
+.add-cart {
   font-family: nunito, sans-serif;
   font-size: 25px;
   font-weight: bold;
   position: absolute;
-  left: 5.5em;
+  left: 120px;
   top: -0.3em;
   width: 200px;
   background-color: #4B7D59;
@@ -584,15 +631,40 @@ div.nav-add h3.add-nav {
   height: 40px;
   text-align: center;
   color: #fff;
+  z-index: 1;
 }
-div.nav-add h1.add-price {
+
+.add-cart::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: #11BF42;
+  transition: transform 400ms ease-in;
+  z-index: -1;
+}
+
+.add-cart::after {
+  transform: scaleX(0);
+  transform-origin: right;
+}
+
+.add-cart:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.add-price {
   position: absolute;
   left: 0.5em;
   font-size: 24px;
   font-weight: bold;
   font-family: roboto, sans-serif;
 }
-div.nav-add h2.add-ship {
+
+.add-ship {
   position: absolute;
   top: 2em;
   left: 0.7em;
@@ -602,18 +674,44 @@ div.nav-add h2.add-ship {
   width: 200px;
 }
 
-div.nav-spec {
-  position: absolute;
-  top: 15em;
-}
-div.nav-spec h1.spec-title {
+.spec-title {
   font-size: 24px;
   font-weight: 600;
   position: absolute;
-  top: 1em;
+  top: 600px;
   left: 1.5em;
   z-index: 500;
 }
+
+.spec-released {
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  top: 9.3em;
+  left: -1.8em;
+  border: 2px solid #E4E7D9;
+  width: 240px;
+  height: 24.5px;
+  padding-top: 0.5em;
+  padding-left: 0.5em;
+}
+
+.spec-resleased {
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  top: 11.1em;
+  left: -2.1em;
+  border: 2px solid #E4E7D9;
+  width: 175px;
+  height: 24.5px;
+  padding-top: 0.5em;
+  padding-left: 0.5em;
+
+}
+
+
+
 div.nav-spec div.close-item h2.back-text {
   font-size: 24px;
   font-weight: 600;
@@ -626,7 +724,7 @@ div.nav-spec div.close-item h2.spec-head {
   width: 415px;
   height: 30px;
   position: absolute;
-  top: 3em;
+  top: 650px;
   left: 1.3em;
   padding: 0.5em;
 }
@@ -638,7 +736,7 @@ div.nav-spec div.close-item svg.div-line1 {
 }
 div.nav-spec div.close-item div.spec-des {
   position: absolute;
-  top: 10em;
+  top: 742px;
   left: 4em;
 }
 div.nav-spec div.close-item div.spec-des h2.spec-genre {
@@ -703,7 +801,7 @@ div.nav-spec div.close-item div.spec-des h2.spec-multi {
 }
 div.nav-spec div.close-item div.spec-info {
   position: absolute;
-  top: 8em;
+  top: 710px;
   left: 20em;
 }
 div.nav-spec div.close-item div.spec-info h2.spec-sport {
@@ -769,7 +867,7 @@ div.nav-spec div.close-item div.spec-info h2.spec-num {
 
 div.close-info {
   position: absolute;
-  top: 27em;
+  top: 990px
 }
 div.close-info svg.div-line {
   position: absolute;
@@ -792,7 +890,7 @@ div.close-producte {
   left: 2.2em;
 }
 div.close-producte h1.close-game-title {
-  width: 200px;
+  width: 500px;
   font-size: 30px;
   font-weight: normal;
   position: absolute;
@@ -807,6 +905,9 @@ div.close-producte p {
 }
 
 @media only screen and (min-width: 700px) {
+  
+  
+  
   label.nav-toggle-lable {
     display: none;
   }
@@ -904,6 +1005,11 @@ div.close-producte p {
   }
 }
 @media screen and (min-width: 800px) {
+
+  div.nav-spec h1.spec-title {
+    position: absolute;
+    top: 1.5em;
+  }
   label.nav-toggle-lable {
     display: none;
   }
@@ -954,7 +1060,7 @@ div.close-producte p {
   }
   div.nav-add {
     position: absolute;
-    top: 4.5em;
+    top: 17em;
     left: 21em;
     height: 120px;
   }
@@ -962,7 +1068,7 @@ div.close-producte p {
     position: absolute;
     top: 1.5em;
     left: 0.4em;
-    width: 300px;
+    width: 100px;
     height: 40px;
   }
   div.nav-add h1.add-price {
@@ -978,7 +1084,7 @@ div.close-producte p {
   }
   div.nav-spec {
     position: absolute;
-    top: 27em;
+    top: 35em;
   }
   div.nav-spec div.close-item {
     width: 100%;
@@ -994,7 +1100,7 @@ div.close-producte p {
   }
   div.nav-spec div.close-item h2.spec-head {
     background-color: #E4E7D9;
-    width: 440px;
+    width: 415px;
     height: 50px;
     position: absolute;
     top: 3em;
@@ -1008,7 +1114,7 @@ div.close-producte p {
   }
   div.nav-spec div.close-item div.spec-des {
     position: absolute;
-    top: 10em;
+    top: 11.5em;
     left: 4em;
   }
   div.nav-spec div.close-item div.spec-des h2.spec-genre {
@@ -1073,7 +1179,7 @@ div.close-producte p {
   }
   div.nav-spec div.close-item div.spec-info {
     position: absolute;
-    top: 8em;
+    top: 9.5em;
     left: 20em;
   }
   div.nav-spec div.close-item div.spec-info h2.spec-sport {
@@ -1138,7 +1244,7 @@ div.close-producte p {
   }
   div.close-info {
     position: absolute;
-    top: 53em;
+    top: 60em;
   }
   div.text-box {
     position: absolute;
@@ -1239,6 +1345,37 @@ div.close-producte p {
   }
 }
 @media screen and (min-width: 900px) {
+  
+  
+  div.footer-detail footer {
+    height: 96px;
+    position: absolute;
+    top: 1000px;
+  }
+  
+  div.nav-spec {
+    position: absolute;
+    top: 36em;
+  }
+
+  div.nav-spec div.close-item h2.spec-head {
+    position: absolute;
+    top: 2em;
+    width: 17.3em;
+  }
+
+  div.nav-spec h1.spec-title {
+    position: absolute;
+    top: 0.5em;
+  }
+
+  div.close-info {
+    position: relative;
+    top: 12.5em;
+    left: 30em;
+  }
+  
+  
   label.nav-toggle-lable {
     display: none;
   }
@@ -1328,6 +1465,29 @@ div.close-producte p {
   }
 }
 @media screen and (min-width: 930px) {
+  
+  div.nav-spec {
+    position: absolute;
+    top: 36em;
+  }
+
+  div.nav-spec div.close-item h2.spec-head {
+    position: absolute;
+    top: 2em;
+    width: 17.3em;
+  }
+
+  div.nav-spec h1.spec-title {
+    position: absolute;
+    top: 0.5em;
+  }
+
+  div.close-info {
+    position: relative;
+    top: 12.5em;
+    left: 30em;
+  }
+  
   label.nav-toggle-lable {
     display: none;
   }
@@ -1341,6 +1501,12 @@ div.close-producte p {
     top: 2.5em;
     left: 1em;
     font-size: 50px;
+  }
+
+  div.footer-detail footer {
+    height: 96px;
+    position: absolute;
+    top: 1000px;
   }
   header {
     display: grid;
@@ -1385,6 +1551,41 @@ div.close-producte p {
   }
 }
 @media screen and (min-width: 1030px) {
+
+  div.footer-detail footer {
+    height: 96px;
+    position: absolute;
+    top: 1000px;
+  }
+  
+  div.close-info {
+    position: relative;
+    top: 12.5em;
+    left: 30em;
+  }
+  
+  div.nav-spec {
+    position: absolute;
+    top: 36em;
+  }
+
+  div.nav-spec h1.spec-title {
+    position: absolute;
+    top: 0.5em;
+  }
+
+  div.nav-spec div.close-item h2.spec-head {
+    position: absolute;
+    top: 2em;
+    width: 17.3em;
+  }
+
+  div.nav-add {
+    top: 300px;
+    height: 80px;
+  }
+  
+  
   label.nav-toggle-lable {
     display: none;
   }
@@ -1469,6 +1670,18 @@ div.close-producte p {
   }
 }
 @media screen and (min-width: 1200px) {
+  
+  div.nav-add {
+    top: 300px;
+    height: 80px;
+  }
+  
+  div.close-info {
+    position: relative;
+    top: 12.5em;
+    left: 30em;
+  }
+  
   label.nav-toggle-lable {
     display: none;
   }
@@ -1528,6 +1741,11 @@ div.close-producte p {
     left: 37em;
     font-size: 20px;
   }
+  div.nav-spec {
+    position: absolute;
+    top: 36em;
+  }
+
   div.nav-spec h1.spec-title {
     position: absolute;
     top: 0.5em;
@@ -1631,7 +1849,104 @@ div.close-producte p {
   }
 }
 @media screen and (min-width: 1400px) {
-  label.nav-toggle-lable {
+  
+  .rate {
+    width: 209px;
+    height: 100px;
+    position: absolute;
+    top: 200px;
+    left: 350px;
+  }
+  
+  div.nav-add {
+    position: absolute;
+    top: 400px;
+    left: 320px;
+    background-color: #E4E7D9;
+    height: 80px;
+    width: 360px;
+  }
+  
+  .add-cart {
+    font-family: nunito, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    position: absolute;
+    left: 120px;
+    top: -0.3em;
+    width: 200px;
+    background-color: #4B7D59;
+    border-radius: 4px;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+  }
+  
+ 
+  .add-price {
+    position: absolute;
+    left: 0.5em;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: roboto, sans-serif;
+  }
+  
+  .add-ship {
+    position: absolute;
+    top: 2em;
+    left: 0.7em;
+    font-size: 16px;
+    font-weight: lighter;
+    font-family: roboto, sans-serif;
+    width: 200px;
+  }
+  
+  .spec-title {
+    font-size: 24px;
+    font-weight: 600;
+    position: absolute;
+    top: 600px;
+    left: 1.5em;
+    z-index: 500;
+  }
+  
+  .spec-released {
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    top: 9.3em;
+    left: -1.8em;
+    border: 2px solid #E4E7D9;
+    width: 240px;
+    height: 24.5px;
+    padding-top: 0.5em;
+    padding-left: 0.5em;
+  }
+  
+  .spec-resleased {
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    top: 11.1em;
+    left: -2.1em;
+    border: 2px solid #E4E7D9;
+    width: 175px;
+    height: 24.5px;
+    padding-top: 0.5em;
+    padding-left: 0.5em;
+  
+  }
+  
+  div.nav-spec div.close-item div.spec-info {
+    position: absolute;
+    top: 128px;
+    left: 20em;
+  }
+  
+  
+   label.nav-toggle-lable {
     display: none;
   }
   div.detail-top h2.sec-title {
@@ -1646,7 +1961,7 @@ div.close-producte p {
 
   div.nav-spec {
     position: absolute;
-    top: 13em;
+    top: 36em;
   }
   header {
     display: grid;
@@ -1689,8 +2004,8 @@ div.close-producte p {
     height: 2.5em;
   }
   div.close-info {
-    position: absolute;
-    top: 10em;
+    position: relative;
+    top: 5em;
     left: 15em;
   }
   div.close-info h1.close-producte-title {
@@ -1795,7 +2110,7 @@ div.close-producte p {
   div.footer-detail footer {
     height: 96px;
     position: absolute;
-    top: 900px;
+    top: 1100px;
   }
   div.footer-detail footer div.sosical-media {
     display: inline;
