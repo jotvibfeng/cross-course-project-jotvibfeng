@@ -2,22 +2,17 @@ const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
 
-console.log(id);
-
 if (!id) {
   document.location.href = "/";
 }
 
 const url = `https://api.noroff.dev/api/v1/gamehub/${id}`;
 
-console.log(url);
-
 async function getGamehub() {
   try {
     const loadingContainer = document.querySelector("#loading");
     const response = await fetch(url);
     const details = await response.json();
-    console.log(details);
 
     loadingContainer.innerHTML = "";
 

@@ -10,8 +10,6 @@ async function getGamehub() {
     const loadingContainer = document.querySelector("#loading");
 
     gamehub.forEach(function (game) {
-      console.log(game);
-
       loadingContainer.innerHTML = "";
 
       gamehubContainer.innerHTML += `<div class="gamehub-container">
@@ -40,7 +38,6 @@ async function getGamehub() {
                                   </div>`;
     });
   } catch (error) {
-    console.log(error);
     const gamehubContainer = document.querySelector("#gamehub-container");
     gamehubContainer.innerHTML =
       '<div class="error"> An error arccured when calling this gamehub API</div>';
