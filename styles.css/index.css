@@ -862,6 +862,9 @@ div.footer-check footer div.footer-col a:hover {
 
 /* footer design start here */
 footer {
+  min-height: 10%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
   width: 100%;
   height: 134px;
   background-color: #4B7D59;
@@ -2357,6 +2360,7 @@ footer div.footer-col a:hover {
     display: grid;
     grid-template-columns: 5fr auto minmax(900px, 3fr) 3fr;
     height: 97px;
+    width: 100%;
   }
   header .logo {
     position: absolute;
@@ -2429,9 +2433,9 @@ footer div.footer-col a:hover {
     left: 35em;
   }
   footer {
-    height: 96px;
-    position: relative;
-    top: 300px;
+    min-height: 30%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
   }
   footer div.sosical-media {
     display: inline;
@@ -2480,4 +2484,10 @@ footer div.footer-col a:hover {
     position: absolute;
     left: 15em;
   }
+ div.footer-wrapper footer {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  width: 100%;
+ }
 }/*# sourceMappingURL=index.css.map */

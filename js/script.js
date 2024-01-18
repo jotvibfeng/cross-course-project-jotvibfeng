@@ -1,4 +1,4 @@
-const url = "https://api.noroff.dev/api/v1/gamehub";
+import { url } from "./const.js";
 
 async function getGamehub() {
   try {

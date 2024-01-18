@@ -134,11 +134,13 @@ img.vr-man {
 
 /* footer design start here */
 footer {
+  min-height: 30%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
   width: 100%;
-  height: 134px;
   background-color: #4B7D59;
   position: absolute;
-  top: 1000px;
+  top: 1100px;
 }
 footer div.sosical-media {
   display: inline;
@@ -196,11 +198,13 @@ footer div.footer-col a:hover {
 }
 
 div.footer-detail footer {
+  min-height: 10%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
   width: 100%;
-  height: 134px;
   background-color: #4B7D59;
   position: absolute;
-  top: 1450px;
+  top: 1250px;
 }
 div.footer-detail footer div.sosical-media {
   display: inline;
@@ -533,7 +537,7 @@ div.hero-rec img.rec-images3 {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 50vw;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -2151,9 +2155,9 @@ div.close-producte p {
     left: 15em;
   }
   footer {
-    height: 96px;
-    position: absolute;
-    top: 1100px;
+    min-height: 1%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
   }
   footer div.sosical-media {
     display: inline;

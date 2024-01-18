@@ -1,3 +1,5 @@
+import { url } from "./const.js";
+
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const id = params.get("id");
@@ -6,12 +8,12 @@ if (!id) {
   document.location.href = "/";
 }
 
-const url = `https://api.noroff.dev/api/v1/gamehub/${id}`;
+const detailUrl = `${url}/${id}`;
 
 async function getGamehub() {
   try {
     const loadingContainer = document.querySelector("#loading");
-    const response = await fetch(url);
+    const response = await fetch(detailUrl);
     const details = await response.json();
 
     loadingContainer.innerHTML = "";
