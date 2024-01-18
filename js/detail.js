@@ -12,11 +12,8 @@ const detailUrl = `${url}/${id}`;
 
 async function getGamehub() {
   try {
-    const loadingContainer = document.querySelector("#loading");
     const response = await fetch(detailUrl);
     const details = await response.json();
-
-    loadingContainer.innerHTML = "";
 
     const detailContainer = document.querySelector("#detail-container");
 
@@ -108,18 +105,3 @@ async function getGamehub() {
   }
 }
 getGamehub();
-
-document.addEventListener("DOMContentLoaded", function () {
-  const loading = document.getElementById("loading");
-
-  window.addEventListener("load", function () {
-    // Hide the loading indicator when the page has fully loaded
-    loading.classList.add("loading-hidden");
-  });
-
-  // Simulate a delay or async operation
-  setTimeout(() => {
-    // Show the loading indicator
-    loading.classList.remove("loading-hidden");
-  });
-});

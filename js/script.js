@@ -4,14 +4,12 @@ async function getGamehub() {
   try {
     const response = await fetch(url);
     const gamehub = await response.json();
-    //console.log(response);
+    console.log(response);
 
     const gamehubContainer = document.querySelector("#gamehub-container");
-    const loadingContainer = document.querySelector("#loading");
+    const loadingContainer = document.querySelector("#loading-container");
 
     gamehub.forEach(function (game) {
-      loadingContainer.innerHTML = "";
-
       gamehubContainer.innerHTML += `<div class="gamehub-container">
                                      <a href="detail.html">
                                       <img
@@ -45,18 +43,3 @@ async function getGamehub() {
 }
 
 getGamehub();
-
-document.addEventListener("DOMContentLoaded", function () {
-  const loading = document.getElementById("loading");
-
-  window.addEventListener("load", function () {
-    // Hide the loading indicator when the page has fully loaded
-    loading.classList.add("loading-hidden");
-  });
-
-  // Simulate a delay or async operation
-  setTimeout(() => {
-    // Show the loading indicator
-    loading.classList.remove("loading-hidden");
-  });
-});

@@ -108,27 +108,40 @@ header .shoppingcart {
 }
 
 /* javascript assigment styling started here */
-.loading {
+.loading-container {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
   display: flex;
-  justify-content: center;
   align-items: center;
-  background-color: white;
-  transition: opacity 1s, visibility 1s;
+  justify-content: center;
+  z-index: 1000;
+  /* Optionally, add a transition for a smooth appearance */
+  transition: opacity 0.3s ease;
+  opacity: 1;
 }
 
-.loading::after {
-  content: "";
-  width: 75px;
-  height: 75px;
-  border: 15px solid rgb(164, 161, 161);
-  border-top-color: #11BF42;
+.loading {
+  border: 8px solid #11BF42;
+  border-top: 8px solid transparent;
   border-radius: 50%;
-  animation: loading 0.75s ease infinite;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Optionally, add styles to hide the loading indicator */
+.loading-container.loading-hidden {
+  opacity: 0;
+  pointer-events: none;
 }
 
 @keyframes loading {
