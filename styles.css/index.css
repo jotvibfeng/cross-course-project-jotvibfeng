@@ -1,23 +1,26 @@
+
+
+
 body {
-  margin: 0;
+ margin: 0;
   font-family: roboto, sans-serif;
   font-weight: normal;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-div.game-container {
-  position: absolute;
-  bottom: 10px;
-}
+
 
 /*Nav bar styling start here*/
 header {
   background-color: #4B7D59;
   text-align: center;
-  position: fixed;
+  position: relative;
   z-index: 999;
   width: 100%;
   height: 80px;
-  top: 0px;
+  
 }
 header .logo {
   margin: 0;
@@ -33,7 +36,7 @@ header .nav-toggle {
 header .nav-toggle-lable {
   position: absolute;
   top: 0;
-  left: 22em;
+  left: 30em;
   height: 100%;
   display: flex;
   align-items: center;
@@ -99,69 +102,23 @@ header .nav-toggle:checked ~ nav a {
   transition: opacity 250ms ease-in-out 250ms;
 }
 header .shoppingcart {
-  display: flex;
   width: 2em;
   height: 2em;
   position: absolute;
-  left: 27em;
+  left: 35em;
   bottom: 1.5em;
 }
 
-/* javascript assigment styling started here */
-.loading-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.8);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1000;
-  /* Optionally, add a transition for a smooth appearance */
-  transition: opacity 0.3s ease;
-  opacity: 1;
-}
 
-.loading {
-  border: 8px solid #11BF42;
-  border-top: 8px solid transparent;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  animation: spin 1s linear infinite;
-}
 
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-/* Optionally, add styles to hide the loading indicator */
-.loading-container.loading-hidden {
-  opacity: 0;
-  pointer-events: none;
-}
-
-@keyframes loading {
-  from{
-    transform: rotate(0turn);
-  }
-  to{
-    transform: rotate(1turn);
-  }
-}
-
-.loading-hidden {
-  opacity: 0;
-  visibility: hidden;
-}
-
-.gamehub-container {
+div.gamehub-container {
   display:grid;
   grid-template-columns: repeat(2,200px);
-  gap: 90px;
+  gap: 50px;
+  position: relative;
+  left: -10px;
+  top: -30px;
+
 }
 
 .product-image {
@@ -175,15 +132,15 @@ header .shoppingcart {
 .game-info {
   position: relative;
   top: 300px;
-  left: -200px;
+  left: -70px;
 }
 
-.game-title {
+h3.game-title {
   font-weight: normal;
   font-size: 18px;
   position: relative;
   top: -10px;
-  left: 7px;
+  left: -80px;
   width: 150%;
   
 }
@@ -192,16 +149,16 @@ header .shoppingcart {
   font-size: 20px;
   font-weight: bold;
   position: relative;
-  top: -22px;
-  left: 5px;
+  top: -30px;
+  left: -80px;
 }
 
-.action-button {
+div.action-button {
   position: relative;
-  top: 70px;
-  left: 90px;
+  top: 100px;
+  left: 100px;
   background-color: #4B7D59;
-  width: 168px;
+  width: 160px;
   height: 35px;
   border-radius: 4px;
   z-index: 1;
@@ -237,12 +194,12 @@ header .shoppingcart {
   
 }
 
-.detail-button  {
+div.detail-button  {
   position: relative;
-  top: 120px;
-  left: -200px;
+  top: 140px;
+  left: -150px;
   background-color: #1E7B9C;
-  width: 168px;
+  width: 160px;
   height: 35px;
   border-radius: 4px;
   z-index: 1;
@@ -295,594 +252,23 @@ a {
 
 
 
-/*The Cart styling started here*/
-body.body-background {
-  background-color: #E2E2E2;
-}
 
-/*For chromium and safari*/
-input[type=number]::-webkit-inner-spin-button {
-  display: none;
-}
 
-div.title-shopping {
-  position: absolute;
-  top: 5em;
-  left: 8em;
-}
 
-div.title-order {
-  position: absolute;
-  top: 10em;
-  left: 3em;
-  font-weight: bolder;
-}
-
-div.order-container {
-  position: absolute;
-  left: 2.5em;
-  top: 13em;
-  background-color: #fff;
-  width: 400px;
-  height: 160px;
-}
-div.order-container img.ping-pong-order {
-  height: 120px;
-  width: 100px;
-  position: absolute;
-  left: 1em;
-  top: 1em;
-}
-div.order-container h4.game-title {
-  position: absolute;
-  top: -0.2em;
-}
-div.order-container h6.console-order {
-  position: relative;
-  top: 1.3em;
-  font-weight: normal;
-}
-div.order-container h6.del-time {
-  position: relative;
-  top: -0.9em;
-  font-weight: normal;
-}
-div.order-container h5.order-price {
-  position: absolute;
-  left: 11em;
-  top: 7em;
-}
-div.order-container svg.bin {
-  position: absolute;
-  top: 1em;
-  left: 10em;
-  width: 41px;
-  height: 38px;
-}
-div.order-container input.number {
-  position: absolute;
-  top: 8.5em;
-  width: 80px;
-}
-div.order-container div.order-dis {
-  position: absolute;
-  left: 9em;
-}
-
-div.checkout-container {
-  position: absolute;
-  top: 27em;
-  left: 2.5em;
-  background-color: #fff;
-  width: 250px;
-  height: 150px;
-}
-div.checkout-container h6.item-cart {
-  position: absolute;
-  left: 1em;
-}
-div.checkout-container h6.price-item {
-  position: absolute;
-  left: 15em;
-  top: 0em;
-}
-div.checkout-container h6.price-cost {
-  position: absolute;
-  top: 2em;
-  left: 15.2em;
-}
-div.checkout-container h6.cost-cart {
-  position: absolute;
-  top: 2em;
-  left: 1em;
-}
-div.checkout-container h5.total-price {
-  position: absolute;
-  left: 12em;
-  top: 4em;
-}
-div.checkout-container h5.total {
-  position: absolute;
-  top: 4em;
-  left: 1em;
-}
-div.checkout-container h5.check-price {
-  position: absolute;
-  top: 7em;
-  left: 2em;
-  width: 150px;
-  height: 22px;
-  text-align: center;
-  background-color: #4B7D59;
-  font-family: nunito, sans-serif;
-  border-radius: 4px;
-}
-div.checkout-container a.hero-checkout {
-  color: #fff;
-  position: absolute;
-}
-
-/*The Checkout page start here*/
-div.hero-delivery {
-  position: absolute;
-  top: 12em;
-  left: 2em;
-  background-color: #fff;
-  width: 382px;
-  height: 175px;
-}
-div.hero-delivery h1.del-info {
-  font-size: 24px;
-  position: absolute;
-  top: -2.5em;
-}
-div.hero-delivery h4.checkout-del {
-  position: relative;
-  top: 1.5em;
-  left: 0.5em;
-  margin: 0.5em;
-  font-size: 16px;
-  font-weight: 500;
-}
-div.hero-delivery h4.checkout-info {
-  position: relative;
-  top: 0.5em;
-  left: 0.5em;
-  margin: 0.5em;
-  font-size: 16px;
-  font-weight: 500;
-}
-
-div.hero-option {
-  position: absolute;
-  top: 28em;
-  left: 2em;
-  background-color: #fff;
-  width: 382px;
-  height: 175px;
-}
-div.hero-option h1.del-option {
-  position: absolute;
-  top: -2.5em;
-  font-size: 24px;
-}
-div.hero-option label.radio-button1 {
-  position: absolute;
-  left: 10.7em;
-  top: 4em;
-  cursor: pointer;
-}
-div.hero-option label.radio-button1 input.radio-input1 {
-  display: none;
-}
-div.hero-option label.radio-button1 div.radio__radio1 {
-  width: 1.25em;
-  height: 1.25em;
-  border: 2px solid black;
-  border-radius: 50%;
-  box-sizing: border-box;
-  padding: 2px;
-  position: absolute;
-  left: 0.1em;
-  color: #fff;
-}
-div.hero-option label.radio-button1 div.radio__radio1::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  display: block;
-  background-color: #11BF42;
-  border-radius: 50%;
-  transform: scale(0);
-  transition: transform 0.15s;
-}
-div.hero-option label.radio-button1 input.radio-input1:checked + div.radio__radio1::after {
-  transform: scale(1);
-}
-div.hero-option label.radio-button2 {
-  position: absolute;
-  left: 10.7em;
-  top: 7em;
-  cursor: pointer;
-}
-div.hero-option label.radio-button2 input.radio-input2 {
-  display: none;
-}
-div.hero-option label.radio-button2 div.radio__radio2 {
-  width: 1.25em;
-  height: 1.25em;
-  border: 2px solid black;
-  border-radius: 50%;
-  box-sizing: border-box;
-  padding: 2px;
-  position: absolute;
-  left: 0.1em;
-  color: #fff;
-}
-div.hero-option label.radio-button2 div.radio__radio2::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  display: block;
-  background-color: #11BF42;
-  border-radius: 50%;
-  transform: scale(0);
-  transition: transform 0.15s;
-}
-div.hero-option label.radio-button2 input.radio-input2:checked + div.radio__radio2::after {
-  transform: scale(1);
-}
-div.hero-option label.radio-button3 {
-  position: absolute;
-  left: 10.7em;
-  top: 8.7em;
-  cursor: pointer;
-}
-div.hero-option label.radio-button3 input.radio-input3 {
-  display: none;
-}
-div.hero-option label.radio-button3 div.radio__radio3 {
-  width: 1.25em;
-  height: 1.25em;
-  border: 2px solid black;
-  border-radius: 50%;
-  box-sizing: border-box;
-  padding: 2px;
-  position: absolute;
-  left: 0.1em;
-  color: #fff;
-}
-div.hero-option label.radio-button3 div.radio__radio3::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  display: block;
-  background-color: #11BF42;
-  border-radius: 50%;
-  transform: scale(0);
-  transition: transform 0.15s;
-}
-div.hero-option label.radio-button3 input.radio-input3:checked + div.radio__radio3::after {
-  transform: scale(1);
-}
-div.hero-option label.radio-button {
-  position: absolute;
-  left: 10.7em;
-  top: 2.4em;
-  cursor: pointer;
-}
-div.hero-option label.radio-button input.radio-input {
-  display: none;
-}
-div.hero-option label.radio-button div.radio__radio {
-  width: 1.25em;
-  height: 1.25em;
-  border: 2px solid black;
-  border-radius: 50%;
-  box-sizing: border-box;
-  padding: 2px;
-  position: absolute;
-  left: 0.1em;
-  color: #fff;
-}
-div.hero-option label.radio-button div.radio__radio::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  display: block;
-  background-color: #11BF42;
-  border-radius: 50%;
-  transform: scale(0);
-  transition: transform 0.15s;
-}
-div.hero-option label.radio-button input.radio-input:checked + div.radio__radio::after {
-  transform: scale(1);
-}
-div.hero-option h4.del-date {
-  position: relative;
-  top: 0.5em;
-  left: 0.5em;
-  margin: 0.5em;
-}
-div.hero-option h4.mail-option {
-  position: relative;
-  top: 1.5em;
-  left: 0.5em;
-  margin: 0.5em;
-  font-size: 16px;
-  font-weight: 500;
-}
-div.hero-option svg.ups {
-  width: 24px;
-  height: 25px;
-  position: absolute;
-  left: 11em;
-  top: 0.7em;
-}
-div.hero-option svg.postnord {
-  width: 58px;
-  height: 19px;
-  position: absolute;
-  top: 6em;
-  left: 19.1em;
-}
-div.hero-option svg.bring {
-  width: 58px;
-  height: 19px;
-  position: absolute;
-  top: 7.5em;
-  left: 19em;
-}
-div.hero-option svg.bring-2 {
-  width: 58px;
-  height: 19px;
-  position: absolute;
-  top: 9em;
-  left: 19em;
-}
-
-div.hero-pay {
-  position: absolute;
-  top: 45em;
-  left: 2em;
-  background-color: #fff;
-  width: 382px;
-  height: 94px;
-}
-div.hero-pay h1.del-pay {
-  position: absolute;
-  top: -2.5em;
-  font-size: 24px;
-}
-div.hero-pay h4.pay-option {
-  position: relative;
-  left: 1em;
-}
-div.hero-pay label.radio-button4 {
-  position: absolute;
-  left: 4em;
-  top: 1.5em;
-  cursor: pointer;
-}
-div.hero-pay label.radio-button4 input.radio-input4 {
-  display: none;
-}
-div.hero-pay label.radio-button4 div.radio__radio4 {
-  width: 1.25em;
-  height: 1.25em;
-  border: 2px solid black;
-  border-radius: 50%;
-  box-sizing: border-box;
-  padding: 2px;
-  position: absolute;
-  color: #fff;
-}
-div.hero-pay label.radio-button4 div.radio__radio4::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  display: block;
-  background-color: #11BF42;
-  border-radius: 50%;
-  transform: scale(0);
-  transition: transform 0.15s;
-}
-div.hero-pay label.radio-button4 input.radio-input4:checked + div.radio__radio4::after {
-  transform: scale(1);
-}
-div.hero-pay label.radio-button5 {
-  position: absolute;
-  left: 4em;
-  top: 3.8em;
-  cursor: pointer;
-}
-div.hero-pay label.radio-button5 input.radio-input5 {
-  display: none;
-}
-div.hero-pay label.radio-button5 div.radio__radio5 {
-  width: 1.25em;
-  height: 1.25em;
-  border: 2px solid black;
-  border-radius: 50%;
-  box-sizing: border-box;
-  padding: 2px;
-  position: absolute;
-  color: #fff;
-}
-div.hero-pay label.radio-button5 div.radio__radio5::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  display: block;
-  background-color: #11BF42;
-  border-radius: 50%;
-  transform: scale(0);
-  transition: transform 0.15s;
-}
-div.hero-pay label.radio-button5 input.radio-input5:checked + div.radio__radio5::after {
-  transform: scale(1);
-}
-div.hero-pay svg.vipps {
-  width: 86px;
-  height: 31px;
-  position: absolute;
-  top: 1em;
-  left: 5em;
-}
-div.hero-pay svg.master-card {
-  width: 50px;
-  height: 24px;
-  position: absolute;
-  left: 6em;
-  top: 3.7em;
-  background-color: #E2E2E2;
-  border-radius: 4px;
-}
-div.hero-pay svg.visa {
-  width: 60px;
-  height: 19px;
-  position: absolute;
-  left: 10em;
-  background-color: #E2E2E2;
-  border-radius: 4px;
-}
-
-div.hero-detail {
-  position: absolute;
-  top: 55em;
-  left: 2em;
-  background-color: #fff;
-  height: 206px;
-  width: 382px;
-}
-div.hero-detail h1.del-detail {
-  position: absolute;
-  top: -2.5em;
-  font-size: 24px;
-}
-div.hero-detail h4.del-pay {
-  position: absolute;
-  top: 0em;
-  left: 21em;
-  font-weight: 500;
-}
-div.hero-detail h4.del-pay-1 {
-  position: absolute;
-  top: 2em;
-  left: 19em;
-  font-weight: 500;
-}
-div.hero-detail h4.del-game {
-  position: relative;
-  left: 6em;
-  font-weight: normal;
-  margin: 0.5em;
-  width: 100px;
-}
-div.hero-detail h4.check-pay {
-  width: 50px;
-  position: absolute;
-  left: 8em;
-  top: 3.1em;
-  color: #fff;
-  width: 168px;
-  height: 35px;
-  text-align: center;
-  font-size: 24px;
-  border-radius: 4px;
-  font-family: nunito, sans-serif;
-  background-color: #4B7D59;
-}
-div.hero-detail h4.check-pay a {
-  width: 10px;
-}
-div.hero-detail h4.hero-total {
-  position: relative;
-  top: -0.5em;
-  left: 1em;
-  font-weight: 500;
-}
-div.hero-detail img.del-ping-pong {
-  width: 80px;
-  height: 102px;
-  position: absolute;
-  top: 5.7em;
-  left: 1em;
-}
-
-/*checkout footer desgin start here*/
-div.footer-check footer {
-  width: 100%;
-  height: 134px;
-  background-color: #4B7D59;
-  position: absolute;
-  top: 1150px;
-}
-div.footer-check footer div.sosical-media {
-  display: inline;
-  position: absolute;
-  left: 28em;
-  top: 3em;
-}
-div.footer-check footer div.sosical-media svg.insta {
-  width: 32px;
-  height: 30px;
-  position: absolute;
-  right: 4em;
-}
-div.footer-check footer div.sosical-media svg.tik-tok {
-  width: 32px;
-  height: 34px;
-  position: absolute;
-  right: 1em;
-}
-div.footer-check footer div.sosical-media svg.face {
-  width: 17px;
-  height: 30px;
-  position: absolute;
-  left: 0, 5em;
-}
-div.footer-check footer .logo-footer {
-  margin: 0;
-  height: 64px;
-  width: 90px;
-  position: absolute;
-  bottom: 4em;
-  left: 2em;
-  top: 1em;
-}
-div.footer-check footer div.footer-col nav {
-  position: absolute;
-  left: 10em;
-  top: 1em;
-}
-div.footer-check footer div.footer-col ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-div.footer-check footer div.footer-col li {
-  margin-top: 0.5em;
-}
-div.footer-check footer div.footer-col a {
-  font-family: nunito, sans-serif;
-  text-decoration: none;
-  color: #fff;
-}
-div.footer-check footer div.footer-col a:hover {
-  color: #75dd53;
-}
 
 /* footer design start here */
+
+div.footer-wrapper  {
+  margin-top: auto;
+}
+
+
 footer {
-  min-height: 10%;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
   width: 100%;
   height: 134px;
   background-color: #4B7D59;
-  position: absolute;
-  top: 2150px;
+  position: relative;
+  top: 200px;
 }
 footer div.sosical-media {
   display: inline;
@@ -937,6 +323,106 @@ footer div.footer-col a {
 }
 footer div.footer-col a:hover {
   color: #75dd53;
+}
+
+@media screen and (max-width: 431px){
+  div.gamehub-container {
+    grid-template-columns: repeat(2,150px);
+    gap: 60px;
+   left: -25px;
+  }
+  .product-image {
+    height: 159px;
+    width: 122px;
+    position: relative;
+    left: 100px;
+    top: 100px;
+  }
+  
+  div.game-info {
+    position: relative;
+    top: 300px;
+    left: -110px;
+  }
+  
+  h3.game-title {
+    font-weight: normal;
+    font-size: 16px;
+    position: relative;
+    top: -50px;
+    left: 0px;
+    width: 100%;
+  }
+  
+  h3.game-price {
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    top: -70px;
+    left: 0px;
+  }
+
+  div.action-button {
+    position: relative;
+    top: 105px;
+    left: 100px;
+    width: 122px;
+    height: 35px;
+  }
+  
+  div.detail-button {
+    position: relative;
+    left: -110px;
+    top: 145px;
+    width: 122px;
+    height: 35px;
+  }
+
+
+
+  header .shoppingcart {
+    display: flex;
+    width: 2em;
+    height: 2em;
+    position: absolute;
+    left: 250px;
+    bottom: 1.5em;
+  }
+
+  label.nav-toggle-lable {
+    
+    left: 200px;
+  }
+
+
+
+footer div.sosical-media svg.insta {
+ 
+  right: 190px;
+}
+footer div.sosical-media svg.tik-tok {
+  width: 32px;
+  height: 34px;
+  position: absolute;
+  right: 150px;
+}
+footer div.sosical-media svg.face {
+  width: 17px;
+  height: 30px;
+  position: absolute;
+  left: -140px;
+}
+
+footer.logo-footer {
+  left: 10px;
+}
+
+
+footer {
+  top: 170px;
+  position: relative;
+}
+ 
 }
 
 @media only screen and (min-width: 700px) {
@@ -996,83 +482,7 @@ footer div.footer-col a:hover {
   div.checkout-container a h5:hover {
     background-color: #11BF42;
   }
-  .product-container div.action-button-1 a h3:hover {
-    background-color: #11BF42;
-  }
-  .product-container div.action-button-2 a h3:hover {
-    background-color: #4FBBE1;
-  }
-  .product-container-2 div.action-button-1 a h3:hover {
-    background-color: #11BF42;
-  }
-  .product-container-2 div.action-button-2 a h3:hover {
-    background-color: #4FBBE1;
-  }
-  .product-container-3 {
-    position: absolute;
-    left: 30em;
-    top: 0em;
-  }
-  .product-container-3 div.action-button-1 a h3:hover {
-    background-color: #11BF42;
-  }
-  .product-container-3 div.action-button-2 a h3:hover {
-    background-color: #4FBBE1;
-  }
-  .product-container-4 {
-    position: absolute;
-    left: 0em;
-  }
-  .product-container-4 div.action-button-1 a h3:hover {
-    background-color: #11BF42;
-  }
-  .product-container-4 div.action-button-2 a h3:hover {
-    background-color: #4FBBE1;
-  }
-  .product-container-5 {
-    position: absolute;
-    top: 20em;
-    left: 15em;
-  }
-  .product-container-5 div.action-button-1 a h3:hover {
-    background-color: #11BF42;
-  }
-  .product-container-5 div.action-button-2 a h3:hover {
-    background-color: #4FBBE1;
-  }
-  .product-container-6 {
-    position: absolute;
-    top: 20em;
-    left: 30em;
-  }
-  .product-container-6 div.action-button-1 a h3:hover {
-    background-color: #11BF42;
-  }
-  .product-container-6 div.action-button-2 a h3:hover {
-    background-color: #4FBBE1;
-  }
-  .product-container-7 {
-    position: absolute;
-    top: 40em;
-    left: 0em;
-  }
-  .product-container-7 div.action-button-1 a h3:hover {
-    background-color: #11BF42;
-  }
-  .product-container-7 div.action-button-2 a h3:hover {
-    background-color: #4FBBE1;
-  }
-  .product-container-8 {
-    position: absolute;
-    top: 40em;
-    left: 15em;
-  }
-  .product-container-8 div.action-button-1 a h3:hover {
-    background-color: #11BF42;
-  }
-  .product-container-8 div.action-button-2 a h3:hover {
-    background-color: #4FBBE1;
-  }
+ 
   footer div.sosical-media {
     display: inline;
     position: absolute;
@@ -1096,7 +506,7 @@ footer div.footer-col a:hover {
 }
 @media screen and (min-width: 800px) {
   
-  .gamehub-container {
+  div.gamehub-container {
     display:grid;
     grid-template-columns: repeat(3,200px);
     gap: 70px;
@@ -1104,23 +514,27 @@ footer div.footer-col a:hover {
     top: 10px;
   }
 
-  .game-info {
+  div.game-info {
     position: relative;
     top: 300px;
     left: -180px;
   }
   
-  .game-title {
+  h3.game-title {
     font-weight: normal;
     font-size: 18px;
     position: relative;
     top: -10px;
     left: 7px;
-    width: 250%;
+    width: 50%;
     
   }
+
+  h3.game-price {
+    left: 5px;
+  }
   
-  .action-button {
+  div.action-button {
     position: relative;
     top: 370px;
     left: -450px;
@@ -1131,7 +545,7 @@ footer div.footer-col a:hover {
     z-index: 1;
   }
 
-  .detail-button  {
+  div.detail-button  {
     position: relative;
     top: 140px;
     left: 90px;
@@ -1241,7 +655,7 @@ footer div.footer-col a:hover {
 }
 @media screen and (min-width: 900px) {
   
-  .gamehub-container {
+  div.gamehub-container {
     display:grid;
     grid-template-columns: repeat(3,200px);
     gap: 70px;
@@ -1249,23 +663,28 @@ footer div.footer-col a:hover {
     top: 10px;
   }
 
-  .game-info {
+  div.game-info {
     position: relative;
     top: 300px;
     left: -180px;
   }
   
-  .game-title {
+  h3.game-title {
     font-weight: normal;
     font-size: 18px;
     position: relative;
     top: -10px;
     left: 7px;
-    width: 250%;
-    
+    width: 50%;
   }
+
+  h3.game-price {
+    left: 5px;
+  }
+
+
   
-  .action-button {
+  div.action-button {
     position: relative;
     top: 370px;
     left: -450px;
@@ -1276,7 +695,7 @@ footer div.footer-col a:hover {
     z-index: 1;
   }
 
-  .detail-button  {
+  div.detail-button  {
     position: relative;
     top: 140px;
     left: 90px;
@@ -1297,7 +716,7 @@ footer div.footer-col a:hover {
   header {
     display: grid;
     grid-template-columns: 5fr auto minmax(900px, 3fr) 3fr;
-    width: 1440px;
+    width: 100%;
     height: 97px;
   }
   header .logo {
@@ -1425,32 +844,36 @@ footer div.footer-col a:hover {
 }
 @media screen and (min-width: 930px) {
   
-  .gamehub-container {
+  div.gamehub-container {
     display:grid;
     grid-template-columns: repeat(3,200px);
     gap: 70px;
-    position: relative;
-    top: 10px;
-    left: 10px;
+    top: -20px;
+    left: 0px;
   }
 
-  .game-info {
+  div.game-info {
     position: relative;
     top: 300px;
     left: -180px;
+    
   }
   
-  .game-title {
+  h3.game-title {
     font-weight: normal;
     font-size: 18px;
     position: relative;
     top: -10px;
     left: 7px;
-    width: 250%;
+    width: 50%;
     
   }
+
+  h3.game-price {
+    left: 5px;
+  }
   
-  .action-button {
+  div.action-button {
     position: relative;
     top: 370px;
     left: -450px;
@@ -1461,7 +884,7 @@ footer div.footer-col a:hover {
     z-index: 1;
   }
 
-  .detail-button  {
+  div.detail-button  {
     position: relative;
     top: 140px;
     left: 90px;
@@ -1483,7 +906,7 @@ footer div.footer-col a:hover {
   header {
     display: grid;
     grid-template-columns: 5fr auto minmax(900px, 3fr) 3fr;
-    width: 1440px;
+    width: 100%;
     height: 97px;
   }
   header .logo {
@@ -1510,7 +933,7 @@ footer div.footer-col a:hover {
     margin-top: 0;
     margin-right: 2em;
     position: relative;
-    right: 32em;
+    right: 15em;
   }
   header nav ul {
     display: flex;
@@ -1523,35 +946,35 @@ footer div.footer-col a:hover {
   }
 
   footer {
-    top: 1650px;
+    top: 250px;
+   
   }
 }
 @media screen and (min-width: 1030px) {
-  .gamehub-container {
-    display:grid;
+  div.gamehub-container {
     grid-template-columns: repeat(4,100px);
     gap: 160px;
-    position: relative;
-    top: 20px;
+    top: 0px;
+    left: -20px;
   }
 
-  .game-info {
+  div.game-info {
     position: relative;
     top: 300px;
-    left: -170px;
+    left: -80px;
   }
   
-  .game-title {
+  h3.game-title {
     font-weight: normal;
     font-size: 18px;
     position: relative;
     top: -10px;
-    left: 7px;
-    width: 250%;
+    left: -80px;
+    width: 100%;
     
   }
   
-  .action-button {
+  div.action-button {
     position: relative;
     top: 370px;
     left: -430px;
@@ -1562,7 +985,7 @@ footer div.footer-col a:hover {
     z-index: 1;
   }
 
-  .detail-button  {
+  div.detail-button  {
     position: relative;
     top: 410px;
     left: -690px;
@@ -1583,7 +1006,7 @@ footer div.footer-col a:hover {
   header {
     display: grid;
     grid-template-columns: 5fr auto minmax(900px, 3fr) 3fr;
-    width: 1440px;
+    width: 100%;
     height: 97px;
   }
   header .logo {
@@ -1610,7 +1033,7 @@ footer div.footer-col a:hover {
     margin-top: 0;
     margin-right: 2em;
     position: relative;
-    right: 32em;
+    right: 15em;
   }
   header nav ul {
     display: flex;
@@ -1621,286 +1044,8 @@ footer div.footer-col a:hover {
     width: 2.5em;
     height: 2.5em;
   }
-  .product-container {
-    position: absolute;
-    left: 0em;
-    top: 0em;
-  }
-  .product-container .black-image {
-    height: 200px;
-    width: 150px;
-  }
-  .product-container .info {
-    position: absolute;
-    top: 2.7em;
-  }
-  .product-container .info .title {
-    position: absolute;
-    left: 1.5em;
-  }
-  .product-container .info .price {
-    position: absolute;
-    left: 8em;
-  }
-  .product-container .action-button-1 {
-    position: absolute;
-    top: 2.5em;
-  }
-  .product-container .action-button-1 h3.add {
-    width: 200px;
-  }
-  .product-container .action-button-2 {
-    position: absolute;
-    top: 2.5em;
-  }
-  .product-container .action-button-2 h3.detail {
-    width: 200px;
-  }
-  .product-container-2 {
-    position: absolute;
-    left: 16em;
-    top: 0em;
-  }
-  .product-container-2 .furious-image {
-    height: 200px;
-    width: 150px;
-  }
-  .product-container-2 .info {
-    position: absolute;
-    top: 2.7em;
-  }
-  .product-container-2 .info .title {
-    position: absolute;
-    left: 1.5em;
-  }
-  .product-container-2 .info .price {
-    position: absolute;
-    left: 8em;
-  }
-  .product-container-2 .action-button-1 {
-    position: absolute;
-    top: 2.5em;
-  }
-  .product-container-2 .action-button-1 h3.add {
-    width: 200px;
-  }
-  .product-container-2 .action-button-2 {
-    position: absolute;
-    top: 2.5em;
-  }
-  .product-container-2 .action-button-2 h3.detail {
-    width: 200px;
-  }
-  .product-container-3 {
-    position: absolute;
-    left: 32em;
-    top: 0em;
-  }
-  .product-container-3 .ping-pong-image {
-    height: 200px;
-    width: 150px;
-  }
-  .product-container-3 .info {
-    position: absolute;
-    top: 2.7em;
-  }
-  .product-container-3 .info .title {
-    position: absolute;
-    left: 1.5em;
-  }
-  .product-container-3 .info .price {
-    position: absolute;
-    left: 8em;
-  }
-  .product-container-3 .action-button-1 {
-    position: absolute;
-    top: 2.5em;
-  }
-  .product-container-3 .action-button-1 h3.add {
-    width: 200px;
-  }
-  .product-container-3 .action-button-2 {
-    position: absolute;
-    top: 2.5em;
-  }
-  .product-container-3 .action-button-2 h3.detail {
-    width: 200px;
-  }
-  .product-container-4 {
-    position: absolute;
-    left: 48em;
-    top: 0em;
-  }
-  .product-container-4 .assassin-image {
-    height: 200px;
-    width: 150px;
-  }
-  .product-container-4 .info {
-    position: absolute;
-    top: 2.7em;
-  }
-  .product-container-4 .info .title {
-    position: absolute;
-    left: 1.5em;
-  }
-  .product-container-4 .info .price {
-    position: absolute;
-    left: 8em;
-  }
-  .product-container-4 .action-button-1 {
-    position: absolute;
-    top: 2.5em;
-  }
-  .product-container-4 .action-button-1 h3.add {
-    width: 200px;
-  }
-  .product-container-4 .action-button-2 {
-    position: absolute;
-    top: 2.5em;
-  }
-  .product-container-4 .action-button-2 h3.detail {
-    width: 200px;
-  }
-  .product-container-5 {
-    position: absolute;
-    left: 0em;
-    top: 23em;
-  }
-  .product-container-5 .space-war-image {
-    height: 200px;
-    width: 150px;
-  }
-  .product-container-5 .info {
-    position: absolute;
-    top: 2.7em;
-  }
-  .product-container-5 .info .title {
-    position: absolute;
-    left: 1.5em;
-  }
-  .product-container-5 .info .price {
-    position: absolute;
-    left: 8em;
-  }
-  .product-container-5 .action-button-1 {
-    position: absolute;
-    top: 2.5em;
-  }
-  .product-container-5 .action-button-1 h3.add {
-    width: 200px;
-  }
-  .product-container-5 .action-button-2 {
-    position: absolute;
-    top: 2.5em;
-  }
-  .product-container-5 .action-button-2 h3.detail {
-    width: 200px;
-  }
-  .product-container-6 {
-    position: absolute;
-    left: 16em;
-    top: 23em;
-  }
-  .product-container-6 .racing-image {
-    height: 200px;
-    width: 150px;
-  }
-  .product-container-6 .info {
-    position: absolute;
-    top: 2.7em;
-  }
-  .product-container-6 .info .title {
-    position: absolute;
-    left: 1.5em;
-  }
-  .product-container-6 .info .price {
-    position: absolute;
-    left: 8em;
-  }
-  .product-container-6 .action-button-1 {
-    position: absolute;
-    top: 2.5em;
-  }
-  .product-container-6 .action-button-1 h3.add {
-    width: 200px;
-  }
-  .product-container-6 .action-button-2 {
-    position: absolute;
-    top: 2.5em;
-  }
-  .product-container-6 .action-button-2 h3.detail {
-    width: 200px;
-  }
-  .product-container-7 {
-    position: absolute;
-    left: 32em;
-    top: 23em;
-  }
-  .product-container-7 .boxer-image {
-    height: 200px;
-    width: 150px;
-  }
-  .product-container-7 .info {
-    position: absolute;
-    top: 2.7em;
-  }
-  .product-container-7 .info .title {
-    position: absolute;
-    left: 1.5em;
-  }
-  .product-container-7 .info .price {
-    position: absolute;
-    left: 8em;
-  }
-  .product-container-7 .action-button-1 {
-    position: absolute;
-    top: 2.5em;
-  }
-  .product-container-7 .action-button-1 h3.add {
-    width: 200px;
-  }
-  .product-container-7 .action-button-2 {
-    position: absolute;
-    top: 2.5em;
-  }
-  .product-container-7 .action-button-2 h3.detail {
-    width: 200px;
-  }
-  .product-container-8 {
-    position: absolute;
-    left: 48em;
-    top: 23em;
-  }
-  .product-container-8 .cyberpunk-image {
-    height: 200px;
-    width: 150px;
-  }
-  .product-container-8 .info {
-    position: absolute;
-    top: 2.7em;
-  }
-  .product-container-8 .info .title {
-    position: absolute;
-    left: 1.5em;
-  }
-  .product-container-8 .info .price {
-    position: absolute;
-    left: 8em;
-  }
-  .product-container-8 .action-button-1 {
-    position: absolute;
-    top: 2.5em;
-  }
-  .product-container-8 .action-button-1 h3.add {
-    width: 200px;
-  }
-  .product-container-8 .action-button-2 {
-    position: absolute;
-    top: 2.5em;
-  }
-  .product-container-8 .action-button-2 h3.detail {
-    width: 200px;
-  }
+  
+  
   div.order-container {
     width: 468px;
     height: 265px;
@@ -2051,7 +1196,7 @@ footer div.footer-col a:hover {
   }
   footer {
     height: 96px;
-    top: 1250px;
+    top: 400px;
   }
   footer div.sosical-media {
     display: inline;
@@ -2201,46 +1346,7 @@ footer div.footer-col a:hover {
     width: 2.5em;
     height: 2.5em;
   }
-  .product-container {
-    position: absolute;
-    left: 2em;
-    top: 0em;
-  }
-  .product-container-2 {
-    position: absolute;
-    left: 20em;
-    top: 0em;
-  }
-  .product-container-3 {
-    position: absolute;
-    left: 38em;
-    top: 0em;
-  }
-  .product-container-4 {
-    position: absolute;
-    left: 57em;
-    top: 0em;
-  }
-  .product-container-5 {
-    position: absolute;
-    left: 2em;
-    top: 23em;
-  }
-  .product-container-6 {
-    position: absolute;
-    left: 20em;
-    top: 23em;
-  }
-  .product-container-7 {
-    position: absolute;
-    left: 38em;
-    top: 23em;
-  }
-  .product-container-8 {
-    position: absolute;
-    left: 57em;
-    top: 23em;
-  }
+  
   div.hero-detail {
     position: absolute;
     top: 12em;
@@ -2319,13 +1425,14 @@ footer div.footer-col a:hover {
 }
 @media screen and (min-width: 1400px) {
  
-  .gamehub-container {
+  div.gamehub-container {
     display:grid;
     grid-template-columns: repeat(4,100px);
     gap: 160px;
     position: relative;
-    top: 20px;
-    left: 20px;
+    top: 0px;
+    left: auto;
+  
   }
 
   .game-info {
@@ -2334,14 +1441,18 @@ footer div.footer-col a:hover {
     left: -170px;
   }
   
-  .game-title {
+  h3.game-title {
     font-weight: normal;
     font-size: 18px;
     position: relative;
     top: -10px;
-    left: 7px;
-    width: 250%;
+    left: -80px;
+    width: 150%;
     
+  }
+
+  h3.game-price {
+    left: -85px;
   }
   
   .action-button {
@@ -2410,42 +1521,14 @@ footer div.footer-col a:hover {
     width: 2.5em;
     height: 2.5em;
   }
-  .product-container-2 {
-    position: absolute;
-    left: 24em;
-    top: 0em;
-  }
-  .product-container-3 {
-    position: absolute;
-    left: 47em;
-    top: 0em;
-  }
-  .product-container-4 {
-    position: absolute;
-    left: 70em;
-    top: 0em;
-  }
-  .product-container-6 {
-    position: absolute;
-    left: 24em;
-    top: 23em;
-  }
-  .product-container-7 {
-    position: absolute;
-    left: 47em;
-    top: 23em;
-  }
-  .product-container-8 {
-    position: absolute;
-    left: 70em;
-    top: 23em;
-  }
+
   div.hero-detail {
     position: absolute;
     top: 12em;
     left: 35em;
   }
   footer {
+    top: 400px;
     min-height: 30%;
     display: grid;
     grid-template-rows: auto 1fr auto;
