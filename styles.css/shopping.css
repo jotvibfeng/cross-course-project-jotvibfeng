@@ -1,10 +1,10 @@
 
 body {
-  margin: 0;
+   margin: 0;
   font-family: roboto, sans-serif;
   font-weight: normal;
   min-height: 100vh;
-  position: flex;
+  display: flex;
   flex-direction: column;
 }
 
@@ -104,13 +104,16 @@ header .shoppingcart {
   bottom: 1.5em;
 }
   
-
+div.footer-detail {
+  margin-top: auto;
+}
 footer {
   width: 100%;
   height: 134px;
   background-color: #4B7D59;
   position: relative;
   top: 2150px;
+
 }
 footer div.sosical-media {
   display: inline;
@@ -1261,20 +1264,32 @@ div.close-producte p {
   font-weight: lighter;
 }
 
-@media screen and (max-width: 431px){
-  div.detail-card {
-    position: relative;
+@media screen and (max-width: 431px) {
+  
+  header .shoppingcart {
+    left: 250px;
+  }
+
+  label.nav-toggle-lable {
     left: 200px;
+  }
+  
+  
+  div.detail-card {
+    position: absolute;
+    top: 10px;
+    left: 20px;
   }
 
   img.detail-image {
-    height: 209px;
-    width: 252px;
+    height: 200px;
+    width: 150px;
   }
 
   svg.rate {
-    top: 100px;
+    top: 370px;
     left: 20px;
+    width: 150px;
   }
  
   h1.detail-title {
@@ -1285,14 +1300,156 @@ div.close-producte p {
   h2.sec-title {
     font-size: 15px;
   }
+
+ h3.add-cart {
+  width: 168px;
+  height: 35px;
+ }
+
+  div.nav-add {
+    height: 75px;
+    width: 318px;
+    top: 450px;
+    left: 0px;
+  }
+
+  div.nav-spec div.close-item h2.spec-head {
+    width: 202px;
+    height: 39px;
+    top: 590px;
+    left: 0em;
+    
+  }
+
+  div.nav-spec div.close-item div.spec-des {
+    top: 690px;
+    left: 4em;
+  }
+
+  div.nav-spec div.close-item div.spec-des h2.spec-genre {
+    width: 100px;
+    height: 29px;
+  }
+  div.nav-spec div.close-item div.spec-des h2.spec-platform {
+    height: 29px;
+    width: 100px;
+  }
+  div.nav-spec div.close-item div.spec-des h2.spec-esrb {
+    height: 29px;
+    width: 100px;
+  }
+  div.nav-spec div.close-item div.spec-des h2.spec-pegi {
+    height: 29px;
+    width: 100px;
+   }
+  div.nav-spec div.close-item div.spec-des h2.spec-multi {
+    height: 29px;
+    width: 100px;
+  }
+  h2.spec-released {
+    width: 100px;
+    height: 29px;
+  }
+
+  .spec-resleased {
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    top: 11.1em;
+    left: -2.1em;
+    border: 2px solid #E4E7D9;
+    width: 100px;
+    height: 29px;
+    
+  
+  }
+
+
+  div.nav-spec div.close-item div.spec-info {
+    position: relative;
+    top: 455px;
+    left: 9.4em;
+  }
+
+ h1.spec-title {
+  top: 550px;
+  left: 20px;
+   
+ }
+
+ div.nav-spec div.close-item div.spec-info h2.spec-sport {
+  width: 100px;
+  height: 29px;
+}
+div.nav-spec div.close-item div.spec-info h2.spec-play {
+  width: 100px;
+  height: 29px;
+}
+div.nav-spec div.close-item div.spec-info h2.spec-for {
+  width: 100px;
+  height: 29px;
+}
+div.nav-spec div.close-item div.spec-info h2.spec-age {
+  width: 100px;
+  height: 29px;
+}
+div.nav-spec div.close-item div.spec-info h2.spec-num {
+  width: 100px;
+  height: 29px;
+}
+ 
+ div.nav-spec div.close-item div.spec-des {
+    left: 2em;
+  }
+
+  div.close-info {
+    position: relative;
+    top: 700px;
+    left: -5%;
+  }
+
+  div.close-info h1.close-producte-title {
+    font-size: 24px;
+    position: relative;
+    top: 0.5em;
+    left: 0.7em;
+  }
+
+  div.close-producte h1.close-game-title {
+    font-size: 20px;
+    position: relative;
+    left: -1em;
+    top: 0.1em;
+  }
+  div.close-producte p {
+    position: relative;
+    top: -0.5em;
+    left: -1.5em;
+    width: 50%;
+    font-size: 15px;
+    
+  }
+
+
+  footer div.sosical-media svg.insta {
+   left: -175px;
+  }
+  footer div.sosical-media svg.tik-tok {
+    width: 32px;
+    height: 34px;
+    left: -135px;
+  }
+  footer div.sosical-media svg.face {
+    width: 17px;
+    height: 30px;
+    left: -200px;
+  }
+  
+  footer.logo-footer {
+    left: 10px;
+  }
  
 }
-
- 
-
-
-  
-
 
 @media screen and (min-width: 700px) {
   label.nav-toggle-lable {

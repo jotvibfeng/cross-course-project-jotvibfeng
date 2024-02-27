@@ -329,7 +329,7 @@ footer div.footer-col a:hover {
   div.gamehub-container {
     grid-template-columns: repeat(2,150px);
     gap: 60px;
-   left: -25px;
+   left: -40px;
   }
   .product-image {
     height: 159px;
