@@ -1,9 +1,9 @@
 
 body {
-   margin: 0;
+  margin: 0;
   font-family: roboto, sans-serif;
   font-weight: normal;
-  min-height: 100vh;
+  min-height: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -183,64 +183,75 @@ body.body-background {
   background-color: #E2E2E2;
 }
 
-  div.title-shopping {
+img.order-image {
+  height: 150px;
+  width: 100px;
+  position: relative;
+  left: .5em;
+  top: 2em;
+
+}
+
+  div.cart-container {
     position: absolute;
-    top: 5em;
-    left: 8em;
+    top: 3em;
+    left: 20px;
+    width: 70%;
+    font-size: 15px;
   }
   
-  div.title-order {
-    position: absolute;
-    top: 10em;
-    left: 3em;
-    font-weight: bolder;
-  }
+
   
   div.order-container {
     position: absolute;
-    left: 2.5em;
-    top: 13em;
+    left: 0em;
+    top: 8em;
     background-color: #fff;
-    width: 400px;
-    height: 160px;
+    width: 382px;
+    height: 206px;
   }
-  div.order-container img.ping-pong-order {
-    height: 120px;
-    width: 100px;
-    position: absolute;
-    left: 1em;
-    top: 1em;
-  }
+ 
   div.order-container h4.game-title {
     position: absolute;
-    top: -0.2em;
+    top: 0.5em;
+    left: 7.5em;
+    font-weight: bolder;
+    font-size: 16px;
   }
   div.order-container h6.console-order {
-    position: relative;
-    top: 1.3em;
+    position: absolute;
+    top: 1em;
+    left: 7.5em;
+    font-size: 16px;
     font-weight: normal;
   }
   div.order-container h6.del-time {
-    position: relative;
-    top: -0.9em;
+    position: absolute;
+    top: 2.5em;
+    left: 7.5em;
+    font-size: 16px;
     font-weight: normal;
   }
   div.order-container h5.order-price {
     position: absolute;
-    left: 11em;
-    top: 7em;
+    left: 16em;
+    top: 6.3em;
+    font-size: 18px;
   }
   div.order-container svg.bin {
     position: absolute;
-    top: 1em;
-    left: 10em;
+    top: .5em;
+    left: 22em;
     width: 41px;
     height: 38px;
   }
   div.order-container input.number {
     position: absolute;
-    top: 8.5em;
-    width: 80px;
+    top: 10.5em;
+    left: 8.9em;
+    width: 146px;
+    height: 20px;
+    border-radius: 10px;
   }
   div.order-container div.order-dis {
     position: absolute;
@@ -248,48 +259,55 @@ body.body-background {
   }
   
   div.checkout-container {
-    position: absolute;
-    top: 27em;
-    left: 2.5em;
+    position: relative;
+    top: 5em;
+    left: 0em;
     background-color: #fff;
-    width: 250px;
-    height: 150px;
+    width: 382px;
+    height: 180px;
   }
   div.checkout-container h6.item-cart {
-    position: absolute;
+    position: relative;
+    font-size: 16px;
+    top: 1em;
     left: 1em;
   }
   div.checkout-container h6.price-item {
-    position: absolute;
+    position: relative;
+    font-size: 16px;
     left: 15em;
-    top: 0em;
+    top: -2.3em;
   }
   div.checkout-container h6.price-cost {
     position: absolute;
-    top: 2em;
+    font-size: 16px;
+    top: .9em;
     left: 15.2em;
   }
   div.checkout-container h6.cost-cart {
     position: absolute;
-    top: 2em;
+    font-size: 16px;
+    top: .5em;
     left: 1em;
   }
   div.checkout-container h5.total-price {
     position: absolute;
-    left: 12em;
-    top: 4em;
+    font-size: 16px;
+    left: 15em;
+    top: 3.5em;
   }
   div.checkout-container h5.total {
     position: absolute;
-    top: 4em;
+    font-size: 16px;
+    top: 3.5em;
     left: 1em;
   }
   div.checkout-container h5.check-price {
     position: absolute;
-    top: 7em;
-    left: 2em;
-    width: 150px;
-    height: 22px;
+    top: -1em;
+    left: 1.5em;
+    width: 250px;
+    height: 35px;
     text-align: center;
     background-color: #4B7D59;
     font-family: nunito, sans-serif;
@@ -297,6 +315,7 @@ body.body-background {
   }
   div.checkout-container a.hero-checkout {
     color: #fff;
+    font-size: 25px;
     position: absolute;
   }
 
@@ -1265,6 +1284,8 @@ div.close-producte p {
 }
 
 @media screen and (max-width: 431px) {
+
+  
   
   header .shoppingcart {
     left: 250px;
@@ -1274,7 +1295,7 @@ div.close-producte p {
     left: 200px;
   }
   
-  
+  /*detail page*/
   div.detail-card {
     position: absolute;
     top: 10px;
@@ -1427,7 +1448,203 @@ div.nav-spec div.close-item div.spec-info h2.spec-num {
     left: -1.5em;
     width: 50%;
     font-size: 15px;
-    
+  }
+
+  /*payment complett*/
+
+  footer.footer-complett { 
+    top: 300px;
+  }
+  div.hero-successful h1.succes-title {
+    position: absolute;
+    top: 5.5em;
+    left: 2.7em;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  div.hero-successful svg.checkmark {
+    width: 66px;
+    height: 66px;
+    position: absolute;
+    top: 12em;
+    left: 10em;
+  }
+  div.hero-successful p.succes-text {
+    width: 70%;
+    text-align: center;
+    line-height: 1.8em;
+    position: absolute;
+    top: 16em;
+    left: 2em;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  div.hero-rec {
+    position: absolute;
+    top: 20em;
+    left: -1em;
+  }
+  div.hero-rec h1.rec-title {
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    top: 3em;
+    left: 3em;
+    width: 300px;
+  }
+  div.hero-rec h3.rec-detail {
+    font-family: nunito, sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    background-color: #1E7B9C;
+    border-radius: 4px;
+    position: absolute;
+    top: 12.7em;
+    left: 1em;
+    width: 120px;
+    height: 35px;
+    text-align: center;
+    color: #fff;
+  }
+  div.hero-rec h3.rec-detail2 {
+    font-family: nunito, sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    background-color: #1E7B9C;
+    border-radius: 4px;
+    position: absolute;
+    top: 12.7em;
+    left: 7.6em;
+    width: 120px;
+    height: 35px;
+    text-align: center;
+    color: #fff;
+  }
+  div.hero-rec h3.rec-detail3 {
+    font-family: nunito, sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    background-color: #1E7B9C;
+    border-radius: 4px;
+    position: absolute;
+    top: 12.7em;
+    left: 14em;
+    width: 120px;
+    height: 35px;
+    text-align: center;
+    color: #fff;
+  }
+  div.hero-rec h2.rec-game {
+    position: absolute;
+    top: 20em;
+    left: 1.7em;
+    font-size: 14px;
+    font-weight: normal;
+  }
+  div.hero-rec h2.rec-game2 {
+    position: absolute;
+    top: 20em;
+    left: 13em;
+    width: 200px;
+    font-size: 14px;
+    font-weight: normal;
+  }
+  div.hero-rec h2.rec-game3 {
+    position: absolute;
+    top: 20em;
+    left: 24.3em;
+    font-size: 14px;
+    font-weight: normal;
+  }
+  div.hero-rec h3.rec-console {
+    position: absolute;
+    top: 30em;
+    left: 2.4em;
+    font-size: 10px;
+    font-weight: lighter;
+  }
+  div.hero-rec h3.rec-console2 {
+    position: absolute;
+    top: 30em;
+    left: 18.2em;
+    font-size: 10px;
+    font-weight: normal;
+  }
+  div.hero-rec h3.rec-console3 {
+    position: absolute;
+    top: 30em;
+    left: 34em;
+    font-size: 10px;
+    font-weight: normal;
+  }
+  div.hero-rec h3.rec-price {
+    position: absolute;
+    top: 17.2em;
+    left: 5.5em;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  div.hero-rec h3.rec-price2 {
+    position: absolute;
+    top: 17.2em;
+    left: 15.9em;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  div.hero-rec h3.rec-price3 {
+    position: absolute;
+    top: 17.2em;
+    left: 24.5em;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  div.hero-rec img.rec-images {
+    height: 150px;
+    width: 100px;
+    position: absolute;
+    top: 8em;
+    left: 1.5em;
+  }
+  div.hero-rec img.rec-images2 {
+    height: 150px;
+    width: 100px;
+    position: absolute;
+    top: 8em;
+    left: 11.5em;
+  }
+  div.hero-rec img.rec-images3 {
+    height: 150px;
+    width: 100px;;
+    position: absolute;
+    top: 8em;
+    left: 21.3em;
+  }
+
+  /*cart page*/
+
+  div.cart-container {
+   margin: 0%;
+  }
+
+  div.order-container {
+    width: 382px;
+    height: 206px;
+    left: -20px;
+  }
+
+  img.order-image {
+    width: 80px;
+    height: 102px;
+  }
+
+  div.order-container h4.game-title {
+    font-size: 16px;
+  }
+
+  div.checkout-container {
+    width: 382px;
+    height: 175px;
   }
 
 
@@ -1857,9 +2074,139 @@ div.nav-spec div.close-item div.spec-info h2.spec-num {
     
   }
 
+  div.order-container {
+    position: absolute;
+    left: 0em;
+    top: 10em;
+    background-color: #fff;
+    width: 668px;
+    height: 265px;
+  }
+
+  img.order-image {
+    height: 177px;
+    width: 131px;
+    position: relative;
+    left: 1.5em;
+    top: 2em;
+  
+  }
+  
+   
+    div.order-container h4.game-title {
+      position: absolute;
+      top: 0em;
+      left: 7.5em;
+      font-weight: bolder;
+      font-size: 24px;
+    }
+    div.order-container h6.console-order {
+      position: absolute;
+      top: 1em;
+      left: 9em;
+      font-size: 20px;
+      font-weight: normal;
+    }
+    div.order-container h6.del-time {
+      position: absolute;
+      top: 2em;
+      left: 8em;
+      font-size: 22px;
+      font-weight: normal;
+    }
+    div.order-container h5.order-price {
+      position: absolute;
+      left: 25em;
+      top: 5.5em;
+      font-size: 20px;
+    }
+    div.order-container svg.bin {
+      position: absolute;
+      top: .5em;
+      left: 35em;
+      width: 41px;
+      height: 38px;
+    }
+    div.order-container input.number {
+      position: absolute;
+      top: 10.5em;
+      left: 13em;
+      width: 135px;
+      height: 25px;
+      border-radius: 10px;
+    }
+    div.order-container div.order-dis {
+      position: absolute;
+      left: 9em;
+    }
+    
+    div.checkout-container {
+      position: relative;
+      top: -15em;
+      left: 47em;
+      background-color: #fff;
+      width: 392px;
+      height: 265px;
+    }
+    div.checkout-container h6.item-cart {
+      position: relative;
+      font-size: 20px;
+      font-weight: normal;
+      top: 2em;
+      left: 1em;
+    }
+    div.checkout-container h6.price-item {
+      position: relative;
+      font-size: 20px;
+      font-weight: normal;
+      left: 15em;
+      top: -1.5em;
+    }
+    div.checkout-container h6.price-cost {
+      position: absolute;
+      font-size: 20px;
+      font-weight: normal;
+      top: 1.5em;
+      left: 15.2em;
+    }
+    div.checkout-container h6.cost-cart {
+      position: absolute;
+      font-size: 24px;
+      top: 3em;
+      left: 1em;
+    }
+    div.checkout-container h5.total-price {
+      position: absolute;
+      font-size: 24px;
+      left: 12em;
+      top: 3.7em;
+    }
+    div.checkout-container h5.total {
+      position: absolute;
+      font-size: 20px;
+      font-weight: normal;
+      top: 2em;
+      left: 1em;
+    }
+    div.checkout-container h5.check-price {
+      position: absolute;
+      top: -1em;
+      left: 1em;
+      width: 250px;
+      height: 35px;
+    }
+    div.checkout-container a.hero-checkout {
+      color: #fff;
+      font-size: 25px;
+      position: absolute;
+      top: 8em;
+    }
+  
+
   header {
     display: grid;
     grid-template-columns: 5fr auto minmax(900px, 3fr) 3fr;
+    width: 100%;
     height: 97px;
   }
   header .logo {

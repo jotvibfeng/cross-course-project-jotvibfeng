@@ -4,7 +4,6 @@ async function getGamehub() {
   try {
     const response = await fetch(url);
     const gamehub = await response.json();
-    console.log(response);
 
     const gamehubContainer = document.querySelector("#gamehub-container");
     const loadingContainer = document.querySelector("#loading-container");
