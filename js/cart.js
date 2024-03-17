@@ -49,7 +49,7 @@ async function getGamehub() {
                                    <h6 class="price-cost">0$</h6>
                                    <h5 class="total">Total Amount</h5>
                                    <h5 class="total-price">${cart.price}$</h5>
-                                   <a href="checkout.html" class="hero-checkout"
+                                   <a href="checkout.html?id=${cart.id}" class="hero-checkout"
                                      ><h5 class="check-price">Check out</h5>
                                      </a>
                                  </div>

@@ -380,13 +380,16 @@ div.hero-option label.radio-button1 div.radio__radio1 {
   box-sizing: border-box;
   padding: 2px;
   position: absolute;
-  left: 0.1em;
+  top: 0em;
+  left: 0em;
   color: #fff;
 }
 div.hero-option label.radio-button1 div.radio__radio1::after {
   content: "";
   width: 100%;
   height: 100%;
+  position: relative;
+  top: -1.2em;
   display: block;
   background-color: #11BF42;
   border-radius: 50%;
@@ -420,6 +423,9 @@ div.hero-option label.radio-button2 div.radio__radio2::after {
   content: "";
   width: 100%;
   height: 100%;
+  position: relative;
+  top: -1.2em;
+  left: 0em;
   display: block;
   background-color: #11BF42;
   border-radius: 50%;
@@ -453,6 +459,8 @@ div.hero-option label.radio-button3 div.radio__radio3::after {
   content: "";
   width: 100%;
   height: 100%;
+  position: relative;
+  top: -1.2em;
   display: block;
   background-color: #11BF42;
   border-radius: 50%;
@@ -486,6 +494,8 @@ div.hero-option label.radio-button div.radio__radio::after {
   content: "";
   width: 100%;
   height: 100%;
+  position: relative;
+  top: -1.2em;
   display: block;
   background-color: #11BF42;
   border-radius: 50%;
@@ -578,6 +588,8 @@ div.hero-pay label.radio-button4 div.radio__radio4::after {
   content: "";
   width: 100%;
   height: 100%;
+  position: relative;
+  top: -1.2em;
   display: block;
   background-color: #11BF42;
   border-radius: 50%;
@@ -610,6 +622,8 @@ div.hero-pay label.radio-button5 div.radio__radio5::after {
   content: "";
   width: 100%;
   height: 100%;
+  position: relative;
+  top: -1.2em;
   display: block;
   background-color: #11BF42;
   border-radius: 50%;
@@ -1956,6 +1970,48 @@ div.nav-spec div.close-item div.spec-info h2.spec-num {
 }
 
 @media screen and (min-width: 1400px) {
+
+  div.hero-successful {
+    position: absolute;
+    top: 0px;
+  }
+  div.hero-successful h1.succes-title {
+    position: relative;
+    top: 9.5em;
+    left: 2.7em;
+    font-size: 26px;
+    font-weight: bold;
+  }
+  div.hero-successful svg.checkmark {
+    width: 66px;
+    height: 66px;
+    position: absolute;
+    top: 12em;
+    left: 13em;
+  }
+  div.hero-successful p.succes-text {
+    width: 410px;
+    text-align: center;
+    line-height: 1.8em;
+    position: absolute;
+    top: 18em;
+    left: 2.5em;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  div.hero-detail {
+    position: relative;
+    top: 5em;
+    left: 2em;
+    background-color: #fff;
+    height: 206px;
+    width: 382px;
+  }
+
+  div.hero-rec {
+    left: 250px;
+  }
+  /*detail page*/
   
   .rate {
     width: 209px;
@@ -2032,7 +2088,7 @@ div.nav-spec div.close-item div.spec-info h2.spec-num {
     padding-left: 0.5em;
   }
   
-  
+  /*cart pag*/
 
   div.nav-spec div.close-item div.spec-des {
     position: absolute;
@@ -2326,28 +2382,8 @@ div.nav-spec div.close-item div.spec-info h2.spec-num {
     left: 37em;
     font-size: 20px;
   }
-  div.text-box {
-    position: absolute;
-    top: -3em;
-    left: 35em;
-    font-size: 20px;
-  }
-  div.text-box label.hero-name {
-    position: absolute;
-    top: 0.5em;
-  }
-  div.text-box label.hero-email {
-    position: absolute;
-    top: 4em;
-  }
-  div.text-box label.hero-message {
-    position: absolute;
-    top: 8em;
-  }
-  div.hero-send {
-    position: absolute;
-    top: 47.5em;
-  }
+
+ 
   div.footer-detail footer {
     height: 96px;
     position: absolute;

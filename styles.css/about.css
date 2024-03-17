@@ -306,65 +306,91 @@ h1.title-2 {
   top: 29.5em;
 }
 
-div.text-box {
-  position: absolute;
-  top: 3em;
+.error{
+	color: #af4242;
+	background-color: #fde8ec;
+	padding: 10px;
+	/*visibility: hidden;*/
+	display: none;
 }
-div.text-box label.hero-name {
-  position: absolute;
-  top: 1em;
+.error.display-error{
+	display:  block;
+	margin-bottom: 20px;
+	transform: translateY(-20px);
 }
-div.text-box label.hero-email {
-  position: absolute;
-  top: 5.5em;
+.success{
+	margin-bottom: 30px;
+	color: green;
+	background-color: #d2ffd2;
+	padding: 10px;
+	display: none;
 }
-div.text-box label.hero-message {
-  position: absolute;
-  top: 10em;
-}
-div.text-box input.area-name {
-  position: absolute;
-  top: 3em;
-  width: 20em;
-  height: 2em;
-}
-div.text-box input.area-email {
-  position: absolute;
-  top: 8.2em;
-  height: 2em;
-  width: 20em;
-}
-div.text-box textarea {
-  position: absolute;
-  top: 14em;
-  left: 0;
-  width: 20em;
-}
-div.text-box form {
-  position: absolute;
-  top: 30em;
-  left: 2em;
+.success.display-success{
+	display: block;
 }
 
-div.hero-send {
+div.form-valadation {
   position: absolute;
-  top: 51em;
-  left: 2em;
+  left: 20em;
+ 
 }
-div.hero-send h3.send {
-  font-family: nunito, sans-serif;
-  font-weight: 700;
-  font-size: 20px;
-  width: 127px;
-  height: 30px;
-  text-align: center;
-  background-color: #4B7D59;
+
+form {
+  position: relative;
+  width: 50%;
+  top: 2em; 
+  
+}
+
+label {
+  width: auto; 
+}
+
+input[type="text"] {
+  
+  width: 200px;
+}
+
+p.input-hint {
+  width: 200%;
+}
+
+button.submit {
+  background-color:#4B7D59;
+  height: 35px;
+  width: 123px;
+  font-weight: bold;
+  font-family: roboto, sans-serif;
+  font-size: 18px;
   border-radius: 4px;
-}
-div.hero-send a {
-  text-decoration: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
   color: #fff;
 }
+
+button.submit:hover {
+  background-color: #11BF42;
+}
+
+input {
+  width: 200px;
+  border-radius: 4px;
+  height: 2em;
+  font-size: 18px;
+}
+
+textarea {
+  border-radius: 4px;
+}
+
+
+
+
+footer.footer-wrapper-contact {
+  height: 96px;
+}
+
 
 
 
@@ -373,6 +399,15 @@ div.hero-send a {
   header {
     width: 100%;
     
+  }
+
+  div.form-valadation {
+  width: 0%;
+  }
+
+  form {
+    top: 320px;
+    left:-290px;
   }
 
   div.title {
@@ -423,7 +458,11 @@ div.hero-send a {
 }
 
 @media only screen and (min-width: 700px) {
-  
+
+  div.hero-send {
+    top: 19em;
+    left: 0em;
+  }
   
   
   label.nav-toggle-lable {
@@ -465,6 +504,10 @@ div.hero-send a {
     background: url("vr.jpg");
     background-color: linear-gradient(#FFFBFB);
     opacity: 0.8;
+  }
+
+  p.end-text {
+    top: 10px;
   }
   .title {
     color: #fff;
@@ -524,6 +567,11 @@ div.hero-send a {
 }
 @media screen and (min-width: 800px) {
 
+  div.hero-send {
+    top: 19em;
+    left: 0em;
+  }
+
   div.nav-spec h1.spec-title {
     position: absolute;
     top: 1.5em;
@@ -536,6 +584,12 @@ div.hero-send a {
     -o-object-position: left 65%;
        object-position: left 65%;
   }
+
+form {
+  left: 7em;
+
+}
+
   img.service-man {
     height: 250px;
     -o-object-position: left 40%;
@@ -799,7 +853,7 @@ div.hero-send a {
     margin-top: 0;
     margin-right: 1em;
     position: relative;
-    right: 35em;
+    right: 15em;
   }
   header nav ul {
     display: flex;
@@ -881,6 +935,10 @@ div.hero-send a {
     position: absolute;
     top: 1000px;
   }
+
+  form {
+    left: 7em;
+  }
   
   div.nav-spec {
     position: absolute;
@@ -902,6 +960,11 @@ div.hero-send a {
     position: relative;
     top: 12.5em;
     left: 30em;
+  }
+
+  div.hero-send{
+    top: 19em;
+    left: 0em;
   }
   
   
@@ -938,7 +1001,7 @@ div.hero-send a {
     margin-top: 0;
     margin-right: 1em;
     position: relative;
-    right: 35em;
+    right: 15em;
   }
   header nav ul {
     display: flex;
@@ -994,6 +1057,10 @@ div.hero-send a {
   }
 }
 @media screen and (min-width: 930px) {
+  div.hero-send{
+    top: 19em;
+    left: 0em;
+  }
   
   div.nav-spec {
     position: absolute;
@@ -1067,7 +1134,7 @@ div.hero-send a {
     margin-top: 0;
     margin-right: 2em;
     position: relative;
-    right: 32em;
+    right: 15em;
   }
   header nav ul {
     display: flex;
@@ -1080,6 +1147,11 @@ div.hero-send a {
   }
 }
 @media screen and (min-width: 1030px) {
+
+  div.hero-send{
+    top: 19em;
+    left: 0em;
+  }
 
   div.footer-detail footer {
     height: 96px;
@@ -1113,7 +1185,14 @@ div.hero-send a {
     top: 300px;
     height: 80px;
   }
+
+  form {
+    left: 7em;
+  }
   
+  footer.footer-wrapper-contact {
+    height: 96px;
+  }
   
   label.nav-toggle-lable {
     display: none;
@@ -1148,7 +1227,7 @@ div.hero-send a {
     margin-top: 0;
     margin-right: 2em;
     position: relative;
-    right: 32em;
+    right: 15em;
   }
   header nav ul {
     display: flex;
@@ -1163,6 +1242,12 @@ div.hero-send a {
     height: 250px;
     -o-object-position: left 70%;
        object-position: left 70%;
+  }
+
+  div.footer-wrapper-contact {
+    position: relative;
+    top: -35em;
+    
   }
 
   footer {
@@ -1199,6 +1284,12 @@ div.hero-send a {
   }
 }
 @media screen and (min-width: 1200px) {
+
+  div.footer-wrapper-contact {
+    position: relative;
+    top: -30em;
+    
+  }
   
   div.nav-add {
     top: 300px;
@@ -1224,6 +1315,10 @@ div.hero-send a {
 
   label.nav-toggle-lable {
     display: none;
+  }
+
+  form {
+    left: 26.4em;
   }
   img.vr-man {
     height: 350px;
@@ -1314,8 +1409,9 @@ div.hero-send a {
     top: 8em;
   }
   div.hero-send {
-    position: absolute;
-    top: 47.5em;
+    position: relative;
+    top: 19em;
+    left: 0em;
     width: 123px;
     height: 35px;
   }
@@ -1349,7 +1445,7 @@ div.hero-send a {
     margin-top: 0;
     margin-right: 4em;
     position: relative;
-    right: 22em;
+    right: 15em;
   }
   header nav ul {
     display: flex;
@@ -1389,6 +1485,10 @@ div.hero-send a {
   }
 }
 @media screen and (min-width: 1400px) {
+
+div.hero-successful {
+  left: 200px;
+}
   
   
   header {
@@ -1473,6 +1573,11 @@ div.hero-send a {
     position: absolute;
     top: 2.3em;
   }
+
+form {
+  left: 26.4em;
+}
+
   img.service-man {
     height: 400px;
     -o-object-position: left 50%;
@@ -1532,9 +1637,11 @@ div.hero-send a {
     position: absolute;
     top: 8em;
   }
+
   div.hero-send {
-    position: absolute;
-    top: 47.5em;
+    position: relative;
+    top: 19em;
+    left: 0em;
   }
   div.footer-detail footer {
     height: 96px;

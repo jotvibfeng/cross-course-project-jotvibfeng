@@ -17,15 +17,15 @@ async function getGamehub() {
                                         alt="The cover of ${game.title}"
                                       />
                                      </a>
-                                     <div class="game-info">
+                                     <div class="game-info" >
                                         <h3 class="game-title">${game.title}</h3>
                                         <h3 class="game-price">${game.price}$</h3>
-                                     </div>
                                      <div class="action-button">
-                                        <a href="cart.html">
+                                        <a href="cart.html?id=${game.id}" class="add-to-cart">
                                           <h3 class="add">Add to cart</h3>
                                         </a>
                                      </div>
+                                    </div>
                                     <div class="detail-button">
                                       <a href="detail.html?id=${game.id}">
                                         <h3 class="detail">Detail</h3>

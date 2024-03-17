@@ -362,20 +362,30 @@ footer div.footer-col a:hover {
     left: 0px;
   }
 
-  div.action-button {
-    position: relative;
-    top: 105px;
-    left: 100px;
-    width: 122px;
-    height: 35px;
+  h3.add {
+    top: 5px;
   }
   
-  div.detail-button {
+  div.action-button {
     position: relative;
-    left: -110px;
-    top: 145px;
-    width: 122px;
+    top: -85px;
+    left: 0px;
+    background-color: #4B7D59;
+    width: 130px;
     height: 35px;
+    border-radius: 4px;
+    z-index: 1;
+  }
+
+  div.detail-button  {
+    position: relative;
+    top: 150px;
+    left: 100px;
+    background-color: #1E7B9C;
+    width: 130px;
+    height: 35px;
+    border-radius: 4px;
+    z-index: 1;
   }
 
 
@@ -426,6 +436,32 @@ footer {
 }
 
 @media only screen and (min-width: 700px) {
+
+  h3.add {
+    top: 5px;
+  }
+  
+  div.action-button {
+    position: relative;
+    top: -50px;
+    left: -80px;
+    background-color: #4B7D59;
+    width: 168px;
+    height: 35px;
+    border-radius: 4px;
+    z-index: 1;
+  }
+
+  div.detail-button  {
+    position: relative;
+    top: 140px;
+    left: 100px;
+    background-color: #1E7B9C;
+    width: 168px;
+    height: 35px;
+    border-radius: 4px;
+    z-index: 1;
+  }
   label.nav-toggle-lable {
     display: none;
   }
@@ -509,9 +545,10 @@ footer {
   div.gamehub-container {
     display:grid;
     grid-template-columns: repeat(3,200px);
-    gap: 70px;
+    gap: 140px;
     position: relative;
     top: 10px;
+    left: -45px;
   }
 
   div.game-info {
@@ -524,20 +561,25 @@ footer {
     font-weight: normal;
     font-size: 18px;
     position: relative;
-    top: -10px;
-    left: 7px;
-    width: 50%;
+    top: -17px;
+    left: -60px;
+    width: 100%;
     
   }
 
   h3.game-price {
-    left: 5px;
+    left: -60px;
+    top: -40px;
+  }
+  
+  h3.add {
+    top: 5px;
   }
   
   div.action-button {
     position: relative;
-    top: 370px;
-    left: -450px;
+    top: -60px;
+    left: -80px;
     background-color: #4B7D59;
     width: 168px;
     height: 35px;
@@ -547,14 +589,18 @@ footer {
 
   div.detail-button  {
     position: relative;
-    top: 140px;
-    left: 90px;
+    top: 400px;
+    left: -610px;
     background-color: #1E7B9C;
     width: 168px;
     height: 35px;
     border-radius: 4px;
     z-index: 1;
   }
+
+  
+
+ 
   
   label.nav-toggle-lable {
     display: none;
@@ -562,7 +608,7 @@ footer {
   header {
     display: grid;
     grid-template-columns: 5fr auto minmax(900px, 3fr) 3fr;
-    width: 1440px;
+    width: 100%;
     height: 97px;
   }
   header .logo {
@@ -603,7 +649,7 @@ footer {
   }
   footer {
     height: 96px;
-    top: 1650px;
+    top: 350px;
   }
   footer div.sosical-media {
     display: inline;
@@ -658,9 +704,10 @@ footer {
   div.gamehub-container {
     display:grid;
     grid-template-columns: repeat(3,200px);
-    gap: 70px;
+    gap: 150px;
     position: relative;
     top: 10px;
+    left: -40px;
   }
 
   div.game-info {
@@ -673,21 +720,25 @@ footer {
     font-weight: normal;
     font-size: 18px;
     position: relative;
-    top: -10px;
-    left: 7px;
-    width: 50%;
+    top: -20px;
+    left: -70px;
+    width: 100%;
   }
 
   h3.game-price {
-    left: 5px;
+    left: -70px;
+    top: -40px;
   }
 
-
+  
+  h3.add {
+    top: 5px;
+  }
   
   div.action-button {
     position: relative;
-    top: 370px;
-    left: -450px;
+    top: -60px;
+    left: -80px;
     background-color: #4B7D59;
     width: 168px;
     height: 35px;
@@ -697,14 +748,15 @@ footer {
 
   div.detail-button  {
     position: relative;
-    top: 140px;
-    left: 90px;
+    top: 400px;
+    left: -610px;
     background-color: #1E7B9C;
     width: 168px;
     height: 35px;
     border-radius: 4px;
     z-index: 1;
   }
+  
   
   
   
@@ -743,7 +795,7 @@ footer {
     margin-top: 0;
     margin-right: 1em;
     position: relative;
-    right: 35em;
+    right: 15em;
   }
   header nav ul {
     display: flex;
@@ -764,34 +816,10 @@ footer {
   div.hero-detail a h4:hover {
     background-color: #11BF42;
   }
-  .product-container-4 {
-    position: absolute;
-    left: 44em;
-    top: 0em;
-  }
-  .product-container-5 {
-    position: absolute;
-    left: 0em;
-    top: 20em;
-  }
-  .product-container-6 {
-    position: absolute;
-    left: 15em;
-    top: 20em;
-  }
-  .product-container-7 {
-    position: absolute;
-    left: 30em;
-    top: 20em;
-  }
-  .product-container-8 {
-    position: absolute;
-    left: 44em;
-    top: 20em;
-  }
+
   footer {
     height: 96px;
-    top: 1650px;
+    top: 350px;
   }
   footer div.sosical-media {
     display: inline;
@@ -847,9 +875,9 @@ footer {
   div.gamehub-container {
     display:grid;
     grid-template-columns: repeat(3,200px);
-    gap: 70px;
+    gap: 120px;
     top: -20px;
-    left: 0px;
+    left: -40px;
   }
 
   div.game-info {
@@ -863,20 +891,25 @@ footer {
     font-weight: normal;
     font-size: 18px;
     position: relative;
-    top: -10px;
-    left: 7px;
-    width: 50%;
+    top: -15px;
+    left: -40px;
+    width: 200%;
     
   }
 
   h3.game-price {
-    left: 5px;
+    left: -40px;
+    top: -35px;
+  }
+  
+  h3.add {
+    top: 5px;
   }
   
   div.action-button {
     position: relative;
-    top: 370px;
-    left: -450px;
+    top: -55px;
+    left: -50px;
     background-color: #4B7D59;
     width: 168px;
     height: 35px;
@@ -886,14 +919,15 @@ footer {
 
   div.detail-button  {
     position: relative;
-    top: 140px;
-    left: 90px;
+    top: 385px;
+    left: -550px;
     background-color: #1E7B9C;
     width: 168px;
     height: 35px;
     border-radius: 4px;
     z-index: 1;
   }
+  
   
   
   
@@ -947,6 +981,7 @@ footer {
 
   footer {
     top: 250px;
+    width: 100%;
    
   }
 }
@@ -970,14 +1005,22 @@ footer {
     position: relative;
     top: -10px;
     left: -80px;
-    width: 100%;
+    width: 250%;
     
+  }
+
+  h3.game-price {
+    left: -80px;
+  }
+  
+  h3.add {
+    top: 5px;
   }
   
   div.action-button {
     position: relative;
-    top: 370px;
-    left: -430px;
+    top: -45px;
+    left: -90px;
     background-color: #4B7D59;
     width: 168px;
     height: 35px;
@@ -987,18 +1030,14 @@ footer {
 
   div.detail-button  {
     position: relative;
-    top: 410px;
-    left: -690px;
+    top: 400px;
+    left: -430px;
     background-color: #1E7B9C;
     width: 168px;
     height: 35px;
     border-radius: 4px;
     z-index: 1;
   }
-  
-  
-  
-  
   
   label.nav-toggle-lable {
     display: none;
@@ -1270,20 +1309,28 @@ footer {
     left: -170px;
   }
   
-  .game-title {
+  h3.game-title {
     font-weight: normal;
     font-size: 18px;
     position: relative;
     top: -10px;
-    left: 7px;
+    left: -80px;
     width: 250%;
     
   }
+
+  h3.game-price {
+    left: -80px;
+  }
   
-  .action-button {
+  h3.add {
+    top: 5px;
+  }
+  
+  div.action-button {
     position: relative;
-    top: 370px;
-    left: -430px;
+    top: -45px;
+    left: -90px;
     background-color: #4B7D59;
     width: 168px;
     height: 35px;
@@ -1291,10 +1338,10 @@ footer {
     z-index: 1;
   }
 
-  .detail-button  {
+  div.detail-button  {
     position: relative;
-    top: 410px;
-    left: -690px;
+    top: 400px;
+    left: -430px;
     background-color: #1E7B9C;
     width: 168px;
     height: 35px;
@@ -1308,7 +1355,7 @@ footer {
   header {
     display: grid;
     grid-template-columns: 5fr auto minmax(900px, 3fr) 3fr;
-    width: 1440px;
+    width: 100%;
     height: 97px;
   }
   header .logo {
@@ -1446,19 +1493,23 @@ footer {
     font-size: 18px;
     position: relative;
     top: -10px;
-    left: -80px;
-    width: 150%;
+    left: -82px;
+    width: 250%;
     
   }
 
   h3.game-price {
     left: -85px;
   }
+
+  h3.add {
+    top: 5px;
+  }
   
-  .action-button {
+  div.action-button {
     position: relative;
-    top: 370px;
-    left: -430px;
+    top: -45px;
+    left: -90px;
     background-color: #4B7D59;
     width: 168px;
     height: 35px;
@@ -1466,10 +1517,10 @@ footer {
     z-index: 1;
   }
 
-  .detail-button  {
+  div.detail-button  {
     position: relative;
-    top: 410px;
-    left: -690px;
+    top: 400px;
+    left: -430px;
     background-color: #1E7B9C;
     width: 168px;
     height: 35px;
@@ -1510,7 +1561,7 @@ footer {
     margin-top: 0;
     margin-right: 4em;
     position: relative;
-    right: 22em;
+    right: 20em;
   }
   header nav ul {
     display: flex;
