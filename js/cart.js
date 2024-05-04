@@ -1,4 +1,4 @@
-import { url } from "./const.js";
+import { url } from "./constant/api.js";
 
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
