@@ -1,4 +1,4 @@
-import { BASE_URL } from "../../constants/api.js";
+import { BASE_URL } from "../../constant/api.js";
 
 export async function fetchProduct(id) {
   const url = `${BASE_URL}${id}`;

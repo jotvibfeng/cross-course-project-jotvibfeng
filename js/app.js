@@ -1,10 +1,17 @@
+import { displayProduct } from "./events/products/dispalyProduct.js";
+import { displayProducts } from "./events/products/displayProducts.js";
+
 const { pathname } = location;
 
 console.log(pathname);
 
 switch (pathname) {
+  case "/":
   case "/index.html":
-    console.log("displayProducts");
+    displayProducts();
+    break;
+  case "/product.html":
+    displayProduct();
     break;
 }
 
