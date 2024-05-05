@@ -15,13 +15,13 @@ div.loading-container {
   grid-template-columns: repeat(5,200px);
   position: absolute;
   
-  top: 300px;
+  top: 450px;
   left: 200px;
   gap: 100px;
 }
 
   div a  {
-    font-size: 20px;
+    font-size: 10px;
     text-decoration: none;
 }
 
@@ -29,7 +29,7 @@ div.thumbnails-container {
   display:grid;
   grid-template-columns: repeat(5,200px);
   position: absolute;
-  bottom: 0px;
+  bottom: 250px;
   left: 200px;
   gap: 50px;
   
