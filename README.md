@@ -1,3 +1,6 @@
+coss-course-project
+this is our first major project that we were working on for the first year in school. Are assignment was to use the self-made design we made in the design course and start getting to the basic of HTML and CSS. 
+
 <div class="title-shopping">
         <h1>Shopping Cart</h1>
       </div>
