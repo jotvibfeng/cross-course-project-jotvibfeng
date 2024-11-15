@@ -1,5 +1,8 @@
-coss-course-project
-this is our first major project that we were working on for the first year in school. Are assignment was to use the self-made design we made in the design course and start getting to the basic of HTML and CSS. 
+# coss-course-project
+This is the first major project we worked on for a school assignment. We used a design we made on Figma in a previous course that we used as inspiration. You chose them based on your design like a movie site, a site that sells outdoor clothing, and a site for selling video games which is the one I picked because of my interest in that.
+
+# What is the project purpose 
+The purpose of the project was to make a user-friendly e-commerce site with a product page to purchase a detail page to get more information about the product, an easy-to-navigate menu, and a contact form to submit, an about page with info about the company capable of using HTML and CSS and see if we could replicate our design from Figma in the development process. I also attempted to use CASS a CSS framework but it became a little too difficult to use for me at a time so I went back to using vanilla CSS again. Since this was my first project assignment there was a lot of trouble but I think that is the same case for every Front-end developer`s first project, as you can see in the example under HTML here I definitely could done this differently with the structure of it which I have taken with me further and improved it. But the biggest problem I had in this course was CSS I had so much wired styling that made no sense instead of using width 100% on the background color on my header I used the width I had on the screen I was working on which was a nightmare to do in responsive design on but I found out the problem which a main component in the work field find the problem and solve it.         
 
 <div class="title-shopping">
         <h1>Shopping Cart</h1>
@@ -46,3 +49,14 @@ this is our first major project that we were working on for the first year in sc
           ><h5 class="check-price">Check out</h5></a
         >
       </div>
+      
+# How to run the project
+1. Clone the repo:
+git clone git@github.com/jotvibfeng/cross-course-project-jotvibfeng.git
+2. Install the dependencies:
+npm install
+If you running into an error during installation make sure you have downloaded node_module on your computer.
+you can use this link for how to download node_module: https://nodejs.org/en/learn/getting-started/how-to-install-nodejs
+
+# How to use the site
+The first thing you should do is try to purchase a product and test payment checkout which I think you will see is pretty well made. 
