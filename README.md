@@ -51,12 +51,10 @@ The purpose of the project was to make a user-friendly e-commerce site with a pr
       </div>
       
 # How to run the project
-1. Clone the repo:
-git clone git@github.com/jotvibfeng/cross-course-project-jotvibfeng.git
-2. Install the dependencies:
-npm install
-If you running into an error during installation make sure you have downloaded node_module on your computer.
-you can use this link for how to download node_module: https://nodejs.org/en/learn/getting-started/how-to-install-nodejs
+Clone the repo: git clone git@github.com:jotvibfeng/Project_Exam1.git
+Install the dependencies:npm install
+To run the app, run the following commands: npm run start
+Install the dependencies: npm install If you running into an error during installation make sure you have downloaded node_module on your computer. you can use this link for how to download node_module: https://nodejs.org/en/learn/getting-started/how-to-install-nodejs
 
 # How to use the site
 The first thing you should do is try to purchase a product and test payment checkout which I think you will see is pretty well made. 
