@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Hotjar Tracking Code for gamehub.com -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 3878002, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+    <script src="js/cart.js" type="module"></script>
+    <link rel="stylesheet" href="styles.css/shopping.css" />
+    <title>Gamehub|cart</title>
+  </head>
+  <header>
+    <a href="index.html">
+      <img src="/images/Gamehub-logo.png" class="logo" alt="Game Hub logo"
+    /></a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+    <nav>
+      <ul>
+        <li><a href="index.html">Games</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="index.html">Sell your used games</a></li>
+      </ul>
+    </nav>
+    <label for="nav-toggle" class="nav-toggle-lable">
+      <span>x</span>
+    </label>
+    <svg
+      class="shoppingcart"
+      viewBox="0 0 24 25"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M1.01053 0.375049C0.454737 0.375049 0 0.920673 0 1.58755C0 2.25442 0.454737 2.80004 1.01053 2.80004H3.25288L5.90552 15.5313C6.12985 16.6104 6.93625 17.35 7.86291 17.35H19.4526C20.3641 17.35 21.1382 16.6249 21.3787 15.5689L24 4.01254H7.07368L7.57895 6.43754H21.3787L19.4526 14.925H7.86291L5.21027 2.1938C5.10098 1.67158 4.84878 1.2085 4.49405 0.878733C4.13933 0.548964 3.70262 0.371598 3.25389 0.375049H1.01053ZM18.1895 17.35C16.5272 17.35 15.1579 18.9929 15.1579 20.9875C15.1579 22.9821 16.5272 24.625 18.1895 24.625C19.8518 24.625 21.2211 22.9821 21.2211 20.9875C21.2211 18.9929 19.8518 17.35 18.1895 17.35ZM9.09474 17.35C7.43242 17.35 6.06316 18.9929 6.06316 20.9875C6.06316 22.9821 7.43242 24.625 9.09474 24.625C10.7571 24.625 12.1263 22.9821 12.1263 20.9875C12.1263 18.9929 10.7571 17.35 9.09474 17.35ZM9.09474 19.775C9.66366 19.775 10.1053 20.3061 10.1053 20.9875C10.1053 21.6701 9.66265 22.2 9.09474 22.2C8.52581 22.2 8.08421 21.6689 8.08421 20.9875C8.08421 20.3049 8.52682 19.775 9.09474 19.775ZM18.1895 19.775C18.7584 19.775 19.2 20.3061 19.2 20.9875C19.2 21.6701 18.7574 22.2 18.1895 22.2C17.6205 22.2 17.1789 21.6689 17.1789 20.9875C17.1789 20.3049 17.6216 19.775 18.1895 19.775Z"
+        fill="white"
+      />
+    </svg>
+  </header>
+  <body class="body-background">
+    <main>
+      <div id="cart-container" class="cart-container"></div>
+    </main>
+  </body>
+</html>

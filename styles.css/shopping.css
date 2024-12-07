@@ -1,0 +1,2441 @@
+
+body {
+  margin: 0;
+  font-family: roboto, sans-serif;
+  font-weight: normal;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #4B7D59;
+  text-align: center;
+  position: relative;
+  z-index: 999;
+  width: 100%;
+  height: 80px;
+  
+}
+header .logo {
+  margin: 0;
+  height: 64px;
+  width: 90px;
+  position: absolute;
+  left: 2em;
+  top: 0.2em;
+}
+header .nav-toggle {
+  display: none;
+}
+header .nav-toggle-lable {
+  position: absolute;
+  top: 0;
+  left: 22em;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+header .nav-toggle-lable span {
+  color: #4B7D59;
+}
+header .nav-toggle-lable span,
+header .nav-toggle-lable span::before,
+header .nav-toggle-lable span::after {
+  display: block;
+  background: #fff;
+  height: 2px;
+  width: 2em;
+  position: relative;
+}
+header .nav-toggle-lable span::before,
+header .nav-toggle-lable span::after {
+  content: "";
+  position: absolute;
+}
+header .nav-toggle-lable span::before {
+  bottom: 7px;
+}
+header .nav-toggle-lable span::after {
+  top: 7px;
+}
+header nav {
+  position: absolute;
+  text-align: left;
+  top: 100%;
+  left: 0;
+  background: rgb(255, 253, 253);
+  width: 100%;
+  transform-origin: top;
+  transform: scale(1, 0);
+  transition: transform 400ms ease-in-out;
+}
+header nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+header nav li {
+  margin-top: 1em;
+  margin-left: 2em;
+}
+header nav a {
+  color: black;
+  text-decoration: none;
+  font-size: 18px;
+  opacity: 0;
+  transition: opacity 150ms ease-in-out;
+}
+header nav a:hover {
+  color: #11BF42;
+}
+header .nav-toggle:checked ~ nav {
+  transform: scale(1, 1);
+}
+header .nav-toggle:checked ~ nav a {
+  opacity: 1;
+  transition: opacity 250ms ease-in-out 250ms;
+}
+header .shoppingcart {
+  width: 2em;
+  height: 2em;
+  position: absolute;
+  left: 27em;
+  bottom: 1.5em;
+}
+  
+div.footer-detail {
+  margin-top: auto;
+}
+footer {
+  width: 100%;
+  height: 134px;
+  background-color: #4B7D59;
+  position: relative;
+  top: 2150px;
+
+}
+footer div.sosical-media {
+  display: inline;
+  position: absolute;
+  left: 28em;
+  top: 3em;
+}
+footer div.sosical-media svg.insta {
+  width: 32px;
+  height: 30px;
+  position: absolute;
+  right: 4em;
+}
+footer div.sosical-media svg.tik-tok {
+  width: 32px;
+  height: 34px;
+  position: absolute;
+  right: 1em;
+}
+footer div.sosical-media svg.face {
+  width: 17px;
+  height: 30px;
+  position: absolute;
+  left: 0, 5em;
+}
+footer .logo-footer {
+  margin: 0;
+  height: 64px;
+  width: 90px;
+  position: absolute;
+  bottom: 4em;
+  left: 2em;
+  top: 1em;
+}
+footer div.footer-col nav {
+  position: absolute;
+  left: 10em;
+  top: 1em;
+}
+footer div.footer-col ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+footer div.footer-col li {
+  margin-top: 0.5em;
+}
+footer div.footer-col a {
+  font-family: nunito, sans-serif;
+  text-decoration: none;
+  color: #fff;
+}
+footer div.footer-col a:hover {
+  color: #75dd53;
+}
+  
+  
+  
+  
+  
+  /*For chromium and safari*/
+  input[type=number]::-webkit-inner-spin-button {
+    display: none;
+  }
+  /*The Cart styling started here*/
+body.body-background {
+  background-color: #E2E2E2;
+}
+
+img.order-image {
+  height: 150px;
+  width: 100px;
+  position: relative;
+  left: .5em;
+  top: 2em;
+
+}
+
+  div.cart-container {
+    position: absolute;
+    top: 3em;
+    left: 20px;
+    width: 70%;
+    font-size: 15px;
+  }
+  
+
+  
+  div.order-container {
+    position: absolute;
+    left: 0em;
+    top: 8em;
+    background-color: #fff;
+    width: 382px;
+    height: 206px;
+  }
+ 
+  div.order-container h4.game-title {
+    position: absolute;
+    top: 0.5em;
+    left: 7.5em;
+    font-weight: bolder;
+    font-size: 16px;
+  }
+  div.order-container h6.console-order {
+    position: absolute;
+    top: 1em;
+    left: 7.5em;
+    font-size: 16px;
+    font-weight: normal;
+  }
+  div.order-container h6.del-time {
+    position: absolute;
+    top: 2.5em;
+    left: 7.5em;
+    font-size: 16px;
+    font-weight: normal;
+  }
+  div.order-container h5.order-price {
+    position: absolute;
+    left: 16em;
+    top: 6.3em;
+    font-size: 18px;
+  }
+  div.order-container svg.bin {
+    position: absolute;
+    top: .5em;
+    left: 22em;
+    width: 41px;
+    height: 38px;
+  }
+  div.order-container input.number {
+    position: absolute;
+    top: 10.5em;
+    left: 8.9em;
+    width: 146px;
+    height: 20px;
+    border-radius: 10px;
+  }
+  div.order-container div.order-dis {
+    position: absolute;
+    left: 9em;
+  }
+  
+  div.checkout-container {
+    position: relative;
+    top: 5em;
+    left: 0em;
+    background-color: #fff;
+    width: 382px;
+    height: 180px;
+  }
+  div.checkout-container h6.item-cart {
+    position: relative;
+    font-size: 16px;
+    top: 1em;
+    left: 1em;
+  }
+  div.checkout-container h6.price-item {
+    position: relative;
+    font-size: 16px;
+    left: 15em;
+    top: -2.3em;
+  }
+  div.checkout-container h6.price-cost {
+    position: absolute;
+    font-size: 16px;
+    top: .9em;
+    left: 15.2em;
+  }
+  div.checkout-container h6.cost-cart {
+    position: absolute;
+    font-size: 16px;
+    top: .5em;
+    left: 1em;
+  }
+  div.checkout-container h5.total-price {
+    position: absolute;
+    font-size: 16px;
+    left: 15em;
+    top: 3.5em;
+  }
+  div.checkout-container h5.total {
+    position: absolute;
+    font-size: 16px;
+    top: 3.5em;
+    left: 1em;
+  }
+  div.checkout-container h5.check-price {
+    position: absolute;
+    top: -1em;
+    left: 1.5em;
+    width: 250px;
+    height: 35px;
+    text-align: center;
+    background-color: #4B7D59;
+    font-family: nunito, sans-serif;
+    border-radius: 4px;
+  }
+  div.checkout-container a.hero-checkout {
+    color: #fff;
+    font-size: 25px;
+    position: absolute;
+  }
+
+  /*The Checkout page start here*/
+div.hero-delivery {
+  position: absolute;
+  top: 12em;
+  left: 2em;
+  background-color: #fff;
+  width: 382px;
+  height: 175px;
+}
+div.hero-delivery h1.del-info {
+  font-size: 24px;
+  position: absolute;
+  top: -2.5em;
+}
+div.hero-delivery h4.checkout-del {
+  position: relative;
+  top: 1.5em;
+  left: 0.5em;
+  margin: 0.5em;
+  font-size: 16px;
+  font-weight: 500;
+}
+div.hero-delivery h4.checkout-info {
+  position: relative;
+  top: 0.5em;
+  left: 0.5em;
+  margin: 0.5em;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+div.hero-option {
+  position: absolute;
+  top: 28em;
+  left: 2em;
+  background-color: #fff;
+  width: 382px;
+  height: 175px;
+}
+div.hero-option h1.del-option {
+  position: absolute;
+  top: -2.5em;
+  font-size: 24px;
+}
+div.hero-option label.radio-button1 {
+  position: absolute;
+  left: 10.7em;
+  top: 4em;
+  cursor: pointer;
+}
+div.hero-option label.radio-button1 input.radio-input1 {
+  display: none;
+}
+div.hero-option label.radio-button1 div.radio__radio1 {
+  width: 1.25em;
+  height: 1.25em;
+  border: 2px solid black;
+  border-radius: 50%;
+  box-sizing: border-box;
+  padding: 2px;
+  position: absolute;
+  top: 0em;
+  left: 0em;
+  color: #fff;
+}
+div.hero-option label.radio-button1 div.radio__radio1::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: -1.2em;
+  display: block;
+  background-color: #11BF42;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: transform 0.15s;
+}
+div.hero-option label.radio-button1 input.radio-input1:checked + div.radio__radio1::after {
+  transform: scale(1);
+}
+div.hero-option label.radio-button2 {
+  position: absolute;
+  left: 10.7em;
+  top: 7em;
+  cursor: pointer;
+}
+div.hero-option label.radio-button2 input.radio-input2 {
+  display: none;
+}
+div.hero-option label.radio-button2 div.radio__radio2 {
+  width: 1.25em;
+  height: 1.25em;
+  border: 2px solid black;
+  border-radius: 50%;
+  box-sizing: border-box;
+  padding: 2px;
+  position: absolute;
+  left: 0.1em;
+  color: #fff;
+}
+div.hero-option label.radio-button2 div.radio__radio2::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: -1.2em;
+  left: 0em;
+  display: block;
+  background-color: #11BF42;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: transform 0.15s;
+}
+div.hero-option label.radio-button2 input.radio-input2:checked + div.radio__radio2::after {
+  transform: scale(1);
+}
+div.hero-option label.radio-button3 {
+  position: absolute;
+  left: 10.7em;
+  top: 8.7em;
+  cursor: pointer;
+}
+div.hero-option label.radio-button3 input.radio-input3 {
+  display: none;
+}
+div.hero-option label.radio-button3 div.radio__radio3 {
+  width: 1.25em;
+  height: 1.25em;
+  border: 2px solid black;
+  border-radius: 50%;
+  box-sizing: border-box;
+  padding: 2px;
+  position: absolute;
+  left: 0.1em;
+  color: #fff;
+}
+div.hero-option label.radio-button3 div.radio__radio3::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: -1.2em;
+  display: block;
+  background-color: #11BF42;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: transform 0.15s;
+}
+div.hero-option label.radio-button3 input.radio-input3:checked + div.radio__radio3::after {
+  transform: scale(1);
+}
+div.hero-option label.radio-button {
+  position: absolute;
+  left: 10.7em;
+  top: 2.4em;
+  cursor: pointer;
+}
+div.hero-option label.radio-button input.radio-input {
+  display: none;
+}
+div.hero-option label.radio-button div.radio__radio {
+  width: 1.25em;
+  height: 1.25em;
+  border: 2px solid black;
+  border-radius: 50%;
+  box-sizing: border-box;
+  padding: 2px;
+  position: absolute;
+  left: 0.1em;
+  color: #fff;
+}
+div.hero-option label.radio-button div.radio__radio::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: -1.2em;
+  display: block;
+  background-color: #11BF42;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: transform 0.15s;
+}
+div.hero-option label.radio-button input.radio-input:checked + div.radio__radio::after {
+  transform: scale(1);
+}
+div.hero-option h4.del-date {
+  position: relative;
+  top: 0.5em;
+  left: 0.5em;
+  margin: 0.5em;
+}
+div.hero-option h4.mail-option {
+  position: relative;
+  top: 1.5em;
+  left: 0.5em;
+  margin: 0.5em;
+  font-size: 16px;
+  font-weight: 500;
+}
+div.hero-option svg.ups {
+  width: 24px;
+  height: 25px;
+  position: absolute;
+  left: 11em;
+  top: 0.7em;
+}
+div.hero-option svg.postnord {
+  width: 58px;
+  height: 19px;
+  position: absolute;
+  top: 6em;
+  left: 19.1em;
+}
+div.hero-option svg.bring {
+  width: 58px;
+  height: 19px;
+  position: absolute;
+  top: 7.5em;
+  left: 19em;
+}
+div.hero-option svg.bring-2 {
+  width: 58px;
+  height: 19px;
+  position: absolute;
+  top: 9em;
+  left: 19em;
+}
+
+div.hero-pay {
+  position: absolute;
+  top: 45em;
+  left: 2em;
+  background-color: #fff;
+  width: 382px;
+  height: 94px;
+}
+div.hero-pay h1.del-pay {
+  position: absolute;
+  top: -2.5em;
+  font-size: 24px;
+}
+div.hero-pay h4.pay-option {
+  position: relative;
+  left: 1em;
+}
+div.hero-pay label.radio-button4 {
+  position: absolute;
+  left: 4em;
+  top: 1.5em;
+  cursor: pointer;
+}
+div.hero-pay label.radio-button4 input.radio-input4 {
+  display: none;
+}
+div.hero-pay label.radio-button4 div.radio__radio4 {
+  width: 1.25em;
+  height: 1.25em;
+  border: 2px solid black;
+  border-radius: 50%;
+  box-sizing: border-box;
+  padding: 2px;
+  position: absolute;
+  color: #fff;
+}
+div.hero-pay label.radio-button4 div.radio__radio4::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: -1.2em;
+  display: block;
+  background-color: #11BF42;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: transform 0.15s;
+}
+div.hero-pay label.radio-button4 input.radio-input4:checked + div.radio__radio4::after {
+  transform: scale(1);
+}
+div.hero-pay label.radio-button5 {
+  position: absolute;
+  left: 4em;
+  top: 3.8em;
+  cursor: pointer;
+}
+div.hero-pay label.radio-button5 input.radio-input5 {
+  display: none;
+}
+div.hero-pay label.radio-button5 div.radio__radio5 {
+  width: 1.25em;
+  height: 1.25em;
+  border: 2px solid black;
+  border-radius: 50%;
+  box-sizing: border-box;
+  padding: 2px;
+  position: absolute;
+  color: #fff;
+}
+div.hero-pay label.radio-button5 div.radio__radio5::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: -1.2em;
+  display: block;
+  background-color: #11BF42;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: transform 0.15s;
+}
+div.hero-pay label.radio-button5 input.radio-input5:checked + div.radio__radio5::after {
+  transform: scale(1);
+}
+div.hero-pay svg.vipps {
+  width: 86px;
+  height: 31px;
+  position: absolute;
+  top: 1em;
+  left: 5em;
+}
+div.hero-pay svg.master-card {
+  width: 50px;
+  height: 24px;
+  position: absolute;
+  left: 6em;
+  top: 3.7em;
+  background-color: #E2E2E2;
+  border-radius: 4px;
+}
+div.hero-pay svg.visa {
+  width: 60px;
+  height: 19px;
+  position: absolute;
+  left: 10em;
+  background-color: #E2E2E2;
+  border-radius: 4px;
+}
+
+div.hero-detail {
+  position: absolute;
+  top: 55em;
+  left: 2em;
+  background-color: #fff;
+  height: 206px;
+  width: 382px;
+}
+div.hero-detail h1.del-detail {
+  position: absolute;
+  top: -2.5em;
+  font-size: 24px;
+}
+div.hero-detail h4.del-pay {
+  position: absolute;
+  top: 0em;
+  left: 21em;
+  font-weight: 500;
+}
+div.hero-detail h4.del-pay-1 {
+  position: absolute;
+  top: 2em;
+  left: 19em;
+  font-weight: 500;
+}
+div.hero-detail h4.del-game {
+  position: relative;
+  left: 6em;
+  font-weight: normal;
+  margin: 0.5em;
+  width: 100px;
+}
+div.hero-detail h4.check-pay {
+  width: 50px;
+  position: absolute;
+  left: 8em;
+  top: 3.1em;
+  color: #fff;
+  width: 168px;
+  height: 35px;
+  text-align: center;
+  font-size: 24px;
+  border-radius: 4px;
+  font-family: nunito, sans-serif;
+  background-color: #4B7D59;
+}
+div.hero-detail h4.check-pay a {
+  width: 10px;
+}
+div.hero-detail h4.hero-total {
+  position: relative;
+  top: -0.5em;
+  left: 1em;
+  font-weight: 500;
+}
+div.hero-detail img.del-ping-pong {
+  width: 80px;
+  height: 102px;
+  position: absolute;
+  top: 5.7em;
+  left: 1em;
+}
+
+/*checkout footer desgin start here*/
+div.footer-check footer {
+  width: 100%;
+  height: 134px;
+  background-color: #4B7D59;
+  position: absolute;
+  top: 1150px;
+}
+div.footer-check footer div.sosical-media {
+  display: inline;
+  position: absolute;
+  left: 28em;
+  top: 3em;
+}
+div.footer-check footer div.sosical-media svg.insta {
+  width: 32px;
+  height: 30px;
+  position: absolute;
+  right: 4em;
+}
+div.footer-check footer div.sosical-media svg.tik-tok {
+  width: 32px;
+  height: 34px;
+  position: absolute;
+  right: 1em;
+}
+div.footer-check footer div.sosical-media svg.face {
+  width: 17px;
+  height: 30px;
+  position: absolute;
+  left: 0, 5em;
+}
+div.footer-check footer .logo-footer {
+  margin: 0;
+  height: 64px;
+  width: 90px;
+  position: absolute;
+  bottom: 4em;
+  left: 2em;
+  top: 1em;
+}
+div.footer-check footer div.footer-col nav {
+  position: absolute;
+  left: 10em;
+  top: 1em;
+}
+div.footer-check footer div.footer-col ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+div.footer-check footer div.footer-col li {
+  margin-top: 0.5em;
+}
+div.footer-check footer div.footer-col a {
+  font-family: nunito, sans-serif;
+  text-decoration: none;
+  color: #fff;
+}
+div.footer-check footer div.footer-col a:hover {
+  color: #75dd53;
+}
+
+/*The successful payment page start here*/
+div.hero-successful h1.succes-title {
+  position: absolute;
+  top: 5.5em;
+  left: 2.7em;
+  font-size: 26px;
+  font-weight: bold;
+}
+div.hero-successful svg.checkmark {
+  width: 66px;
+  height: 66px;
+  position: absolute;
+  top: 12em;
+  left: 13em;
+}
+div.hero-successful p.succes-text {
+  width: 410px;
+  text-align: center;
+  line-height: 1.8em;
+  position: absolute;
+  top: 16em;
+  left: 2.5em;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+div.hero-rec {
+  position: absolute;
+  top: 20em;
+}
+div.hero-rec h1.rec-title {
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  top: 3em;
+  left: 7em;
+  width: 300px;
+}
+div.hero-rec h3.rec-detail {
+  font-family: nunito, sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  background-color: #1E7B9C;
+  border-radius: 4px;
+  position: absolute;
+  top: 12.7em;
+  left: 1em;
+  width: 130px;
+  height: 35px;
+  text-align: center;
+  color: #fff;
+}
+div.hero-rec h3.rec-detail2 {
+  font-family: nunito, sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  background-color: #1E7B9C;
+  border-radius: 4px;
+  position: absolute;
+  top: 12.7em;
+  left: 7.6em;
+  width: 130px;
+  height: 35px;
+  text-align: center;
+  color: #fff;
+}
+div.hero-rec h3.rec-detail3 {
+  font-family: nunito, sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  background-color: #1E7B9C;
+  border-radius: 4px;
+  position: absolute;
+  top: 12.7em;
+  left: 14.2em;
+  width: 130px;
+  height: 35px;
+  text-align: center;
+  color: #fff;
+}
+div.hero-rec h2.rec-game {
+  position: absolute;
+  top: 20em;
+  left: 1.7em;
+  font-size: 14px;
+  font-weight: normal;
+}
+div.hero-rec h2.rec-game2 {
+  position: absolute;
+  top: 20em;
+  left: 13em;
+  width: 200px;
+  font-size: 14px;
+  font-weight: normal;
+}
+div.hero-rec h2.rec-game3 {
+  position: absolute;
+  top: 20em;
+  left: 24.3em;
+  font-size: 14px;
+  font-weight: normal;
+}
+div.hero-rec h3.rec-console {
+  position: absolute;
+  top: 30em;
+  left: 2.4em;
+  font-size: 10px;
+  font-weight: lighter;
+}
+div.hero-rec h3.rec-console2 {
+  position: absolute;
+  top: 30em;
+  left: 18.2em;
+  font-size: 10px;
+  font-weight: normal;
+}
+div.hero-rec h3.rec-console3 {
+  position: absolute;
+  top: 30em;
+  left: 34em;
+  font-size: 10px;
+  font-weight: normal;
+}
+div.hero-rec h3.rec-price {
+  position: absolute;
+  top: 17.2em;
+  left: 6.5em;
+  font-weight: bold;
+  font-size: 16px;
+}
+div.hero-rec h3.rec-price2 {
+  position: absolute;
+  top: 17.2em;
+  left: 16.7em;
+  font-weight: bold;
+  font-size: 16px;
+}
+div.hero-rec h3.rec-price3 {
+  position: absolute;
+  top: 17.2em;
+  left: 26.5em;
+  font-weight: bold;
+  font-size: 16px;
+}
+div.hero-rec img.rec-images {
+  height: 159px;
+  width: 130px;
+  position: absolute;
+  top: 8em;
+  left: 1.5em;
+}
+div.hero-rec img.rec-images2 {
+  height: 159px;
+  width: 130px;
+  position: absolute;
+  top: 8em;
+  left: 11.5em;
+}
+div.hero-rec img.rec-images3 {
+  height: 159px;
+  width: 130px;
+  position: absolute;
+  top: 8em;
+  left: 21.3em;
+}
+
+/*The Detail page style start here*/
+
+.detail-card {
+  position: absolute;
+  left: 0px;
+}
+
+.error {
+  position: relative;
+  width: 600px;
+  top: 150px;
+  left: 20px;
+  font-weight: bolder;
+  font-size: 25px;
+  color: red;
+}
+
+.detail-image {
+  width: 287px;
+  height: 388px;
+  position: relative;
+  top: 200px;
+  left: 20px;
+}
+
+h1.detail-title {
+ position: absolute;
+ left: 20px;
+ top: 100px;
+ width: 200%;
+ font-size: 30px;
+ font-weight: 700;
+ font-family: robto,sans-serif;
+}
+
+.sec-title {
+  position: absolute;
+  top: 130px;
+  left: 20px;
+  font-weight: lighter;
+}
+
+svg.rate {
+  width: 209px;
+  height: 100px;
+  position: absolute;
+  top: 170px;
+  left: 350px;
+}
+
+.nav-add {
+  position: absolute;
+  top: 300px;
+  left: 320px;
+  background-color: #E4E7D9;
+  height: 80px;
+  width: 340px;
+}
+
+.add-cart {
+  font-family: nunito, sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  position: absolute;
+  left: 120px;
+  top: -0.3em;
+  width: 200px;
+  background-color: #4B7D59;
+  border-radius: 4px;
+  width: 200px;
+  height: 40px;
+  text-align: center;
+  color: #fff;
+  z-index: 1;
+}
+
+.add-cart::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: #11BF42;
+  transition: transform 400ms ease-in;
+  z-index: -1;
+}
+
+.add-cart::after {
+  transform: scaleX(0);
+  transform-origin: right;
+}
+
+.add-cart:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.add-price {
+  position: absolute;
+  left: 0.5em;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: roboto, sans-serif;
+}
+
+.add-ship {
+  position: absolute;
+  top: 2em;
+  left: 0.7em;
+  font-size: 16px;
+  font-weight: lighter;
+  font-family: roboto, sans-serif;
+  width: 200px;
+}
+
+.spec-title {
+  font-size: 24px;
+  font-weight: 600;
+  position: absolute;
+  top: 600px;
+  left: 1.5em;
+  z-index: 500;
+}
+
+.spec-released {
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  top: 9.3em;
+  left: -1.8em;
+  border: 2px solid #E4E7D9;
+  width: 240px;
+  height: 24.5px;
+  padding-top: 0.5em;
+  padding-left: 0.5em;
+}
+
+.spec-resleased {
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  top: 11.1em;
+  left: -2.1em;
+  border: 2px solid #E4E7D9;
+  width: 175px;
+  height: 24.5px;
+  padding-top: 0.5em;
+  padding-left: 0.5em;
+
+}
+
+div.nav-spec div.close-item h2.back-text {
+  font-size: 24px;
+  font-weight: 600;
+  position: absolute;
+  left: 1.5em;
+  top: 3.5em;
+}
+div.nav-spec div.close-item h2.spec-head {
+  background-color: #E4E7D9;
+  width: 415px;
+  height: 30px;
+  position: absolute;
+  top: 650px;
+  left: 1.3em;
+  padding: 0.5em;
+}
+div.nav-spec div.close-item svg.div-line1 {
+  position: absolute;
+  top: 22em;
+  width: 480px;
+  height: 1px;
+}
+div.nav-spec div.close-item div.spec-des {
+  position: absolute;
+  top: 742px;
+  left: 4em;
+}
+div.nav-spec div.close-item div.spec-des h2.spec-genre {
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  top: -1.9em;
+  left: -1.8em;
+  border: 2px solid #E4E7D9;
+  width: 240px;
+  height: 24.5px;
+  padding-top: 0.5em;
+  padding-left: 0.5em;
+}
+div.nav-spec div.close-item div.spec-des h2.spec-platform {
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  top: 0.3em;
+  left: -1.8em;
+  border: 2px solid #E4E7D9;
+  width: 240px;
+  height: 24.5px;
+  padding-top: 0.5em;
+  padding-left: 0.5em;
+}
+div.nav-spec div.close-item div.spec-des h2.spec-esrb {
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  top: 2.5em;
+  left: -1.8em;
+  border: 2px solid #E4E7D9;
+  width: 240px;
+  height: 24px;
+  padding-top: 0.5em;
+  padding-left: 0.5em;
+}
+div.nav-spec div.close-item div.spec-des h2.spec-pegi {
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  top: 4.7em;
+  left: -1.8em;
+  border: 2px solid #E4E7D9;
+  width: 240px;
+  height: 24.5px;
+  padding-top: 0.5em;
+  padding-left: 0.5em;
+}
+div.nav-spec div.close-item div.spec-des h2.spec-multi {
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  top: 7em;
+  left: -1.8em;
+  border: 2px solid #E4E7D9;
+  width: 240px;
+  height: 24.5px;
+  padding-top: 0.5em;
+  padding-left: 0.5em;
+}
+div.nav-spec div.close-item div.spec-info {
+  position: absolute;
+  top: 710px;
+  left: 20em;
+}
+div.nav-spec div.close-item div.spec-info h2.spec-sport {
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  top: -0.2em;
+  left: -2.1em;
+  border: 2px solid #E4E7D9;
+  width: 175px;
+  height: 25px;
+  padding-top: 0.5em;
+  padding-left: 0.5em;
+}
+div.nav-spec div.close-item div.spec-info h2.spec-play {
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  top: 2.1em;
+  left: -2.1em;
+  border: 2px solid #E4E7D9;
+  width: 175px;
+  height: 24.5px;
+  padding-top: 0.5em;
+  padding-left: 0.5em;
+}
+div.nav-spec div.close-item div.spec-info h2.spec-for {
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  top: 4.3em;
+  left: -2.1em;
+  border: 2px solid #E4E7D9;
+  width: 175px;
+  height: 24.5px;
+  padding-top: 0.5em;
+  padding-left: 0.5em;
+}
+div.nav-spec div.close-item div.spec-info h2.spec-age {
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  top: 6.5em;
+  left: -2.1em;
+  border: 2px solid #E4E7D9;
+  width: 175px;
+  height: 24.5px;
+  padding-top: 0.5em;
+  padding-left: 0.5em;
+}
+div.nav-spec div.close-item div.spec-info h2.spec-num {
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  top: 8.8em;
+  left: -2.1em;
+  border: 2px solid #E4E7D9;
+  width: 175px;
+  height: 24.5px;
+  padding-top: 0.5em;
+  padding-left: 0.5em;
+}
+
+div.close-info {
+  position: absolute;
+  top: 990px
+}
+div.close-info svg.div-line {
+  position: absolute;
+  top: 0em;
+  left: 0.2em;
+  width: 490px;
+  height: 1px;
+}
+div.close-info h1.close-producte-title {
+  font-size: 24px;
+  position: absolute;
+  top: 0em;
+  left: 1.5em;
+  width: 300px;
+}
+
+div.close-producte {
+  position: absolute;
+  top: 2em;
+  left: 2.2em;
+}
+
+
+
+div.close-producte h1.close-game-title {
+  width: 500px;
+  font-size: 30px;
+  font-weight: normal;
+  position: absolute;
+  top: 0.1em;
+}
+div.close-producte p {
+  position: absolute;
+  top: 2.5em;
+  width: 390px;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+@media screen and (max-width: 431px) {
+
+  
+  
+  header .shoppingcart {
+    left: 250px;
+  }
+
+  label.nav-toggle-lable {
+    left: 200px;
+  }
+  
+  /*detail page*/
+  div.detail-card {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+  }
+
+  img.detail-image {
+    height: 200px;
+    width: 150px;
+  }
+
+  svg.rate {
+    top: 370px;
+    left: 20px;
+    width: 150px;
+  }
+ 
+  h1.detail-title {
+    font-size: 24px;
+    left: 20px;
+  }
+
+  h2.sec-title {
+    font-size: 15px;
+  }
+
+ h3.add-cart {
+  width: 168px;
+  height: 35px;
+ }
+
+  div.nav-add {
+    height: 75px;
+    width: 318px;
+    top: 450px;
+    left: 0px;
+  }
+
+  div.nav-spec div.close-item h2.spec-head {
+    width: 202px;
+    height: 39px;
+    top: 590px;
+    left: 0em;
+    
+  }
+
+  div.nav-spec div.close-item div.spec-des {
+    top: 690px;
+    left: 4em;
+  }
+
+  div.nav-spec div.close-item div.spec-des h2.spec-genre {
+    width: 100px;
+    height: 29px;
+  }
+  div.nav-spec div.close-item div.spec-des h2.spec-platform {
+    height: 29px;
+    width: 100px;
+  }
+  div.nav-spec div.close-item div.spec-des h2.spec-esrb {
+    height: 29px;
+    width: 100px;
+  }
+  div.nav-spec div.close-item div.spec-des h2.spec-pegi {
+    height: 29px;
+    width: 100px;
+   }
+  div.nav-spec div.close-item div.spec-des h2.spec-multi {
+    height: 29px;
+    width: 100px;
+  }
+  h2.spec-released {
+    width: 100px;
+    height: 29px;
+  }
+
+  .spec-resleased {
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    top: 11.1em;
+    left: -2.1em;
+    border: 2px solid #E4E7D9;
+    width: 100px;
+    height: 29px;
+    
+  
+  }
+
+
+  div.nav-spec div.close-item div.spec-info {
+    position: relative;
+    top: 455px;
+    left: 9.4em;
+  }
+
+ h1.spec-title {
+  top: 550px;
+  left: 20px;
+   
+ }
+
+ div.nav-spec div.close-item div.spec-info h2.spec-sport {
+  width: 100px;
+  height: 29px;
+}
+div.nav-spec div.close-item div.spec-info h2.spec-play {
+  width: 100px;
+  height: 29px;
+}
+div.nav-spec div.close-item div.spec-info h2.spec-for {
+  width: 100px;
+  height: 29px;
+}
+div.nav-spec div.close-item div.spec-info h2.spec-age {
+  width: 100px;
+  height: 29px;
+}
+div.nav-spec div.close-item div.spec-info h2.spec-num {
+  width: 100px;
+  height: 29px;
+}
+ 
+ div.nav-spec div.close-item div.spec-des {
+    left: 2em;
+  }
+
+  div.close-info {
+    position: relative;
+    top: 700px;
+    left: -5%;
+  }
+
+  div.close-info h1.close-producte-title {
+    font-size: 24px;
+    position: relative;
+    top: 0.5em;
+    left: 0.7em;
+  }
+
+  div.close-producte h1.close-game-title {
+    font-size: 20px;
+    position: relative;
+    left: -1em;
+    top: 0.1em;
+  }
+  div.close-producte p {
+    position: relative;
+    top: -0.5em;
+    left: -1.5em;
+    width: 50%;
+    font-size: 15px;
+  }
+
+  /*payment complett*/
+
+  footer.footer-complett { 
+    top: 300px;
+  }
+  div.hero-successful h1.succes-title {
+    position: absolute;
+    top: 5.5em;
+    left: 2.7em;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  div.hero-successful svg.checkmark {
+    width: 66px;
+    height: 66px;
+    position: absolute;
+    top: 12em;
+    left: 10em;
+  }
+  div.hero-successful p.succes-text {
+    width: 70%;
+    text-align: center;
+    line-height: 1.8em;
+    position: absolute;
+    top: 16em;
+    left: 2em;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  div.hero-rec {
+    position: absolute;
+    top: 20em;
+    left: -1em;
+  }
+  div.hero-rec h1.rec-title {
+    font-size: 20px;
+    font-weight: bold;
+    position: absolute;
+    top: 3em;
+    left: 3em;
+    width: 300px;
+  }
+  div.hero-rec h3.rec-detail {
+    font-family: nunito, sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    background-color: #1E7B9C;
+    border-radius: 4px;
+    position: absolute;
+    top: 12.7em;
+    left: 1em;
+    width: 120px;
+    height: 35px;
+    text-align: center;
+    color: #fff;
+  }
+  div.hero-rec h3.rec-detail2 {
+    font-family: nunito, sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    background-color: #1E7B9C;
+    border-radius: 4px;
+    position: absolute;
+    top: 12.7em;
+    left: 7.6em;
+    width: 120px;
+    height: 35px;
+    text-align: center;
+    color: #fff;
+  }
+  div.hero-rec h3.rec-detail3 {
+    font-family: nunito, sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    background-color: #1E7B9C;
+    border-radius: 4px;
+    position: absolute;
+    top: 12.7em;
+    left: 14em;
+    width: 120px;
+    height: 35px;
+    text-align: center;
+    color: #fff;
+  }
+  div.hero-rec h2.rec-game {
+    position: absolute;
+    top: 20em;
+    left: 1.7em;
+    font-size: 14px;
+    font-weight: normal;
+  }
+  div.hero-rec h2.rec-game2 {
+    position: absolute;
+    top: 20em;
+    left: 13em;
+    width: 200px;
+    font-size: 14px;
+    font-weight: normal;
+  }
+  div.hero-rec h2.rec-game3 {
+    position: absolute;
+    top: 20em;
+    left: 24.3em;
+    font-size: 14px;
+    font-weight: normal;
+  }
+  div.hero-rec h3.rec-console {
+    position: absolute;
+    top: 30em;
+    left: 2.4em;
+    font-size: 10px;
+    font-weight: lighter;
+  }
+  div.hero-rec h3.rec-console2 {
+    position: absolute;
+    top: 30em;
+    left: 18.2em;
+    font-size: 10px;
+    font-weight: normal;
+  }
+  div.hero-rec h3.rec-console3 {
+    position: absolute;
+    top: 30em;
+    left: 34em;
+    font-size: 10px;
+    font-weight: normal;
+  }
+  div.hero-rec h3.rec-price {
+    position: absolute;
+    top: 17.2em;
+    left: 5.5em;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  div.hero-rec h3.rec-price2 {
+    position: absolute;
+    top: 17.2em;
+    left: 15.9em;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  div.hero-rec h3.rec-price3 {
+    position: absolute;
+    top: 17.2em;
+    left: 24.5em;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  div.hero-rec img.rec-images {
+    height: 150px;
+    width: 100px;
+    position: absolute;
+    top: 8em;
+    left: 1.5em;
+  }
+  div.hero-rec img.rec-images2 {
+    height: 150px;
+    width: 100px;
+    position: absolute;
+    top: 8em;
+    left: 11.5em;
+  }
+  div.hero-rec img.rec-images3 {
+    height: 150px;
+    width: 100px;;
+    position: absolute;
+    top: 8em;
+    left: 21.3em;
+  }
+
+  /*cart page*/
+
+  div.cart-container {
+   margin: 0%;
+  }
+
+  div.order-container {
+    width: 382px;
+    height: 206px;
+    left: -20px;
+  }
+
+  img.order-image {
+    width: 80px;
+    height: 102px;
+  }
+
+  div.order-container h4.game-title {
+    font-size: 16px;
+  }
+
+  div.checkout-container {
+    width: 382px;
+    height: 175px;
+  }
+
+
+  footer div.sosical-media svg.insta {
+   left: -175px;
+  }
+  footer div.sosical-media svg.tik-tok {
+    width: 32px;
+    height: 34px;
+    left: -135px;
+  }
+  footer div.sosical-media svg.face {
+    width: 17px;
+    height: 30px;
+    left: -200px;
+  }
+  
+  footer.logo-footer {
+    left: 10px;
+  }
+ 
+}
+
+@media screen and (min-width: 700px) {
+  label.nav-toggle-lable {
+    display: none;
+  }
+  header {
+    display: grid;
+    grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+  }
+  header nav {
+    all: unset;
+    grid-column: 2/4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  header nav a {
+    opacity: 1;
+    color: #fff;
+    font-size: 16px;
+    position: relative;
+  }
+  header nav li {
+    margin-top: 0;
+    position: relative;
+    right: 6em;
+  }
+  header nav ul {
+    display: flex;
+  }
+  header .shoppingcart {
+    position: absolute;
+    left: 40em;
+  }
+  nav a::after {
+    content: "";
+    display: block;
+    height: 5px;
+    background: rgb(71, 207, 241);
+    position: absolute;
+    top: 10;
+    left: 0;
+    right: 0;
+    transform: scale(0, 1);
+    transition: transform ease-in-out 250ms;
+  }
+  nav a:hover::after {
+    transform: scale(1, 1);
+  }
+}
+
+@media screen and (min-width: 800px) {
+  label.nav-toggle-lable {
+    display: none;
+  }
+  header {
+    display: grid;
+    grid-template-columns: 5fr auto minmax(900px, 3fr) 3fr;
+    width: 1440px;
+    height: 97px;
+  }
+  header .logo {
+    position: absolute;
+    left: 5em;
+    top: 1em;
+    width: 112px;
+    height: 63px;
+  }
+  header nav {
+    all: unset;
+    grid-column: 1/4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  header nav a {
+    opacity: 1;
+    color: #fff;
+    font-size: 14px;
+    position: relative;
+  }
+  header nav li {
+    margin-top: 0;
+    margin-right: 1em;
+    position: relative;
+    right: 35em;
+  }
+  header nav ul {
+    display: flex;
+  }
+  header .shoppingcart {
+    position: absolute;
+    left: 45em;
+    bottom: 2em;
+    width: 2em;
+    height: 2em;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  label.nav-toggle-lable {
+    display: none;
+  }
+  header {
+    display: grid;
+    grid-template-columns: 5fr auto minmax(900px, 3fr) 3fr;
+    width: 100%;
+    height: 97px;
+  }
+  header .logo {
+    position: absolute;
+    left: 5em;
+    top: 1em;
+    width: 112px;
+    height: 63px;
+  }
+  header nav {
+    all: unset;
+    grid-column: 1/4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  header nav a {
+    opacity: 1;
+    color: #fff;
+    font-size: 14px;
+    position: relative;
+  }
+  header nav li {
+    margin-top: 0;
+    margin-right: 1em;
+    position: relative;
+    right: 35em;
+  }
+  header nav ul {
+    display: flex;
+  }
+  header .shoppingcart {
+    position: absolute;
+    left: 50em;
+    bottom: 2em;
+    width: 2em;
+    height: 2em;
+  }
+}
+
+@media screen and (min-width: 930px) {
+  label.nav-toggle-lable {
+    display: none;
+  }
+  header {
+    display: grid;
+    grid-template-columns: 5fr auto minmax(900px, 3fr) 3fr;
+    width: 100%;
+    height: 97px;
+  }
+  header .logo {
+    position: absolute;
+    left: 5em;
+    top: 1em;
+    width: 112px;
+    height: 63px;
+  }
+  header nav {
+    all: unset;
+    grid-column: 1/4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  header nav a {
+    opacity: 1;
+    color: #fff;
+    font-size: 14px;
+    position: relative;
+  }
+  header nav li {
+    margin-top: 0;
+    margin-right: 2em;
+    position: relative;
+    right: 15em;
+  }
+  header nav ul {
+    display: flex;
+  }
+  header .shoppingcart {
+    position: absolute;
+    left: 52em;
+    width: 2.5em;
+    height: 2.5em;
+  }
+}
+
+@media screen and (min-width: 1030px) {
+  label.nav-toggle-lable {
+    display: none;
+  }
+  header {
+    display: grid;
+    grid-template-columns: 5fr auto minmax(900px, 3fr) 3fr;
+    width: 100%;
+    height: 97px;
+  }
+  header .logo {
+    position: absolute;
+    left: 5em;
+    top: 1em;
+    width: 112px;
+    height: 63px;
+  }
+  header nav {
+    all: unset;
+    grid-column: 1/4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  header nav a {
+    opacity: 1;
+    color: #fff;
+    font-size: 14px;
+    position: relative;
+  }
+  header nav li {
+    margin-top: 0;
+    margin-right: 2em;
+    position: relative;
+    right: 15em;
+  }
+  header nav ul {
+    display: flex;
+  }
+  header .shoppingcart {
+    position: absolute;
+    left: 57em;
+    width: 2.5em;
+    height: 2.5em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  label.nav-toggle-lable {
+    display: none;
+  }
+  header {
+    display: grid;
+    grid-template-columns: 5fr auto minmax(900px, 3fr) 3fr;
+    width: 1440px;
+    height: 97px;
+  }
+  header .logo {
+    position: absolute;
+    left: 5em;
+    top: 1em;
+    width: 112px;
+    height: 63px;
+  }
+  header nav {
+    all: unset;
+    grid-column: 1/4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  header nav a {
+    opacity: 1;
+    color: #fff;
+    font-size: 14px;
+    position: relative;
+  }
+  header nav li {
+    margin-top: 0;
+    margin-right: 4em;
+    position: relative;
+    right: 22em;
+  }
+  header nav ul {
+    display: flex;
+  }
+  header .shoppingcart {
+    position: absolute;
+    left: 68em;
+    width: 2.5em;
+    height: 2.5em;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+
+  div.hero-successful {
+    position: absolute;
+    top: 0px;
+  }
+  div.hero-successful h1.succes-title {
+    position: relative;
+    top: 9.5em;
+    left: 2.7em;
+    font-size: 26px;
+    font-weight: bold;
+  }
+  div.hero-successful svg.checkmark {
+    width: 66px;
+    height: 66px;
+    position: absolute;
+    top: 12em;
+    left: 13em;
+  }
+  div.hero-successful p.succes-text {
+    width: 410px;
+    text-align: center;
+    line-height: 1.8em;
+    position: absolute;
+    top: 18em;
+    left: 2.5em;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  div.hero-detail {
+    position: relative;
+    top: 5em;
+    left: 2em;
+    background-color: #fff;
+    height: 206px;
+    width: 382px;
+  }
+
+  div.hero-rec {
+    left: 250px;
+  }
+  /*detail page*/
+  
+  .rate {
+    width: 209px;
+    height: 100px;
+    position: absolute;
+    top: 200px;
+    left: 350px;
+  }
+  
+  div.nav-add {
+    position: absolute;
+    top: 300px;
+    left: 320px;
+    background-color: #E4E7D9;
+    height: 80px;
+    width: 360px;
+  }
+  
+  .add-cart {
+    font-family: nunito, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    position: absolute;
+    left: 120px;
+    top: -0.3em;
+    width: 200px;
+    background-color: #4B7D59;
+    border-radius: 4px;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+  }
+  
+ 
+  .add-price {
+    position: absolute;
+    left: 0.5em;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: roboto, sans-serif;
+  }
+  
+  .add-ship {
+    position: absolute;
+    top: 2em;
+    left: 0.7em;
+    font-size: 16px;
+    font-weight: lighter;
+    font-family: roboto, sans-serif;
+    width: 200px;
+  }
+  
+  .spec-title {
+    font-size: 24px;
+    font-weight: 600;
+    position: absolute;
+    top: 0px;
+    left: 1.5em;
+    z-index: 500;
+  }
+  
+  .spec-released {
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    top: 9.3em;
+    left: -1.8em;
+    border: 2px solid #E4E7D9;
+    width: 240px;
+    height: 24.5px;
+    padding-top: 0.5em;
+    padding-left: 0.5em;
+  }
+  
+  /*cart pag*/
+
+  div.nav-spec div.close-item div.spec-des {
+    position: absolute;
+    top: 160px;
+    left: 4em;
+  }
+
+  div.nav-spec div.close-item div.spec-info {
+    position: absolute;
+    top: 128px;
+    left: 20em;
+  }
+  
+  
+   label.nav-toggle-lable {
+    display: none;
+  }
+  div.detail-top h2.sec-title {
+    position: absolute;
+    top: -2em;
+  }
+
+  div.detail-top {
+    position: absolute;
+    top: 5em;
+  }
+
+  div.nav-spec {
+    position: absolute;
+    top: 36em;
+  }
+ 
+  div.nav-spec div.close-item h2.spec-head {
+    background-color: #E4E7D9;
+    width: 415px;
+    height: 30px;
+    position: absolute;
+    top: 67px;
+    
+  }
+
+  div.order-container {
+    position: absolute;
+    left: 0em;
+    top: 10em;
+    background-color: #fff;
+    width: 668px;
+    height: 265px;
+  }
+
+  img.order-image {
+    height: 177px;
+    width: 131px;
+    position: relative;
+    left: 1.5em;
+    top: 2em;
+  
+  }
+  
+   
+    div.order-container h4.game-title {
+      position: absolute;
+      top: 0em;
+      left: 7.5em;
+      font-weight: bolder;
+      font-size: 24px;
+    }
+    div.order-container h6.console-order {
+      position: absolute;
+      top: 1em;
+      left: 9em;
+      font-size: 20px;
+      font-weight: normal;
+    }
+    div.order-container h6.del-time {
+      position: absolute;
+      top: 2em;
+      left: 8em;
+      font-size: 22px;
+      font-weight: normal;
+    }
+    div.order-container h5.order-price {
+      position: absolute;
+      left: 25em;
+      top: 5.5em;
+      font-size: 20px;
+    }
+    div.order-container svg.bin {
+      position: absolute;
+      top: .5em;
+      left: 35em;
+      width: 41px;
+      height: 38px;
+    }
+    div.order-container input.number {
+      position: absolute;
+      top: 10.5em;
+      left: 13em;
+      width: 135px;
+      height: 25px;
+      border-radius: 10px;
+    }
+    div.order-container div.order-dis {
+      position: absolute;
+      left: 9em;
+    }
+    
+    div.checkout-container {
+      position: relative;
+      top: -15em;
+      left: 47em;
+      background-color: #fff;
+      width: 392px;
+      height: 265px;
+    }
+    div.checkout-container h6.item-cart {
+      position: relative;
+      font-size: 20px;
+      font-weight: normal;
+      top: 2em;
+      left: 1em;
+    }
+    div.checkout-container h6.price-item {
+      position: relative;
+      font-size: 20px;
+      font-weight: normal;
+      left: 15em;
+      top: -1.5em;
+    }
+    div.checkout-container h6.price-cost {
+      position: absolute;
+      font-size: 20px;
+      font-weight: normal;
+      top: 1.5em;
+      left: 15.2em;
+    }
+    div.checkout-container h6.cost-cart {
+      position: absolute;
+      font-size: 24px;
+      top: 3em;
+      left: 1em;
+    }
+    div.checkout-container h5.total-price {
+      position: absolute;
+      font-size: 24px;
+      left: 12em;
+      top: 3.7em;
+    }
+    div.checkout-container h5.total {
+      position: absolute;
+      font-size: 20px;
+      font-weight: normal;
+      top: 2em;
+      left: 1em;
+    }
+    div.checkout-container h5.check-price {
+      position: absolute;
+      top: -1em;
+      left: 1em;
+      width: 250px;
+      height: 35px;
+    }
+    div.checkout-container a.hero-checkout {
+      color: #fff;
+      font-size: 25px;
+      position: absolute;
+      top: 8em;
+    }
+  
+
+  header {
+    display: grid;
+    grid-template-columns: 5fr auto minmax(900px, 3fr) 3fr;
+    width: 100%;
+    height: 97px;
+  }
+  header .logo {
+    position: absolute;
+    left: 5em;
+    top: 1em;
+    width: 112px;
+    height: 63px;
+  }
+  header nav {
+    all: unset;
+    grid-column: 1/4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  header nav a {
+    opacity: 1;
+    color: #fff;
+    font-size: 14px;
+    position: relative;
+  }
+  header nav li {
+    margin-top: 0;
+    margin-right: 4em;
+    position: relative;
+    right: 22em;
+  }
+  header nav ul {
+    display: flex;
+  }
+  header .shoppingcart {
+    position: absolute;
+    left: 80em;
+    width: 2.5em;
+    height: 2.5em;
+  }
+  div.close-info {
+    position: relative;
+    top: 5em;
+    left: 15em;
+  }
+  div.close-info h1.close-producte-title {
+    position: absolute;
+    left: 13.5em;
+    top: 5em;
+  }
+  div.close-info div.close-producte {
+    position: absolute;
+    top: 11em;
+    left: 20em;
+    border: solid #E4E7D9;
+    width: 400px;
+    height: 220px;
+  }
+  div.close-info div.close-producte h1.close-game-title {
+    width: 500px;
+    font-size: 30px;
+    font-weight: normal;
+    position: absolute;
+    top: -0.5em;
+  }
+  div.close-info div.close-producte p {
+    position: absolute;
+    top: 1.5em;
+    width: 390px;
+    font-size: 20px;
+    font-weight: lighter;
+  }
+  .info {
+    position: absolute;
+    left: 10em;
+    width: 40em;
+  }
+  .info p.text {
+    position: absolute;
+    top: 2.3em;
+  }
+  img.service-man {
+    height: 400px;
+    -o-object-position: left 50%;
+       object-position: left 50%;
+  }
+  h1.title-2 {
+    position: absolute;
+    top: 3em;
+    left: 1em;
+    font-size: 63px;
+  }
+  div.info-text .chat {
+    position: absolute;
+    top: 24em;
+    left: 18em;
+    font-size: 20px;
+  }
+  div.info-text .time {
+    position: absolute;
+    top: 25.5em;
+    left: 18em;
+    font-size: 20px;
+  }
+  div.info-text .call {
+    position: absolute;
+    top: 27.5em;
+    left: 18em;
+    font-size: 20px;
+  }
+  div.info-text .time-2 {
+    position: absolute;
+    top: 29em;
+    left: 18em;
+    font-size: 20px;
+  }
+  div.info-text .end-text {
+    position: absolute;
+    top: 24em;
+    left: 37em;
+    font-size: 20px;
+  }
+
+ 
+  div.footer-detail footer {
+    height: 96px;
+    position: absolute;
+    top: 1100px;
+  }
+  div.footer-detail footer div.sosical-media {
+    display: inline;
+    position: absolute;
+    left: 82em;
+    top: 2em;
+  }
+  div.footer-detail footer div.sosical-media svg.face {
+    width: 14px;
+    height: 32px;
+  }
+  div.footer-detail footer div.sosical-media svg.tik-tok {
+    width: 24px;
+    height: 32px;
+  }
+  div.footer-detail footer div.sosical-media svg.insta {
+    width: 25px;
+    width: 32px;
+  }
+  div.footer-detail footer div.footer-col {
+    position: absolute;
+    left: 15em;
+  }
+  footer {
+    min-height: 1%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+  }
+  footer div.sosical-media {
+    display: inline;
+    position: absolute;
+    left: 82em;
+    top: 2em;
+  }
+  footer div.sosical-media svg.face {
+    width: 14px;
+    height: 32px;
+  }
+  footer div.sosical-media svg.tik-tok {
+    width: 24px;
+    height: 32px;
+  }
+  footer div.sosical-media svg.insta {
+    width: 25px;
+    width: 32px;
+  }
+  footer div.footer-col {
+    position: absolute;
+    left: 15em;
+  }
+}
